@@ -425,7 +425,7 @@ MonoBehaviour:
   uiResources:
   - {fileID: 2120918184011404945, guid: 6471cd5f9b17f004f9b372ba16c692ff, type: 3}
   - {fileID: 6565287564351532025, guid: 4c12d30e8f0e3fa44ba61be61827ebff, type: 3}
-  - {fileID: 4346490140689400787, guid: b16a73f186c154f428cd24f29fe3470d, type: 3}
+  - {fileID: 6941864843590555215, guid: 04b3c07ed1dee76459bb6ba99346b988, type: 3}
   CanvasParentTF: {fileID: 1692685246}
   bg: {fileID: 2118870615}
 --- !u!1 &507201642
