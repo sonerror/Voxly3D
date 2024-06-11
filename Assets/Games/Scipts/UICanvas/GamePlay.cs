@@ -11,6 +11,6 @@ public class GamePlay : UICanvas
     }
     public void btnID()
     {
-        Debug.LogError("Non");
+        LevelManager.Ins.CheckID();
     }
 }

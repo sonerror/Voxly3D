@@ -39,4 +39,11 @@ public class LevelManager : Singleton<LevelManager>
     {
         if (levelCurrent) Destroy(levelCurrent.gameObject);
     }
+    public void CheckID()
+    {
+        for (int i = 0; i < levelCurrent.quantity; i++)
+        {
+            Debug.LogError(levelCurrent.voxelPieces[i].ID);
+        }
+    }
 }
