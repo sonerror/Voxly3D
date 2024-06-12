@@ -108,8 +108,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c19542d83906b174d95697af1f00dfa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zoomState: 0
-  target: {fileID: 3976220074199064438}
+  zoomState: 1
+  target: {fileID: 4373519065341805499}
   zoomSpeed: 20
   minZoom: 10
   maxZoom: 20
+  minFOV: 10
+  maxFOV: 80

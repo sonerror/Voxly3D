@@ -1,13 +1,17 @@
 using UnityEngine;
 
-public class ZoomObj : MonoBehaviour
+public class ZoomWithMouseWheel : MonoBehaviour
 {
-    public enum ZoomState { Position }
+    public enum ZoomState { Position, FOV }
     public ZoomState zoomState = ZoomState.Position;
-    public Transform target;
-    public float zoomSpeed = 20f;
-    public float minZoom = 0f;
-    public float maxZoom = 10f;
+
+    public Transform target; 
+    public float zoomSpeed = 10f;
+    public float minZoom = 5f; 
+    public float maxZoom = 50f; 
+    public float minFOV = 15f; 
+    public float maxFOV = 90f; 
+
     private Camera cam;
 
     void Start()
@@ -30,9 +34,13 @@ public class ZoomObj : MonoBehaviour
                 case ZoomState.Position:
                     ZoomByPosition(scrollInput);
                     break;
+                case ZoomState.FOV:
+                    ZoomByFOV(scrollInput);
+                    break;
             }
         }
     }
+
     void ZoomByPosition(float scrollInput)
     {
         if (target == null) return;
@@ -40,9 +48,16 @@ public class ZoomObj : MonoBehaviour
         float distance = Vector3.Distance(cam.transform.position, target.position);
         distance -= scrollInput * zoomSpeed;
         distance = Mathf.Clamp(distance, minZoom, maxZoom);
+
         Vector3 direction = (cam.transform.position - target.position).normalized;
         cam.transform.position = target.position + direction * distance;
-        if (distance < maxZoom / 2)
+    }
+
+    void ZoomByFOV(float scrollInput)
+    {
+        cam.fieldOfView -= scrollInput * zoomSpeed;
+        cam.fieldOfView = Mathf.Clamp(cam.fieldOfView, minFOV, maxFOV);
+        if(cam.fieldOfView < maxFOV/2)
         {
             LevelManager.Ins.SetAcText();
         }
@@ -51,4 +66,6 @@ public class ZoomObj : MonoBehaviour
             LevelManager.Ins.SetAcTextAll(false);
         }
     }
+
+  
 }

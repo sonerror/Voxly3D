@@ -6,7 +6,7 @@ using UnityEngine.Windows;
 public class LevelManager : Singleton<LevelManager>
 {
     public LevelDataTFAssetData levelDataTFAssetData;
-    public LevelDataAssetData levelDataAssetData;
+    public Level _levelIndex;
     public Level levelCurrent;
     public GameObject voxelPiece;
     public int _IDSelected;
@@ -38,7 +38,7 @@ public class LevelManager : Singleton<LevelManager>
     }
     public void InstantiateLevel(int indexLevel)
     {
-        levelCurrent = Instantiate(levelDataAssetData.GetLevelWithID(0).levels);
+        levelCurrent = Instantiate(_levelIndex);
         LevelData levelDataTF = levelDataTFAssetData.GetLevelDataWithID(indexLevel).levelDatas;
         foreach(TransformData tf in levelDataTF.transformDataList)
         {
