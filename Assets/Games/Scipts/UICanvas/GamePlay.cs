@@ -9,8 +9,9 @@ public class GamePlay : UICanvas
     {
         base.Open();
     }
-    public void btnID()
+    public void btnID(int idInput)
     {
-        LevelManager.Ins.CheckID();
+        LevelManager.Ins.CheckID(idInput);
+        LevelManager.Ins.ChangematFormID();
     }
 }

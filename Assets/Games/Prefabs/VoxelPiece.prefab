@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7976344891081535929}
   - component: {fileID: 8040966160749642135}
   - component: {fileID: 3306286212774249143}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: VoxelPiece
   m_Icon: {fileID: 0}
@@ -1091,7 +1091,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2860266571038922075}
   - component: {fileID: 135754985573464870}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: VoxelPiece
   m_TagString: VoxelPiece
   m_Icon: {fileID: 0}
@@ -1134,7 +1134,8 @@ MonoBehaviour:
   - {fileID: 7402799117331992206}
   - {fileID: 2528968093855464694}
   - {fileID: 3153650239336157966}
-  material: {fileID: 0}
+  mesh: {fileID: 8040966160749642135}
+  isVoxel: 0
 --- !u!1 &6829437328684178587
 GameObject:
   m_ObjectHideFlags: 0
