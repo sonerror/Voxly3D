@@ -8,18 +8,13 @@ public class Home : UICanvas
     {
         base.Open();
     }
-
-    private void Update()
+    public void OnLoadNewScene()
     {
-    }
-    public void BtnPlay()
-    {
-        SceneController.Ins.ChangeScene("GamePlay", () =>
+        UIManager.Ins.CloseUI<Home>();
+        UIManager.Ins.OpenUI<GamePlay>();
+        if (SceneController.Ins.currentSceneName.Equals("GamePlay") && !UIManager.Ins.IsOpened<Home>())
         {
-            UIManager.Ins.CloseUI<Home>();
-            UIManager.Ins.OpenUI<GamePlay>();
-            UIManager.Ins.bg.gameObject.SetActive(false);
-        }, true, true);
+            LevelManager.Ins.LoadLevel();
+        }
     }
-  
 }

@@ -26,11 +26,14 @@ public class Loading : UICanvas
             slider.value = 1f;
             DOVirtual.DelayedCall(0.5f, () =>
             {
-                UIManager.Ins.CloseUI<Loading>();
-                UIManager.Ins.OpenUI<Home>();
+                SceneController.Ins.ChangeScene("GamePlay", () =>
+                {
+                    UIManager.Ins.CloseUI<Loading>();
+                    UIManager.Ins.OpenUI<Home>();
+                    UIManager.Ins.bg.gameObject.SetActive(false);
+                }, true, true);
+               
             });
         });
     }
-
-
 }

@@ -34,4 +34,10 @@ public class GamePlay : UICanvas
         LevelManager.Ins.CheckID(idInput);
         LevelManager.Ins.ChangematFormID();
     }
+    public void BtnBack()
+    {
+        UIManager.Ins.CloseUI<GamePlay>();
+        UIManager.Ins.OpenUI<Home>();
+        LevelManager.Ins.levelCurrent.gameObject.SetActive(false);
+    }
 }

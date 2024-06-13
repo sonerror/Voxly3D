@@ -13,24 +13,7 @@ public class LevelManager : Singleton<LevelManager>
     public bool areDrawing = false;
     public int indexIDLV = 0;
     public List<int> idButton = new List<int>();
-    private void OnEnable()
-    {
-        EventManager.OnLoadNewScene += OnLoadNewScene;
-    }
 
-    private void OnDestroy()
-    {
-        EventManager.OnLoadNewScene -= OnLoadNewScene;
-    }
-
-    public void OnLoadNewScene()
-    {
-        if (SceneController.Ins.currentSceneName.Equals("GamePlay") && !UIManager.Ins.IsOpened<Home>())
-        {
-            LoadLevel();
-        }
-        idButton.Sort();
-    }
 
   
     public void LoadLevel()
