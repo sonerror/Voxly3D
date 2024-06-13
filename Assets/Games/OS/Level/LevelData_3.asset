@@ -12,4 +12,4340 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2b4471a6c44edd4ab93318f430d977b, type: 3}
   m_Name: LevelData_3
   m_EditorClassIdentifier: 
-  transformDataList: []
+  transformDataList:
+  - id: 3
+    position: {x: -9.5, y: -9.5, z: -9.5}
+  - id: 1
+    position: {x: -9.5, y: -9.5, z: -8.5}
+  - id: 3
+    position: {x: -9.5, y: -9.5, z: -7.5}
+  - id: 4
+    position: {x: -9.5, y: -9.5, z: -6.5}
+  - id: 1
+    position: {x: -9.5, y: -9.5, z: -5.5}
+  - id: 1
+    position: {x: -9.5, y: -9.5, z: -4.5}
+  - id: 4
+    position: {x: -9.5, y: -9.5, z: -3.5}
+  - id: 3
+    position: {x: -9.5, y: -9.5, z: -2.5}
+  - id: 4
+    position: {x: -9.5, y: -9.5, z: -1.5}
+  - id: 3
+    position: {x: -9.5, y: -9.5, z: -0.5}
+  - id: 4
+    position: {x: -9.5, y: -9.5, z: 0.5}
+  - id: 4
+    position: {x: -9.5, y: -9.5, z: 1.5}
+  - id: 1
+    position: {x: -9.5, y: -9.5, z: 2.5}
+  - id: 1
+    position: {x: -9.5, y: -9.5, z: 3.5}
+  - id: 4
+    position: {x: -9.5, y: -9.5, z: 4.5}
+  - id: 4
+    position: {x: -9.5, y: -9.5, z: 5.5}
+  - id: 5
+    position: {x: -9.5, y: -9.5, z: 6.5}
+  - id: 3
+    position: {x: -9.5, y: -9.5, z: 7.5}
+  - id: 1
+    position: {x: -9.5, y: -9.5, z: 8.5}
+  - id: 3
+    position: {x: -9.5, y: -9.5, z: 9.5}
+  - id: 2
+    position: {x: -9.5, y: -8.5, z: -9.5}
+  - id: 2
+    position: {x: -9.5, y: -8.5, z: -8.5}
+  - id: 1
+    position: {x: -9.5, y: -8.5, z: -7.5}
+  - id: 1
+    position: {x: -9.5, y: -8.5, z: -6.5}
+  - id: 5
+    position: {x: -9.5, y: -8.5, z: -5.5}
+  - id: 5
+    position: {x: -9.5, y: -8.5, z: -4.5}
+  - id: 3
+    position: {x: -9.5, y: -8.5, z: -3.5}
+  - id: 4
+    position: {x: -9.5, y: -8.5, z: -2.5}
+  - id: 4
+    position: {x: -9.5, y: -8.5, z: -1.5}
+  - id: 4
+    position: {x: -9.5, y: -8.5, z: -0.5}
+  - id: 2
+    position: {x: -9.5, y: -8.5, z: 0.5}
+  - id: 4
+    position: {x: -9.5, y: -8.5, z: 1.5}
+  - id: 2
+    position: {x: -9.5, y: -8.5, z: 2.5}
+  - id: 2
+    position: {x: -9.5, y: -8.5, z: 3.5}
+  - id: 1
+    position: {x: -9.5, y: -8.5, z: 4.5}
+  - id: 5
+    position: {x: -9.5, y: -8.5, z: 5.5}
+  - id: 3
+    position: {x: -9.5, y: -8.5, z: 6.5}
+  - id: 2
+    position: {x: -9.5, y: -8.5, z: 7.5}
+  - id: 3
+    position: {x: -9.5, y: -8.5, z: 8.5}
+  - id: 4
+    position: {x: -9.5, y: -8.5, z: 9.5}
+  - id: 1
+    position: {x: -9.5, y: -7.5, z: -9.5}
+  - id: 1
+    position: {x: -9.5, y: -7.5, z: -8.5}
+  - id: 1
+    position: {x: -9.5, y: -7.5, z: -7.5}
+  - id: 3
+    position: {x: -9.5, y: -7.5, z: -6.5}
+  - id: 2
+    position: {x: -9.5, y: -7.5, z: -5.5}
+  - id: 3
+    position: {x: -9.5, y: -7.5, z: -4.5}
+  - id: 3
+    position: {x: -9.5, y: -7.5, z: -3.5}
+  - id: 1
+    position: {x: -9.5, y: -7.5, z: -2.5}
+  - id: 3
+    position: {x: -9.5, y: -7.5, z: -1.5}
+  - id: 2
+    position: {x: -9.5, y: -7.5, z: -0.5}
+  - id: 3
+    position: {x: -9.5, y: -7.5, z: 0.5}
+  - id: 5
+    position: {x: -9.5, y: -7.5, z: 1.5}
+  - id: 1
+    position: {x: -9.5, y: -7.5, z: 2.5}
+  - id: 3
+    position: {x: -9.5, y: -7.5, z: 3.5}
+  - id: 1
+    position: {x: -9.5, y: -7.5, z: 4.5}
+  - id: 5
+    position: {x: -9.5, y: -7.5, z: 5.5}
+  - id: 3
+    position: {x: -9.5, y: -7.5, z: 6.5}
+  - id: 5
+    position: {x: -9.5, y: -7.5, z: 7.5}
+  - id: 1
+    position: {x: -9.5, y: -7.5, z: 8.5}
+  - id: 3
+    position: {x: -9.5, y: -7.5, z: 9.5}
+  - id: 4
+    position: {x: -9.5, y: -6.5, z: -9.5}
+  - id: 1
+    position: {x: -9.5, y: -6.5, z: -8.5}
+  - id: 1
+    position: {x: -9.5, y: -6.5, z: -7.5}
+  - id: 4
+    position: {x: -9.5, y: -6.5, z: -6.5}
+  - id: 2
+    position: {x: -9.5, y: -6.5, z: -5.5}
+  - id: 4
+    position: {x: -9.5, y: -6.5, z: -4.5}
+  - id: 1
+    position: {x: -9.5, y: -6.5, z: -3.5}
+  - id: 1
+    position: {x: -9.5, y: -6.5, z: -2.5}
+  - id: 5
+    position: {x: -9.5, y: -6.5, z: -1.5}
+  - id: 4
+    position: {x: -9.5, y: -6.5, z: -0.5}
+  - id: 5
+    position: {x: -9.5, y: -6.5, z: 0.5}
+  - id: 4
+    position: {x: -9.5, y: -6.5, z: 1.5}
+  - id: 5
+    position: {x: -9.5, y: -6.5, z: 2.5}
+  - id: 1
+    position: {x: -9.5, y: -6.5, z: 3.5}
+  - id: 1
+    position: {x: -9.5, y: -6.5, z: 4.5}
+  - id: 2
+    position: {x: -9.5, y: -6.5, z: 5.5}
+  - id: 2
+    position: {x: -9.5, y: -6.5, z: 6.5}
+  - id: 1
+    position: {x: -9.5, y: -6.5, z: 7.5}
+  - id: 1
+    position: {x: -9.5, y: -6.5, z: 8.5}
+  - id: 2
+    position: {x: -9.5, y: -6.5, z: 9.5}
+  - id: 3
+    position: {x: -9.5, y: -5.5, z: -9.5}
+  - id: 1
+    position: {x: -9.5, y: -5.5, z: -8.5}
+  - id: 1
+    position: {x: -9.5, y: -5.5, z: -7.5}
+  - id: 3
+    position: {x: -9.5, y: -5.5, z: -6.5}
+  - id: 2
+    position: {x: -9.5, y: -5.5, z: -5.5}
+  - id: 1
+    position: {x: -9.5, y: -5.5, z: -4.5}
+  - id: 2
+    position: {x: -9.5, y: -5.5, z: -3.5}
+  - id: 5
+    position: {x: -9.5, y: -5.5, z: -2.5}
+  - id: 4
+    position: {x: -9.5, y: -5.5, z: -1.5}
+  - id: 2
+    position: {x: -9.5, y: -5.5, z: -0.5}
+  - id: 1
+    position: {x: -9.5, y: -5.5, z: 0.5}
+  - id: 5
+    position: {x: -9.5, y: -5.5, z: 1.5}
+  - id: 1
+    position: {x: -9.5, y: -5.5, z: 2.5}
+  - id: 1
+    position: {x: -9.5, y: -5.5, z: 3.5}
+  - id: 4
+    position: {x: -9.5, y: -5.5, z: 4.5}
+  - id: 5
+    position: {x: -9.5, y: -5.5, z: 5.5}
+  - id: 2
+    position: {x: -9.5, y: -5.5, z: 6.5}
+  - id: 1
+    position: {x: -9.5, y: -5.5, z: 7.5}
+  - id: 4
+    position: {x: -9.5, y: -5.5, z: 8.5}
+  - id: 2
+    position: {x: -9.5, y: -5.5, z: 9.5}
+  - id: 5
+    position: {x: -9.5, y: -4.5, z: -9.5}
+  - id: 2
+    position: {x: -9.5, y: -4.5, z: -8.5}
+  - id: 1
+    position: {x: -9.5, y: -4.5, z: -7.5}
+  - id: 2
+    position: {x: -9.5, y: -4.5, z: -6.5}
+  - id: 1
+    position: {x: -9.5, y: -4.5, z: -5.5}
+  - id: 4
+    position: {x: -9.5, y: -4.5, z: -4.5}
+  - id: 5
+    position: {x: -9.5, y: -4.5, z: -3.5}
+  - id: 4
+    position: {x: -9.5, y: -4.5, z: -2.5}
+  - id: 5
+    position: {x: -9.5, y: -4.5, z: -1.5}
+  - id: 2
+    position: {x: -9.5, y: -4.5, z: -0.5}
+  - id: 1
+    position: {x: -9.5, y: -4.5, z: 0.5}
+  - id: 5
+    position: {x: -9.5, y: -4.5, z: 1.5}
+  - id: 1
+    position: {x: -9.5, y: -4.5, z: 2.5}
+  - id: 5
+    position: {x: -9.5, y: -4.5, z: 3.5}
+  - id: 2
+    position: {x: -9.5, y: -4.5, z: 4.5}
+  - id: 4
+    position: {x: -9.5, y: -4.5, z: 5.5}
+  - id: 5
+    position: {x: -9.5, y: -4.5, z: 6.5}
+  - id: 3
+    position: {x: -9.5, y: -4.5, z: 7.5}
+  - id: 2
+    position: {x: -9.5, y: -4.5, z: 8.5}
+  - id: 2
+    position: {x: -9.5, y: -4.5, z: 9.5}
+  - id: 3
+    position: {x: -9.5, y: -3.5, z: -9.5}
+  - id: 1
+    position: {x: -9.5, y: -3.5, z: -8.5}
+  - id: 1
+    position: {x: -9.5, y: -3.5, z: -7.5}
+  - id: 5
+    position: {x: -9.5, y: -3.5, z: -6.5}
+  - id: 4
+    position: {x: -9.5, y: -3.5, z: -5.5}
+  - id: 2
+    position: {x: -9.5, y: -3.5, z: -4.5}
+  - id: 4
+    position: {x: -9.5, y: -3.5, z: -3.5}
+  - id: 4
+    position: {x: -9.5, y: -3.5, z: -2.5}
+  - id: 2
+    position: {x: -9.5, y: -3.5, z: -1.5}
+  - id: 3
+    position: {x: -9.5, y: -3.5, z: -0.5}
+  - id: 3
+    position: {x: -9.5, y: -3.5, z: 0.5}
+  - id: 1
+    position: {x: -9.5, y: -3.5, z: 1.5}
+  - id: 4
+    position: {x: -9.5, y: -3.5, z: 2.5}
+  - id: 1
+    position: {x: -9.5, y: -3.5, z: 3.5}
+  - id: 1
+    position: {x: -9.5, y: -3.5, z: 4.5}
+  - id: 3
+    position: {x: -9.5, y: -3.5, z: 5.5}
+  - id: 3
+    position: {x: -9.5, y: -3.5, z: 6.5}
+  - id: 2
+    position: {x: -9.5, y: -3.5, z: 7.5}
+  - id: 2
+    position: {x: -9.5, y: -3.5, z: 8.5}
+  - id: 4
+    position: {x: -9.5, y: -3.5, z: 9.5}
+  - id: 4
+    position: {x: -9.5, y: -2.5, z: -9.5}
+  - id: 1
+    position: {x: -9.5, y: -2.5, z: -8.5}
+  - id: 2
+    position: {x: -9.5, y: -2.5, z: -7.5}
+  - id: 2
+    position: {x: -9.5, y: -2.5, z: -6.5}
+  - id: 2
+    position: {x: -9.5, y: -2.5, z: -5.5}
+  - id: 4
+    position: {x: -9.5, y: -2.5, z: -4.5}
+  - id: 2
+    position: {x: -9.5, y: -2.5, z: -3.5}
+  - id: 1
+    position: {x: -9.5, y: -2.5, z: -2.5}
+  - id: 2
+    position: {x: -9.5, y: -2.5, z: -1.5}
+  - id: 2
+    position: {x: -9.5, y: -2.5, z: -0.5}
+  - id: 5
+    position: {x: -9.5, y: -2.5, z: 0.5}
+  - id: 1
+    position: {x: -9.5, y: -2.5, z: 1.5}
+  - id: 4
+    position: {x: -9.5, y: -2.5, z: 2.5}
+  - id: 4
+    position: {x: -9.5, y: -2.5, z: 3.5}
+  - id: 1
+    position: {x: -9.5, y: -2.5, z: 4.5}
+  - id: 1
+    position: {x: -9.5, y: -2.5, z: 5.5}
+  - id: 2
+    position: {x: -9.5, y: -2.5, z: 6.5}
+  - id: 1
+    position: {x: -9.5, y: -2.5, z: 7.5}
+  - id: 1
+    position: {x: -9.5, y: -2.5, z: 8.5}
+  - id: 2
+    position: {x: -9.5, y: -2.5, z: 9.5}
+  - id: 2
+    position: {x: -9.5, y: -1.5, z: -9.5}
+  - id: 3
+    position: {x: -9.5, y: -1.5, z: -8.5}
+  - id: 4
+    position: {x: -9.5, y: -1.5, z: -7.5}
+  - id: 3
+    position: {x: -9.5, y: -1.5, z: -6.5}
+  - id: 5
+    position: {x: -9.5, y: -1.5, z: -5.5}
+  - id: 2
+    position: {x: -9.5, y: -1.5, z: -4.5}
+  - id: 4
+    position: {x: -9.5, y: -1.5, z: -3.5}
+  - id: 4
+    position: {x: -9.5, y: -1.5, z: -2.5}
+  - id: 4
+    position: {x: -9.5, y: -1.5, z: -1.5}
+  - id: 2
+    position: {x: -9.5, y: -1.5, z: -0.5}
+  - id: 5
+    position: {x: -9.5, y: -1.5, z: 0.5}
+  - id: 1
+    position: {x: -9.5, y: -1.5, z: 1.5}
+  - id: 2
+    position: {x: -9.5, y: -1.5, z: 2.5}
+  - id: 4
+    position: {x: -9.5, y: -1.5, z: 3.5}
+  - id: 4
+    position: {x: -9.5, y: -1.5, z: 4.5}
+  - id: 5
+    position: {x: -9.5, y: -1.5, z: 5.5}
+  - id: 3
+    position: {x: -9.5, y: -1.5, z: 6.5}
+  - id: 2
+    position: {x: -9.5, y: -1.5, z: 7.5}
+  - id: 1
+    position: {x: -9.5, y: -1.5, z: 8.5}
+  - id: 3
+    position: {x: -9.5, y: -1.5, z: 9.5}
+  - id: 5
+    position: {x: -9.5, y: -0.5, z: -9.5}
+  - id: 4
+    position: {x: -9.5, y: -0.5, z: -8.5}
+  - id: 5
+    position: {x: -9.5, y: -0.5, z: -7.5}
+  - id: 5
+    position: {x: -9.5, y: -0.5, z: -6.5}
+  - id: 3
+    position: {x: -9.5, y: -0.5, z: -5.5}
+  - id: 4
+    position: {x: -9.5, y: -0.5, z: -4.5}
+  - id: 1
+    position: {x: -9.5, y: -0.5, z: -3.5}
+  - id: 1
+    position: {x: -9.5, y: -0.5, z: -2.5}
+  - id: 3
+    position: {x: -9.5, y: -0.5, z: -1.5}
+  - id: 5
+    position: {x: -9.5, y: -0.5, z: -0.5}
+  - id: 2
+    position: {x: -9.5, y: -0.5, z: 0.5}
+  - id: 5
+    position: {x: -9.5, y: -0.5, z: 1.5}
+  - id: 2
+    position: {x: -9.5, y: -0.5, z: 2.5}
+  - id: 4
+    position: {x: -9.5, y: -0.5, z: 3.5}
+  - id: 5
+    position: {x: -9.5, y: -0.5, z: 4.5}
+  - id: 5
+    position: {x: -9.5, y: -0.5, z: 5.5}
+  - id: 2
+    position: {x: -9.5, y: -0.5, z: 6.5}
+  - id: 3
+    position: {x: -9.5, y: -0.5, z: 7.5}
+  - id: 3
+    position: {x: -9.5, y: -0.5, z: 8.5}
+  - id: 3
+    position: {x: -9.5, y: -0.5, z: 9.5}
+  - id: 2
+    position: {x: -9.5, y: 0.5, z: -9.5}
+  - id: 5
+    position: {x: -9.5, y: 0.5, z: -8.5}
+  - id: 1
+    position: {x: -9.5, y: 0.5, z: -7.5}
+  - id: 3
+    position: {x: -9.5, y: 0.5, z: -6.5}
+  - id: 4
+    position: {x: -9.5, y: 0.5, z: -5.5}
+  - id: 4
+    position: {x: -9.5, y: 0.5, z: -4.5}
+  - id: 1
+    position: {x: -9.5, y: 0.5, z: -3.5}
+  - id: 3
+    position: {x: -9.5, y: 0.5, z: -2.5}
+  - id: 1
+    position: {x: -9.5, y: 0.5, z: -1.5}
+  - id: 2
+    position: {x: -9.5, y: 0.5, z: -0.5}
+  - id: 5
+    position: {x: -9.5, y: 0.5, z: 0.5}
+  - id: 4
+    position: {x: -9.5, y: 0.5, z: 1.5}
+  - id: 3
+    position: {x: -9.5, y: 0.5, z: 2.5}
+  - id: 2
+    position: {x: -9.5, y: 0.5, z: 3.5}
+  - id: 2
+    position: {x: -9.5, y: 0.5, z: 4.5}
+  - id: 3
+    position: {x: -9.5, y: 0.5, z: 5.5}
+  - id: 2
+    position: {x: -9.5, y: 0.5, z: 6.5}
+  - id: 2
+    position: {x: -9.5, y: 0.5, z: 7.5}
+  - id: 4
+    position: {x: -9.5, y: 0.5, z: 8.5}
+  - id: 2
+    position: {x: -9.5, y: 0.5, z: 9.5}
+  - id: 5
+    position: {x: -9.5, y: 1.5, z: -9.5}
+  - id: 3
+    position: {x: -9.5, y: 1.5, z: -8.5}
+  - id: 3
+    position: {x: -9.5, y: 1.5, z: -7.5}
+  - id: 2
+    position: {x: -9.5, y: 1.5, z: -6.5}
+  - id: 1
+    position: {x: -9.5, y: 1.5, z: -5.5}
+  - id: 4
+    position: {x: -9.5, y: 1.5, z: -4.5}
+  - id: 1
+    position: {x: -9.5, y: 1.5, z: -3.5}
+  - id: 2
+    position: {x: -9.5, y: 1.5, z: -2.5}
+  - id: 1
+    position: {x: -9.5, y: 1.5, z: -1.5}
+  - id: 5
+    position: {x: -9.5, y: 1.5, z: -0.5}
+  - id: 2
+    position: {x: -9.5, y: 1.5, z: 0.5}
+  - id: 1
+    position: {x: -9.5, y: 1.5, z: 1.5}
+  - id: 5
+    position: {x: -9.5, y: 1.5, z: 2.5}
+  - id: 2
+    position: {x: -9.5, y: 1.5, z: 3.5}
+  - id: 4
+    position: {x: -9.5, y: 1.5, z: 4.5}
+  - id: 3
+    position: {x: -9.5, y: 1.5, z: 5.5}
+  - id: 4
+    position: {x: -9.5, y: 1.5, z: 6.5}
+  - id: 3
+    position: {x: -9.5, y: 1.5, z: 7.5}
+  - id: 3
+    position: {x: -9.5, y: 1.5, z: 8.5}
+  - id: 4
+    position: {x: -9.5, y: 1.5, z: 9.5}
+  - id: 5
+    position: {x: -9.5, y: 2.5, z: -9.5}
+  - id: 5
+    position: {x: -9.5, y: 2.5, z: -8.5}
+  - id: 3
+    position: {x: -9.5, y: 2.5, z: -7.5}
+  - id: 1
+    position: {x: -9.5, y: 2.5, z: -6.5}
+  - id: 2
+    position: {x: -9.5, y: 2.5, z: -5.5}
+  - id: 3
+    position: {x: -9.5, y: 2.5, z: -4.5}
+  - id: 3
+    position: {x: -9.5, y: 2.5, z: -3.5}
+  - id: 4
+    position: {x: -9.5, y: 2.5, z: -2.5}
+  - id: 2
+    position: {x: -9.5, y: 2.5, z: -1.5}
+  - id: 1
+    position: {x: -9.5, y: 2.5, z: -0.5}
+  - id: 2
+    position: {x: -9.5, y: 2.5, z: 0.5}
+  - id: 1
+    position: {x: -9.5, y: 2.5, z: 1.5}
+  - id: 3
+    position: {x: -9.5, y: 2.5, z: 2.5}
+  - id: 5
+    position: {x: -9.5, y: 2.5, z: 3.5}
+  - id: 3
+    position: {x: -9.5, y: 2.5, z: 4.5}
+  - id: 1
+    position: {x: -9.5, y: 2.5, z: 5.5}
+  - id: 4
+    position: {x: -9.5, y: 2.5, z: 6.5}
+  - id: 3
+    position: {x: -9.5, y: 2.5, z: 7.5}
+  - id: 1
+    position: {x: -9.5, y: 2.5, z: 8.5}
+  - id: 1
+    position: {x: -9.5, y: 2.5, z: 9.5}
+  - id: 2
+    position: {x: -9.5, y: 3.5, z: -9.5}
+  - id: 4
+    position: {x: -9.5, y: 3.5, z: -8.5}
+  - id: 1
+    position: {x: -9.5, y: 3.5, z: -7.5}
+  - id: 2
+    position: {x: -9.5, y: 3.5, z: -6.5}
+  - id: 5
+    position: {x: -9.5, y: 3.5, z: -5.5}
+  - id: 5
+    position: {x: -9.5, y: 3.5, z: -4.5}
+  - id: 3
+    position: {x: -9.5, y: 3.5, z: -3.5}
+  - id: 3
+    position: {x: -9.5, y: 3.5, z: -2.5}
+  - id: 1
+    position: {x: -9.5, y: 3.5, z: -1.5}
+  - id: 4
+    position: {x: -9.5, y: 3.5, z: -0.5}
+  - id: 2
+    position: {x: -9.5, y: 3.5, z: 0.5}
+  - id: 3
+    position: {x: -9.5, y: 3.5, z: 1.5}
+  - id: 5
+    position: {x: -9.5, y: 3.5, z: 2.5}
+  - id: 2
+    position: {x: -9.5, y: 3.5, z: 3.5}
+  - id: 2
+    position: {x: -9.5, y: 3.5, z: 4.5}
+  - id: 4
+    position: {x: -9.5, y: 3.5, z: 5.5}
+  - id: 2
+    position: {x: -9.5, y: 3.5, z: 6.5}
+  - id: 3
+    position: {x: -9.5, y: 3.5, z: 7.5}
+  - id: 1
+    position: {x: -9.5, y: 3.5, z: 8.5}
+  - id: 1
+    position: {x: -9.5, y: 3.5, z: 9.5}
+  - id: 2
+    position: {x: -9.5, y: 4.5, z: -9.5}
+  - id: 2
+    position: {x: -9.5, y: 4.5, z: -8.5}
+  - id: 3
+    position: {x: -9.5, y: 4.5, z: -7.5}
+  - id: 5
+    position: {x: -9.5, y: 4.5, z: -6.5}
+  - id: 4
+    position: {x: -9.5, y: 4.5, z: -5.5}
+  - id: 4
+    position: {x: -9.5, y: 4.5, z: -4.5}
+  - id: 4
+    position: {x: -9.5, y: 4.5, z: -3.5}
+  - id: 3
+    position: {x: -9.5, y: 4.5, z: -2.5}
+  - id: 5
+    position: {x: -9.5, y: 4.5, z: -1.5}
+  - id: 3
+    position: {x: -9.5, y: 4.5, z: -0.5}
+  - id: 4
+    position: {x: -9.5, y: 4.5, z: 0.5}
+  - id: 5
+    position: {x: -9.5, y: 4.5, z: 1.5}
+  - id: 2
+    position: {x: -9.5, y: 4.5, z: 2.5}
+  - id: 2
+    position: {x: -9.5, y: 4.5, z: 3.5}
+  - id: 1
+    position: {x: -9.5, y: 4.5, z: 4.5}
+  - id: 4
+    position: {x: -9.5, y: 4.5, z: 5.5}
+  - id: 5
+    position: {x: -9.5, y: 4.5, z: 6.5}
+  - id: 2
+    position: {x: -9.5, y: 4.5, z: 7.5}
+  - id: 4
+    position: {x: -9.5, y: 4.5, z: 8.5}
+  - id: 4
+    position: {x: -9.5, y: 4.5, z: 9.5}
+  - id: 4
+    position: {x: -9.5, y: 5.5, z: -9.5}
+  - id: 5
+    position: {x: -9.5, y: 5.5, z: -8.5}
+  - id: 3
+    position: {x: -9.5, y: 5.5, z: -7.5}
+  - id: 3
+    position: {x: -9.5, y: 5.5, z: -6.5}
+  - id: 1
+    position: {x: -9.5, y: 5.5, z: -5.5}
+  - id: 1
+    position: {x: -9.5, y: 5.5, z: -4.5}
+  - id: 1
+    position: {x: -9.5, y: 5.5, z: -3.5}
+  - id: 2
+    position: {x: -9.5, y: 5.5, z: -2.5}
+  - id: 2
+    position: {x: -9.5, y: 5.5, z: -1.5}
+  - id: 5
+    position: {x: -9.5, y: 5.5, z: -0.5}
+  - id: 4
+    position: {x: -9.5, y: 5.5, z: 0.5}
+  - id: 1
+    position: {x: -9.5, y: 5.5, z: 1.5}
+  - id: 5
+    position: {x: -9.5, y: 5.5, z: 2.5}
+  - id: 1
+    position: {x: -9.5, y: 5.5, z: 3.5}
+  - id: 5
+    position: {x: -9.5, y: 5.5, z: 4.5}
+  - id: 3
+    position: {x: -9.5, y: 5.5, z: 5.5}
+  - id: 4
+    position: {x: -9.5, y: 5.5, z: 6.5}
+  - id: 1
+    position: {x: -9.5, y: 5.5, z: 7.5}
+  - id: 3
+    position: {x: -9.5, y: 5.5, z: 8.5}
+  - id: 4
+    position: {x: -9.5, y: 5.5, z: 9.5}
+  - id: 3
+    position: {x: -9.5, y: 6.5, z: -9.5}
+  - id: 2
+    position: {x: -9.5, y: 6.5, z: -8.5}
+  - id: 1
+    position: {x: -9.5, y: 6.5, z: -7.5}
+  - id: 4
+    position: {x: -9.5, y: 6.5, z: -6.5}
+  - id: 1
+    position: {x: -9.5, y: 6.5, z: -5.5}
+  - id: 2
+    position: {x: -9.5, y: 6.5, z: -4.5}
+  - id: 2
+    position: {x: -9.5, y: 6.5, z: -3.5}
+  - id: 1
+    position: {x: -9.5, y: 6.5, z: -2.5}
+  - id: 2
+    position: {x: -9.5, y: 6.5, z: -1.5}
+  - id: 4
+    position: {x: -9.5, y: 6.5, z: -0.5}
+  - id: 5
+    position: {x: -9.5, y: 6.5, z: 0.5}
+  - id: 5
+    position: {x: -9.5, y: 6.5, z: 1.5}
+  - id: 4
+    position: {x: -9.5, y: 6.5, z: 2.5}
+  - id: 1
+    position: {x: -9.5, y: 6.5, z: 3.5}
+  - id: 4
+    position: {x: -9.5, y: 6.5, z: 4.5}
+  - id: 1
+    position: {x: -9.5, y: 6.5, z: 5.5}
+  - id: 1
+    position: {x: -9.5, y: 6.5, z: 6.5}
+  - id: 3
+    position: {x: -9.5, y: 6.5, z: 7.5}
+  - id: 2
+    position: {x: -9.5, y: 6.5, z: 8.5}
+  - id: 5
+    position: {x: -9.5, y: 6.5, z: 9.5}
+  - id: 1
+    position: {x: -9.5, y: 7.5, z: -9.5}
+  - id: 4
+    position: {x: -9.5, y: 7.5, z: -8.5}
+  - id: 3
+    position: {x: -9.5, y: 7.5, z: -7.5}
+  - id: 5
+    position: {x: -9.5, y: 7.5, z: -6.5}
+  - id: 5
+    position: {x: -9.5, y: 7.5, z: -5.5}
+  - id: 4
+    position: {x: -9.5, y: 7.5, z: -4.5}
+  - id: 1
+    position: {x: -9.5, y: 7.5, z: -3.5}
+  - id: 4
+    position: {x: -9.5, y: 7.5, z: -2.5}
+  - id: 5
+    position: {x: -9.5, y: 7.5, z: -1.5}
+  - id: 4
+    position: {x: -9.5, y: 7.5, z: -0.5}
+  - id: 5
+    position: {x: -9.5, y: 7.5, z: 0.5}
+  - id: 2
+    position: {x: -9.5, y: 7.5, z: 1.5}
+  - id: 4
+    position: {x: -9.5, y: 7.5, z: 2.5}
+  - id: 5
+    position: {x: -9.5, y: 7.5, z: 3.5}
+  - id: 5
+    position: {x: -9.5, y: 7.5, z: 4.5}
+  - id: 2
+    position: {x: -9.5, y: 7.5, z: 5.5}
+  - id: 4
+    position: {x: -9.5, y: 7.5, z: 6.5}
+  - id: 2
+    position: {x: -9.5, y: 7.5, z: 7.5}
+  - id: 1
+    position: {x: -9.5, y: 7.5, z: 8.5}
+  - id: 4
+    position: {x: -9.5, y: 7.5, z: 9.5}
+  - id: 5
+    position: {x: -9.5, y: 8.5, z: -9.5}
+  - id: 5
+    position: {x: -9.5, y: 8.5, z: -8.5}
+  - id: 5
+    position: {x: -9.5, y: 8.5, z: -7.5}
+  - id: 3
+    position: {x: -9.5, y: 8.5, z: -6.5}
+  - id: 3
+    position: {x: -9.5, y: 8.5, z: -5.5}
+  - id: 3
+    position: {x: -9.5, y: 8.5, z: -4.5}
+  - id: 1
+    position: {x: -9.5, y: 8.5, z: -3.5}
+  - id: 2
+    position: {x: -9.5, y: 8.5, z: -2.5}
+  - id: 4
+    position: {x: -9.5, y: 8.5, z: -1.5}
+  - id: 4
+    position: {x: -9.5, y: 8.5, z: -0.5}
+  - id: 4
+    position: {x: -9.5, y: 8.5, z: 0.5}
+  - id: 4
+    position: {x: -9.5, y: 8.5, z: 1.5}
+  - id: 4
+    position: {x: -9.5, y: 8.5, z: 2.5}
+  - id: 5
+    position: {x: -9.5, y: 8.5, z: 3.5}
+  - id: 2
+    position: {x: -9.5, y: 8.5, z: 4.5}
+  - id: 2
+    position: {x: -9.5, y: 8.5, z: 5.5}
+  - id: 1
+    position: {x: -9.5, y: 8.5, z: 6.5}
+  - id: 5
+    position: {x: -9.5, y: 8.5, z: 7.5}
+  - id: 4
+    position: {x: -9.5, y: 8.5, z: 8.5}
+  - id: 1
+    position: {x: -9.5, y: 8.5, z: 9.5}
+  - id: 3
+    position: {x: -9.5, y: 9.5, z: -9.5}
+  - id: 3
+    position: {x: -9.5, y: 9.5, z: -8.5}
+  - id: 1
+    position: {x: -9.5, y: 9.5, z: -7.5}
+  - id: 3
+    position: {x: -9.5, y: 9.5, z: -6.5}
+  - id: 5
+    position: {x: -9.5, y: 9.5, z: -5.5}
+  - id: 1
+    position: {x: -9.5, y: 9.5, z: -4.5}
+  - id: 4
+    position: {x: -9.5, y: 9.5, z: -3.5}
+  - id: 5
+    position: {x: -9.5, y: 9.5, z: -2.5}
+  - id: 4
+    position: {x: -9.5, y: 9.5, z: -1.5}
+  - id: 4
+    position: {x: -9.5, y: 9.5, z: -0.5}
+  - id: 1
+    position: {x: -9.5, y: 9.5, z: 0.5}
+  - id: 5
+    position: {x: -9.5, y: 9.5, z: 1.5}
+  - id: 5
+    position: {x: -9.5, y: 9.5, z: 2.5}
+  - id: 1
+    position: {x: -9.5, y: 9.5, z: 3.5}
+  - id: 1
+    position: {x: -9.5, y: 9.5, z: 4.5}
+  - id: 4
+    position: {x: -9.5, y: 9.5, z: 5.5}
+  - id: 3
+    position: {x: -9.5, y: 9.5, z: 6.5}
+  - id: 3
+    position: {x: -9.5, y: 9.5, z: 7.5}
+  - id: 2
+    position: {x: -9.5, y: 9.5, z: 8.5}
+  - id: 1
+    position: {x: -9.5, y: 9.5, z: 9.5}
+  - id: 5
+    position: {x: -8.5, y: -9.5, z: -9.5}
+  - id: 3
+    position: {x: -8.5, y: -9.5, z: -8.5}
+  - id: 1
+    position: {x: -8.5, y: -9.5, z: -7.5}
+  - id: 2
+    position: {x: -8.5, y: -9.5, z: -6.5}
+  - id: 5
+    position: {x: -8.5, y: -9.5, z: -5.5}
+  - id: 4
+    position: {x: -8.5, y: -9.5, z: -4.5}
+  - id: 4
+    position: {x: -8.5, y: -9.5, z: -3.5}
+  - id: 3
+    position: {x: -8.5, y: -9.5, z: -2.5}
+  - id: 1
+    position: {x: -8.5, y: -9.5, z: -1.5}
+  - id: 2
+    position: {x: -8.5, y: -9.5, z: -0.5}
+  - id: 1
+    position: {x: -8.5, y: -9.5, z: 0.5}
+  - id: 4
+    position: {x: -8.5, y: -9.5, z: 1.5}
+  - id: 2
+    position: {x: -8.5, y: -9.5, z: 2.5}
+  - id: 2
+    position: {x: -8.5, y: -9.5, z: 3.5}
+  - id: 2
+    position: {x: -8.5, y: -9.5, z: 4.5}
+  - id: 5
+    position: {x: -8.5, y: -9.5, z: 5.5}
+  - id: 3
+    position: {x: -8.5, y: -9.5, z: 6.5}
+  - id: 5
+    position: {x: -8.5, y: -9.5, z: 7.5}
+  - id: 2
+    position: {x: -8.5, y: -9.5, z: 8.5}
+  - id: 3
+    position: {x: -8.5, y: -9.5, z: 9.5}
+  - id: 2
+    position: {x: -8.5, y: -8.5, z: -9.5}
+  - id: 1
+    position: {x: -8.5, y: -8.5, z: 9.5}
+  - id: 4
+    position: {x: -8.5, y: -7.5, z: -9.5}
+  - id: 2
+    position: {x: -8.5, y: -7.5, z: 9.5}
+  - id: 1
+    position: {x: -8.5, y: -6.5, z: -9.5}
+  - id: 5
+    position: {x: -8.5, y: -6.5, z: 9.5}
+  - id: 3
+    position: {x: -8.5, y: -5.5, z: -9.5}
+  - id: 1
+    position: {x: -8.5, y: -5.5, z: 9.5}
+  - id: 2
+    position: {x: -8.5, y: -4.5, z: -9.5}
+  - id: 3
+    position: {x: -8.5, y: -4.5, z: 9.5}
+  - id: 2
+    position: {x: -8.5, y: -3.5, z: -9.5}
+  - id: 2
+    position: {x: -8.5, y: -3.5, z: 9.5}
+  - id: 1
+    position: {x: -8.5, y: -2.5, z: -9.5}
+  - id: 4
+    position: {x: -8.5, y: -2.5, z: 9.5}
+  - id: 2
+    position: {x: -8.5, y: -1.5, z: -9.5}
+  - id: 3
+    position: {x: -8.5, y: -1.5, z: 9.5}
+  - id: 1
+    position: {x: -8.5, y: -0.5, z: -9.5}
+  - id: 2
+    position: {x: -8.5, y: -0.5, z: 9.5}
+  - id: 2
+    position: {x: -8.5, y: 0.5, z: -9.5}
+  - id: 1
+    position: {x: -8.5, y: 0.5, z: 9.5}
+  - id: 5
+    position: {x: -8.5, y: 1.5, z: -9.5}
+  - id: 2
+    position: {x: -8.5, y: 1.5, z: 9.5}
+  - id: 1
+    position: {x: -8.5, y: 2.5, z: -9.5}
+  - id: 2
+    position: {x: -8.5, y: 2.5, z: 9.5}
+  - id: 4
+    position: {x: -8.5, y: 3.5, z: -9.5}
+  - id: 5
+    position: {x: -8.5, y: 3.5, z: 9.5}
+  - id: 1
+    position: {x: -8.5, y: 4.5, z: -9.5}
+  - id: 3
+    position: {x: -8.5, y: 4.5, z: 9.5}
+  - id: 3
+    position: {x: -8.5, y: 5.5, z: -9.5}
+  - id: 4
+    position: {x: -8.5, y: 5.5, z: 9.5}
+  - id: 5
+    position: {x: -8.5, y: 6.5, z: -9.5}
+  - id: 3
+    position: {x: -8.5, y: 6.5, z: 9.5}
+  - id: 1
+    position: {x: -8.5, y: 7.5, z: -9.5}
+  - id: 1
+    position: {x: -8.5, y: 7.5, z: 9.5}
+  - id: 3
+    position: {x: -8.5, y: 8.5, z: -9.5}
+  - id: 5
+    position: {x: -8.5, y: 8.5, z: 9.5}
+  - id: 1
+    position: {x: -8.5, y: 9.5, z: -9.5}
+  - id: 5
+    position: {x: -8.5, y: 9.5, z: -8.5}
+  - id: 2
+    position: {x: -8.5, y: 9.5, z: -7.5}
+  - id: 2
+    position: {x: -8.5, y: 9.5, z: -6.5}
+  - id: 3
+    position: {x: -8.5, y: 9.5, z: -5.5}
+  - id: 2
+    position: {x: -8.5, y: 9.5, z: -4.5}
+  - id: 2
+    position: {x: -8.5, y: 9.5, z: -3.5}
+  - id: 5
+    position: {x: -8.5, y: 9.5, z: -2.5}
+  - id: 5
+    position: {x: -8.5, y: 9.5, z: -1.5}
+  - id: 1
+    position: {x: -8.5, y: 9.5, z: -0.5}
+  - id: 2
+    position: {x: -8.5, y: 9.5, z: 0.5}
+  - id: 4
+    position: {x: -8.5, y: 9.5, z: 1.5}
+  - id: 3
+    position: {x: -8.5, y: 9.5, z: 2.5}
+  - id: 5
+    position: {x: -8.5, y: 9.5, z: 3.5}
+  - id: 5
+    position: {x: -8.5, y: 9.5, z: 4.5}
+  - id: 4
+    position: {x: -8.5, y: 9.5, z: 5.5}
+  - id: 2
+    position: {x: -8.5, y: 9.5, z: 6.5}
+  - id: 3
+    position: {x: -8.5, y: 9.5, z: 7.5}
+  - id: 3
+    position: {x: -8.5, y: 9.5, z: 8.5}
+  - id: 5
+    position: {x: -8.5, y: 9.5, z: 9.5}
+  - id: 2
+    position: {x: -7.5, y: -9.5, z: -9.5}
+  - id: 2
+    position: {x: -7.5, y: -9.5, z: -8.5}
+  - id: 2
+    position: {x: -7.5, y: -9.5, z: -7.5}
+  - id: 2
+    position: {x: -7.5, y: -9.5, z: -6.5}
+  - id: 3
+    position: {x: -7.5, y: -9.5, z: -5.5}
+  - id: 4
+    position: {x: -7.5, y: -9.5, z: -4.5}
+  - id: 5
+    position: {x: -7.5, y: -9.5, z: -3.5}
+  - id: 3
+    position: {x: -7.5, y: -9.5, z: -2.5}
+  - id: 3
+    position: {x: -7.5, y: -9.5, z: -1.5}
+  - id: 2
+    position: {x: -7.5, y: -9.5, z: -0.5}
+  - id: 4
+    position: {x: -7.5, y: -9.5, z: 0.5}
+  - id: 5
+    position: {x: -7.5, y: -9.5, z: 1.5}
+  - id: 1
+    position: {x: -7.5, y: -9.5, z: 2.5}
+  - id: 3
+    position: {x: -7.5, y: -9.5, z: 3.5}
+  - id: 3
+    position: {x: -7.5, y: -9.5, z: 4.5}
+  - id: 1
+    position: {x: -7.5, y: -9.5, z: 5.5}
+  - id: 5
+    position: {x: -7.5, y: -9.5, z: 6.5}
+  - id: 3
+    position: {x: -7.5, y: -9.5, z: 7.5}
+  - id: 3
+    position: {x: -7.5, y: -9.5, z: 8.5}
+  - id: 1
+    position: {x: -7.5, y: -9.5, z: 9.5}
+  - id: 5
+    position: {x: -7.5, y: -8.5, z: -9.5}
+  - id: 1
+    position: {x: -7.5, y: -8.5, z: 9.5}
+  - id: 4
+    position: {x: -7.5, y: -7.5, z: -9.5}
+  - id: 2
+    position: {x: -7.5, y: -7.5, z: 9.5}
+  - id: 1
+    position: {x: -7.5, y: -6.5, z: -9.5}
+  - id: 1
+    position: {x: -7.5, y: -6.5, z: 9.5}
+  - id: 4
+    position: {x: -7.5, y: -5.5, z: -9.5}
+  - id: 2
+    position: {x: -7.5, y: -5.5, z: 9.5}
+  - id: 3
+    position: {x: -7.5, y: -4.5, z: -9.5}
+  - id: 1
+    position: {x: -7.5, y: -4.5, z: 9.5}
+  - id: 4
+    position: {x: -7.5, y: -3.5, z: -9.5}
+  - id: 4
+    position: {x: -7.5, y: -3.5, z: 9.5}
+  - id: 1
+    position: {x: -7.5, y: -2.5, z: -9.5}
+  - id: 5
+    position: {x: -7.5, y: -2.5, z: 9.5}
+  - id: 1
+    position: {x: -7.5, y: -1.5, z: -9.5}
+  - id: 5
+    position: {x: -7.5, y: -1.5, z: 9.5}
+  - id: 4
+    position: {x: -7.5, y: -0.5, z: -9.5}
+  - id: 2
+    position: {x: -7.5, y: -0.5, z: 9.5}
+  - id: 5
+    position: {x: -7.5, y: 0.5, z: -9.5}
+  - id: 5
+    position: {x: -7.5, y: 0.5, z: 9.5}
+  - id: 5
+    position: {x: -7.5, y: 1.5, z: -9.5}
+  - id: 2
+    position: {x: -7.5, y: 1.5, z: 9.5}
+  - id: 4
+    position: {x: -7.5, y: 2.5, z: -9.5}
+  - id: 4
+    position: {x: -7.5, y: 2.5, z: 9.5}
+  - id: 1
+    position: {x: -7.5, y: 3.5, z: -9.5}
+  - id: 2
+    position: {x: -7.5, y: 3.5, z: 9.5}
+  - id: 1
+    position: {x: -7.5, y: 4.5, z: -9.5}
+  - id: 5
+    position: {x: -7.5, y: 4.5, z: 9.5}
+  - id: 5
+    position: {x: -7.5, y: 5.5, z: -9.5}
+  - id: 4
+    position: {x: -7.5, y: 5.5, z: 9.5}
+  - id: 5
+    position: {x: -7.5, y: 6.5, z: -9.5}
+  - id: 2
+    position: {x: -7.5, y: 6.5, z: 9.5}
+  - id: 1
+    position: {x: -7.5, y: 7.5, z: -9.5}
+  - id: 3
+    position: {x: -7.5, y: 7.5, z: 9.5}
+  - id: 4
+    position: {x: -7.5, y: 8.5, z: -9.5}
+  - id: 5
+    position: {x: -7.5, y: 8.5, z: 9.5}
+  - id: 4
+    position: {x: -7.5, y: 9.5, z: -9.5}
+  - id: 4
+    position: {x: -7.5, y: 9.5, z: -8.5}
+  - id: 5
+    position: {x: -7.5, y: 9.5, z: -7.5}
+  - id: 5
+    position: {x: -7.5, y: 9.5, z: -6.5}
+  - id: 4
+    position: {x: -7.5, y: 9.5, z: -5.5}
+  - id: 5
+    position: {x: -7.5, y: 9.5, z: -4.5}
+  - id: 5
+    position: {x: -7.5, y: 9.5, z: -3.5}
+  - id: 3
+    position: {x: -7.5, y: 9.5, z: -2.5}
+  - id: 4
+    position: {x: -7.5, y: 9.5, z: -1.5}
+  - id: 5
+    position: {x: -7.5, y: 9.5, z: -0.5}
+  - id: 1
+    position: {x: -7.5, y: 9.5, z: 0.5}
+  - id: 2
+    position: {x: -7.5, y: 9.5, z: 1.5}
+  - id: 3
+    position: {x: -7.5, y: 9.5, z: 2.5}
+  - id: 4
+    position: {x: -7.5, y: 9.5, z: 3.5}
+  - id: 5
+    position: {x: -7.5, y: 9.5, z: 4.5}
+  - id: 3
+    position: {x: -7.5, y: 9.5, z: 5.5}
+  - id: 3
+    position: {x: -7.5, y: 9.5, z: 6.5}
+  - id: 1
+    position: {x: -7.5, y: 9.5, z: 7.5}
+  - id: 5
+    position: {x: -7.5, y: 9.5, z: 8.5}
+  - id: 3
+    position: {x: -7.5, y: 9.5, z: 9.5}
+  - id: 5
+    position: {x: -6.5, y: -9.5, z: -9.5}
+  - id: 4
+    position: {x: -6.5, y: -9.5, z: -8.5}
+  - id: 4
+    position: {x: -6.5, y: -9.5, z: -7.5}
+  - id: 2
+    position: {x: -6.5, y: -9.5, z: -6.5}
+  - id: 4
+    position: {x: -6.5, y: -9.5, z: -5.5}
+  - id: 3
+    position: {x: -6.5, y: -9.5, z: -4.5}
+  - id: 1
+    position: {x: -6.5, y: -9.5, z: -3.5}
+  - id: 3
+    position: {x: -6.5, y: -9.5, z: -2.5}
+  - id: 2
+    position: {x: -6.5, y: -9.5, z: -1.5}
+  - id: 5
+    position: {x: -6.5, y: -9.5, z: -0.5}
+  - id: 3
+    position: {x: -6.5, y: -9.5, z: 0.5}
+  - id: 5
+    position: {x: -6.5, y: -9.5, z: 1.5}
+  - id: 4
+    position: {x: -6.5, y: -9.5, z: 2.5}
+  - id: 4
+    position: {x: -6.5, y: -9.5, z: 3.5}
+  - id: 4
+    position: {x: -6.5, y: -9.5, z: 4.5}
+  - id: 1
+    position: {x: -6.5, y: -9.5, z: 5.5}
+  - id: 2
+    position: {x: -6.5, y: -9.5, z: 6.5}
+  - id: 4
+    position: {x: -6.5, y: -9.5, z: 7.5}
+  - id: 1
+    position: {x: -6.5, y: -9.5, z: 8.5}
+  - id: 5
+    position: {x: -6.5, y: -9.5, z: 9.5}
+  - id: 5
+    position: {x: -6.5, y: -8.5, z: -9.5}
+  - id: 5
+    position: {x: -6.5, y: -8.5, z: 9.5}
+  - id: 5
+    position: {x: -6.5, y: -7.5, z: -9.5}
+  - id: 5
+    position: {x: -6.5, y: -7.5, z: 9.5}
+  - id: 1
+    position: {x: -6.5, y: -6.5, z: -9.5}
+  - id: 4
+    position: {x: -6.5, y: -6.5, z: 9.5}
+  - id: 5
+    position: {x: -6.5, y: -5.5, z: -9.5}
+  - id: 4
+    position: {x: -6.5, y: -5.5, z: 9.5}
+  - id: 1
+    position: {x: -6.5, y: -4.5, z: -9.5}
+  - id: 1
+    position: {x: -6.5, y: -4.5, z: 9.5}
+  - id: 4
+    position: {x: -6.5, y: -3.5, z: -9.5}
+  - id: 2
+    position: {x: -6.5, y: -3.5, z: 9.5}
+  - id: 1
+    position: {x: -6.5, y: -2.5, z: -9.5}
+  - id: 2
+    position: {x: -6.5, y: -2.5, z: 9.5}
+  - id: 3
+    position: {x: -6.5, y: -1.5, z: -9.5}
+  - id: 2
+    position: {x: -6.5, y: -1.5, z: 9.5}
+  - id: 5
+    position: {x: -6.5, y: -0.5, z: -9.5}
+  - id: 3
+    position: {x: -6.5, y: -0.5, z: 9.5}
+  - id: 4
+    position: {x: -6.5, y: 0.5, z: -9.5}
+  - id: 2
+    position: {x: -6.5, y: 0.5, z: 9.5}
+  - id: 2
+    position: {x: -6.5, y: 1.5, z: -9.5}
+  - id: 2
+    position: {x: -6.5, y: 1.5, z: 9.5}
+  - id: 5
+    position: {x: -6.5, y: 2.5, z: -9.5}
+  - id: 3
+    position: {x: -6.5, y: 2.5, z: 9.5}
+  - id: 1
+    position: {x: -6.5, y: 3.5, z: -9.5}
+  - id: 1
+    position: {x: -6.5, y: 3.5, z: 9.5}
+  - id: 4
+    position: {x: -6.5, y: 4.5, z: -9.5}
+  - id: 4
+    position: {x: -6.5, y: 4.5, z: 9.5}
+  - id: 5
+    position: {x: -6.5, y: 5.5, z: -9.5}
+  - id: 4
+    position: {x: -6.5, y: 5.5, z: 9.5}
+  - id: 3
+    position: {x: -6.5, y: 6.5, z: -9.5}
+  - id: 2
+    position: {x: -6.5, y: 6.5, z: 9.5}
+  - id: 3
+    position: {x: -6.5, y: 7.5, z: -9.5}
+  - id: 1
+    position: {x: -6.5, y: 7.5, z: 9.5}
+  - id: 3
+    position: {x: -6.5, y: 8.5, z: -9.5}
+  - id: 2
+    position: {x: -6.5, y: 8.5, z: 9.5}
+  - id: 2
+    position: {x: -6.5, y: 9.5, z: -9.5}
+  - id: 1
+    position: {x: -6.5, y: 9.5, z: -8.5}
+  - id: 2
+    position: {x: -6.5, y: 9.5, z: -7.5}
+  - id: 4
+    position: {x: -6.5, y: 9.5, z: -6.5}
+  - id: 4
+    position: {x: -6.5, y: 9.5, z: -5.5}
+  - id: 5
+    position: {x: -6.5, y: 9.5, z: -4.5}
+  - id: 2
+    position: {x: -6.5, y: 9.5, z: -3.5}
+  - id: 2
+    position: {x: -6.5, y: 9.5, z: -2.5}
+  - id: 1
+    position: {x: -6.5, y: 9.5, z: -1.5}
+  - id: 1
+    position: {x: -6.5, y: 9.5, z: -0.5}
+  - id: 1
+    position: {x: -6.5, y: 9.5, z: 0.5}
+  - id: 2
+    position: {x: -6.5, y: 9.5, z: 1.5}
+  - id: 5
+    position: {x: -6.5, y: 9.5, z: 2.5}
+  - id: 4
+    position: {x: -6.5, y: 9.5, z: 3.5}
+  - id: 5
+    position: {x: -6.5, y: 9.5, z: 4.5}
+  - id: 4
+    position: {x: -6.5, y: 9.5, z: 5.5}
+  - id: 3
+    position: {x: -6.5, y: 9.5, z: 6.5}
+  - id: 3
+    position: {x: -6.5, y: 9.5, z: 7.5}
+  - id: 1
+    position: {x: -6.5, y: 9.5, z: 8.5}
+  - id: 5
+    position: {x: -6.5, y: 9.5, z: 9.5}
+  - id: 2
+    position: {x: -5.5, y: -9.5, z: -9.5}
+  - id: 2
+    position: {x: -5.5, y: -9.5, z: -8.5}
+  - id: 4
+    position: {x: -5.5, y: -9.5, z: -7.5}
+  - id: 3
+    position: {x: -5.5, y: -9.5, z: -6.5}
+  - id: 1
+    position: {x: -5.5, y: -9.5, z: -5.5}
+  - id: 5
+    position: {x: -5.5, y: -9.5, z: -4.5}
+  - id: 2
+    position: {x: -5.5, y: -9.5, z: -3.5}
+  - id: 3
+    position: {x: -5.5, y: -9.5, z: -2.5}
+  - id: 4
+    position: {x: -5.5, y: -9.5, z: -1.5}
+  - id: 4
+    position: {x: -5.5, y: -9.5, z: -0.5}
+  - id: 2
+    position: {x: -5.5, y: -9.5, z: 0.5}
+  - id: 2
+    position: {x: -5.5, y: -9.5, z: 1.5}
+  - id: 3
+    position: {x: -5.5, y: -9.5, z: 2.5}
+  - id: 5
+    position: {x: -5.5, y: -9.5, z: 3.5}
+  - id: 1
+    position: {x: -5.5, y: -9.5, z: 4.5}
+  - id: 4
+    position: {x: -5.5, y: -9.5, z: 5.5}
+  - id: 4
+    position: {x: -5.5, y: -9.5, z: 6.5}
+  - id: 2
+    position: {x: -5.5, y: -9.5, z: 7.5}
+  - id: 1
+    position: {x: -5.5, y: -9.5, z: 8.5}
+  - id: 1
+    position: {x: -5.5, y: -9.5, z: 9.5}
+  - id: 4
+    position: {x: -5.5, y: -8.5, z: -9.5}
+  - id: 3
+    position: {x: -5.5, y: -8.5, z: 9.5}
+  - id: 3
+    position: {x: -5.5, y: -7.5, z: -9.5}
+  - id: 4
+    position: {x: -5.5, y: -7.5, z: 9.5}
+  - id: 1
+    position: {x: -5.5, y: -6.5, z: -9.5}
+  - id: 1
+    position: {x: -5.5, y: -6.5, z: 9.5}
+  - id: 1
+    position: {x: -5.5, y: -5.5, z: -9.5}
+  - id: 1
+    position: {x: -5.5, y: -5.5, z: 9.5}
+  - id: 2
+    position: {x: -5.5, y: -4.5, z: -9.5}
+  - id: 1
+    position: {x: -5.5, y: -4.5, z: 9.5}
+  - id: 1
+    position: {x: -5.5, y: -3.5, z: -9.5}
+  - id: 1
+    position: {x: -5.5, y: -3.5, z: 9.5}
+  - id: 1
+    position: {x: -5.5, y: -2.5, z: -9.5}
+  - id: 1
+    position: {x: -5.5, y: -2.5, z: 9.5}
+  - id: 2
+    position: {x: -5.5, y: -1.5, z: -9.5}
+  - id: 2
+    position: {x: -5.5, y: -1.5, z: 9.5}
+  - id: 1
+    position: {x: -5.5, y: -0.5, z: -9.5}
+  - id: 3
+    position: {x: -5.5, y: -0.5, z: 9.5}
+  - id: 1
+    position: {x: -5.5, y: 0.5, z: -9.5}
+  - id: 4
+    position: {x: -5.5, y: 0.5, z: 9.5}
+  - id: 1
+    position: {x: -5.5, y: 1.5, z: -9.5}
+  - id: 5
+    position: {x: -5.5, y: 1.5, z: 9.5}
+  - id: 2
+    position: {x: -5.5, y: 2.5, z: -9.5}
+  - id: 3
+    position: {x: -5.5, y: 2.5, z: 9.5}
+  - id: 4
+    position: {x: -5.5, y: 3.5, z: -9.5}
+  - id: 1
+    position: {x: -5.5, y: 3.5, z: 9.5}
+  - id: 3
+    position: {x: -5.5, y: 4.5, z: -9.5}
+  - id: 4
+    position: {x: -5.5, y: 4.5, z: 9.5}
+  - id: 2
+    position: {x: -5.5, y: 5.5, z: -9.5}
+  - id: 4
+    position: {x: -5.5, y: 5.5, z: 9.5}
+  - id: 3
+    position: {x: -5.5, y: 6.5, z: -9.5}
+  - id: 4
+    position: {x: -5.5, y: 6.5, z: 9.5}
+  - id: 2
+    position: {x: -5.5, y: 7.5, z: -9.5}
+  - id: 2
+    position: {x: -5.5, y: 7.5, z: 9.5}
+  - id: 5
+    position: {x: -5.5, y: 8.5, z: -9.5}
+  - id: 4
+    position: {x: -5.5, y: 8.5, z: 9.5}
+  - id: 4
+    position: {x: -5.5, y: 9.5, z: -9.5}
+  - id: 4
+    position: {x: -5.5, y: 9.5, z: -8.5}
+  - id: 5
+    position: {x: -5.5, y: 9.5, z: -7.5}
+  - id: 2
+    position: {x: -5.5, y: 9.5, z: -6.5}
+  - id: 2
+    position: {x: -5.5, y: 9.5, z: -5.5}
+  - id: 2
+    position: {x: -5.5, y: 9.5, z: -4.5}
+  - id: 3
+    position: {x: -5.5, y: 9.5, z: -3.5}
+  - id: 4
+    position: {x: -5.5, y: 9.5, z: -2.5}
+  - id: 1
+    position: {x: -5.5, y: 9.5, z: -1.5}
+  - id: 1
+    position: {x: -5.5, y: 9.5, z: -0.5}
+  - id: 5
+    position: {x: -5.5, y: 9.5, z: 0.5}
+  - id: 4
+    position: {x: -5.5, y: 9.5, z: 1.5}
+  - id: 5
+    position: {x: -5.5, y: 9.5, z: 2.5}
+  - id: 2
+    position: {x: -5.5, y: 9.5, z: 3.5}
+  - id: 1
+    position: {x: -5.5, y: 9.5, z: 4.5}
+  - id: 1
+    position: {x: -5.5, y: 9.5, z: 5.5}
+  - id: 4
+    position: {x: -5.5, y: 9.5, z: 6.5}
+  - id: 2
+    position: {x: -5.5, y: 9.5, z: 7.5}
+  - id: 4
+    position: {x: -5.5, y: 9.5, z: 8.5}
+  - id: 3
+    position: {x: -5.5, y: 9.5, z: 9.5}
+  - id: 5
+    position: {x: -4.5, y: -9.5, z: -9.5}
+  - id: 2
+    position: {x: -4.5, y: -9.5, z: -8.5}
+  - id: 2
+    position: {x: -4.5, y: -9.5, z: -7.5}
+  - id: 1
+    position: {x: -4.5, y: -9.5, z: -6.5}
+  - id: 5
+    position: {x: -4.5, y: -9.5, z: -5.5}
+  - id: 1
+    position: {x: -4.5, y: -9.5, z: -4.5}
+  - id: 5
+    position: {x: -4.5, y: -9.5, z: -3.5}
+  - id: 1
+    position: {x: -4.5, y: -9.5, z: -2.5}
+  - id: 4
+    position: {x: -4.5, y: -9.5, z: -1.5}
+  - id: 4
+    position: {x: -4.5, y: -9.5, z: -0.5}
+  - id: 2
+    position: {x: -4.5, y: -9.5, z: 0.5}
+  - id: 5
+    position: {x: -4.5, y: -9.5, z: 1.5}
+  - id: 2
+    position: {x: -4.5, y: -9.5, z: 2.5}
+  - id: 2
+    position: {x: -4.5, y: -9.5, z: 3.5}
+  - id: 1
+    position: {x: -4.5, y: -9.5, z: 4.5}
+  - id: 3
+    position: {x: -4.5, y: -9.5, z: 5.5}
+  - id: 5
+    position: {x: -4.5, y: -9.5, z: 6.5}
+  - id: 1
+    position: {x: -4.5, y: -9.5, z: 7.5}
+  - id: 4
+    position: {x: -4.5, y: -9.5, z: 8.5}
+  - id: 5
+    position: {x: -4.5, y: -9.5, z: 9.5}
+  - id: 2
+    position: {x: -4.5, y: -8.5, z: -9.5}
+  - id: 3
+    position: {x: -4.5, y: -8.5, z: 9.5}
+  - id: 1
+    position: {x: -4.5, y: -7.5, z: -9.5}
+  - id: 4
+    position: {x: -4.5, y: -7.5, z: 9.5}
+  - id: 2
+    position: {x: -4.5, y: -6.5, z: -9.5}
+  - id: 4
+    position: {x: -4.5, y: -6.5, z: 9.5}
+  - id: 2
+    position: {x: -4.5, y: -5.5, z: -9.5}
+  - id: 1
+    position: {x: -4.5, y: -5.5, z: 9.5}
+  - id: 3
+    position: {x: -4.5, y: -4.5, z: -9.5}
+  - id: 3
+    position: {x: -4.5, y: -4.5, z: 9.5}
+  - id: 3
+    position: {x: -4.5, y: -3.5, z: -9.5}
+  - id: 3
+    position: {x: -4.5, y: -3.5, z: 9.5}
+  - id: 2
+    position: {x: -4.5, y: -2.5, z: -9.5}
+  - id: 5
+    position: {x: -4.5, y: -2.5, z: 9.5}
+  - id: 2
+    position: {x: -4.5, y: -1.5, z: -9.5}
+  - id: 4
+    position: {x: -4.5, y: -1.5, z: 9.5}
+  - id: 2
+    position: {x: -4.5, y: -0.5, z: -9.5}
+  - id: 1
+    position: {x: -4.5, y: -0.5, z: 9.5}
+  - id: 4
+    position: {x: -4.5, y: 0.5, z: -9.5}
+  - id: 3
+    position: {x: -4.5, y: 0.5, z: 9.5}
+  - id: 3
+    position: {x: -4.5, y: 1.5, z: -9.5}
+  - id: 2
+    position: {x: -4.5, y: 1.5, z: 9.5}
+  - id: 4
+    position: {x: -4.5, y: 2.5, z: -9.5}
+  - id: 2
+    position: {x: -4.5, y: 2.5, z: 9.5}
+  - id: 3
+    position: {x: -4.5, y: 3.5, z: -9.5}
+  - id: 4
+    position: {x: -4.5, y: 3.5, z: 9.5}
+  - id: 1
+    position: {x: -4.5, y: 4.5, z: -9.5}
+  - id: 5
+    position: {x: -4.5, y: 4.5, z: 9.5}
+  - id: 5
+    position: {x: -4.5, y: 5.5, z: -9.5}
+  - id: 1
+    position: {x: -4.5, y: 5.5, z: 9.5}
+  - id: 1
+    position: {x: -4.5, y: 6.5, z: -9.5}
+  - id: 3
+    position: {x: -4.5, y: 6.5, z: 9.5}
+  - id: 3
+    position: {x: -4.5, y: 7.5, z: -9.5}
+  - id: 5
+    position: {x: -4.5, y: 7.5, z: 9.5}
+  - id: 2
+    position: {x: -4.5, y: 8.5, z: -9.5}
+  - id: 3
+    position: {x: -4.5, y: 8.5, z: 9.5}
+  - id: 3
+    position: {x: -4.5, y: 9.5, z: -9.5}
+  - id: 2
+    position: {x: -4.5, y: 9.5, z: -8.5}
+  - id: 1
+    position: {x: -4.5, y: 9.5, z: -7.5}
+  - id: 3
+    position: {x: -4.5, y: 9.5, z: -6.5}
+  - id: 1
+    position: {x: -4.5, y: 9.5, z: -5.5}
+  - id: 3
+    position: {x: -4.5, y: 9.5, z: -4.5}
+  - id: 4
+    position: {x: -4.5, y: 9.5, z: -3.5}
+  - id: 3
+    position: {x: -4.5, y: 9.5, z: -2.5}
+  - id: 4
+    position: {x: -4.5, y: 9.5, z: -1.5}
+  - id: 5
+    position: {x: -4.5, y: 9.5, z: -0.5}
+  - id: 4
+    position: {x: -4.5, y: 9.5, z: 0.5}
+  - id: 3
+    position: {x: -4.5, y: 9.5, z: 1.5}
+  - id: 5
+    position: {x: -4.5, y: 9.5, z: 2.5}
+  - id: 2
+    position: {x: -4.5, y: 9.5, z: 3.5}
+  - id: 3
+    position: {x: -4.5, y: 9.5, z: 4.5}
+  - id: 2
+    position: {x: -4.5, y: 9.5, z: 5.5}
+  - id: 4
+    position: {x: -4.5, y: 9.5, z: 6.5}
+  - id: 4
+    position: {x: -4.5, y: 9.5, z: 7.5}
+  - id: 4
+    position: {x: -4.5, y: 9.5, z: 8.5}
+  - id: 3
+    position: {x: -4.5, y: 9.5, z: 9.5}
+  - id: 2
+    position: {x: -3.5, y: -9.5, z: -9.5}
+  - id: 1
+    position: {x: -3.5, y: -9.5, z: -8.5}
+  - id: 5
+    position: {x: -3.5, y: -9.5, z: -7.5}
+  - id: 1
+    position: {x: -3.5, y: -9.5, z: -6.5}
+  - id: 4
+    position: {x: -3.5, y: -9.5, z: -5.5}
+  - id: 2
+    position: {x: -3.5, y: -9.5, z: -4.5}
+  - id: 1
+    position: {x: -3.5, y: -9.5, z: -3.5}
+  - id: 1
+    position: {x: -3.5, y: -9.5, z: -2.5}
+  - id: 5
+    position: {x: -3.5, y: -9.5, z: -1.5}
+  - id: 4
+    position: {x: -3.5, y: -9.5, z: -0.5}
+  - id: 5
+    position: {x: -3.5, y: -9.5, z: 0.5}
+  - id: 3
+    position: {x: -3.5, y: -9.5, z: 1.5}
+  - id: 1
+    position: {x: -3.5, y: -9.5, z: 2.5}
+  - id: 5
+    position: {x: -3.5, y: -9.5, z: 3.5}
+  - id: 4
+    position: {x: -3.5, y: -9.5, z: 4.5}
+  - id: 2
+    position: {x: -3.5, y: -9.5, z: 5.5}
+  - id: 3
+    position: {x: -3.5, y: -9.5, z: 6.5}
+  - id: 4
+    position: {x: -3.5, y: -9.5, z: 7.5}
+  - id: 4
+    position: {x: -3.5, y: -9.5, z: 8.5}
+  - id: 2
+    position: {x: -3.5, y: -9.5, z: 9.5}
+  - id: 2
+    position: {x: -3.5, y: -8.5, z: -9.5}
+  - id: 4
+    position: {x: -3.5, y: -8.5, z: 9.5}
+  - id: 1
+    position: {x: -3.5, y: -7.5, z: -9.5}
+  - id: 1
+    position: {x: -3.5, y: -7.5, z: 9.5}
+  - id: 1
+    position: {x: -3.5, y: -6.5, z: -9.5}
+  - id: 4
+    position: {x: -3.5, y: -6.5, z: 9.5}
+  - id: 4
+    position: {x: -3.5, y: -5.5, z: -9.5}
+  - id: 4
+    position: {x: -3.5, y: -5.5, z: 9.5}
+  - id: 5
+    position: {x: -3.5, y: -4.5, z: -9.5}
+  - id: 2
+    position: {x: -3.5, y: -4.5, z: 9.5}
+  - id: 1
+    position: {x: -3.5, y: -3.5, z: -9.5}
+  - id: 4
+    position: {x: -3.5, y: -3.5, z: 9.5}
+  - id: 2
+    position: {x: -3.5, y: -2.5, z: -9.5}
+  - id: 4
+    position: {x: -3.5, y: -2.5, z: 9.5}
+  - id: 1
+    position: {x: -3.5, y: -1.5, z: -9.5}
+  - id: 1
+    position: {x: -3.5, y: -1.5, z: 9.5}
+  - id: 4
+    position: {x: -3.5, y: -0.5, z: -9.5}
+  - id: 4
+    position: {x: -3.5, y: -0.5, z: 9.5}
+  - id: 2
+    position: {x: -3.5, y: 0.5, z: -9.5}
+  - id: 5
+    position: {x: -3.5, y: 0.5, z: 9.5}
+  - id: 1
+    position: {x: -3.5, y: 1.5, z: -9.5}
+  - id: 2
+    position: {x: -3.5, y: 1.5, z: 9.5}
+  - id: 5
+    position: {x: -3.5, y: 2.5, z: -9.5}
+  - id: 3
+    position: {x: -3.5, y: 2.5, z: 9.5}
+  - id: 4
+    position: {x: -3.5, y: 3.5, z: -9.5}
+  - id: 4
+    position: {x: -3.5, y: 3.5, z: 9.5}
+  - id: 4
+    position: {x: -3.5, y: 4.5, z: -9.5}
+  - id: 5
+    position: {x: -3.5, y: 4.5, z: 9.5}
+  - id: 5
+    position: {x: -3.5, y: 5.5, z: -9.5}
+  - id: 5
+    position: {x: -3.5, y: 5.5, z: 9.5}
+  - id: 2
+    position: {x: -3.5, y: 6.5, z: -9.5}
+  - id: 2
+    position: {x: -3.5, y: 6.5, z: 9.5}
+  - id: 3
+    position: {x: -3.5, y: 7.5, z: -9.5}
+  - id: 2
+    position: {x: -3.5, y: 7.5, z: 9.5}
+  - id: 3
+    position: {x: -3.5, y: 8.5, z: -9.5}
+  - id: 2
+    position: {x: -3.5, y: 8.5, z: 9.5}
+  - id: 2
+    position: {x: -3.5, y: 9.5, z: -9.5}
+  - id: 5
+    position: {x: -3.5, y: 9.5, z: -8.5}
+  - id: 2
+    position: {x: -3.5, y: 9.5, z: -7.5}
+  - id: 1
+    position: {x: -3.5, y: 9.5, z: -6.5}
+  - id: 2
+    position: {x: -3.5, y: 9.5, z: -5.5}
+  - id: 2
+    position: {x: -3.5, y: 9.5, z: -4.5}
+  - id: 5
+    position: {x: -3.5, y: 9.5, z: -3.5}
+  - id: 2
+    position: {x: -3.5, y: 9.5, z: -2.5}
+  - id: 1
+    position: {x: -3.5, y: 9.5, z: -1.5}
+  - id: 5
+    position: {x: -3.5, y: 9.5, z: -0.5}
+  - id: 1
+    position: {x: -3.5, y: 9.5, z: 0.5}
+  - id: 5
+    position: {x: -3.5, y: 9.5, z: 1.5}
+  - id: 5
+    position: {x: -3.5, y: 9.5, z: 2.5}
+  - id: 3
+    position: {x: -3.5, y: 9.5, z: 3.5}
+  - id: 3
+    position: {x: -3.5, y: 9.5, z: 4.5}
+  - id: 3
+    position: {x: -3.5, y: 9.5, z: 5.5}
+  - id: 1
+    position: {x: -3.5, y: 9.5, z: 6.5}
+  - id: 1
+    position: {x: -3.5, y: 9.5, z: 7.5}
+  - id: 4
+    position: {x: -3.5, y: 9.5, z: 8.5}
+  - id: 1
+    position: {x: -3.5, y: 9.5, z: 9.5}
+  - id: 5
+    position: {x: -2.5, y: -9.5, z: -9.5}
+  - id: 1
+    position: {x: -2.5, y: -9.5, z: -8.5}
+  - id: 4
+    position: {x: -2.5, y: -9.5, z: -7.5}
+  - id: 3
+    position: {x: -2.5, y: -9.5, z: -6.5}
+  - id: 4
+    position: {x: -2.5, y: -9.5, z: -5.5}
+  - id: 1
+    position: {x: -2.5, y: -9.5, z: -4.5}
+  - id: 4
+    position: {x: -2.5, y: -9.5, z: -3.5}
+  - id: 4
+    position: {x: -2.5, y: -9.5, z: -2.5}
+  - id: 2
+    position: {x: -2.5, y: -9.5, z: -1.5}
+  - id: 5
+    position: {x: -2.5, y: -9.5, z: -0.5}
+  - id: 3
+    position: {x: -2.5, y: -9.5, z: 0.5}
+  - id: 5
+    position: {x: -2.5, y: -9.5, z: 1.5}
+  - id: 2
+    position: {x: -2.5, y: -9.5, z: 2.5}
+  - id: 4
+    position: {x: -2.5, y: -9.5, z: 3.5}
+  - id: 3
+    position: {x: -2.5, y: -9.5, z: 4.5}
+  - id: 1
+    position: {x: -2.5, y: -9.5, z: 5.5}
+  - id: 5
+    position: {x: -2.5, y: -9.5, z: 6.5}
+  - id: 1
+    position: {x: -2.5, y: -9.5, z: 7.5}
+  - id: 4
+    position: {x: -2.5, y: -9.5, z: 8.5}
+  - id: 1
+    position: {x: -2.5, y: -9.5, z: 9.5}
+  - id: 2
+    position: {x: -2.5, y: -8.5, z: -9.5}
+  - id: 1
+    position: {x: -2.5, y: -8.5, z: 9.5}
+  - id: 5
+    position: {x: -2.5, y: -7.5, z: -9.5}
+  - id: 5
+    position: {x: -2.5, y: -7.5, z: 9.5}
+  - id: 4
+    position: {x: -2.5, y: -6.5, z: -9.5}
+  - id: 1
+    position: {x: -2.5, y: -6.5, z: 9.5}
+  - id: 3
+    position: {x: -2.5, y: -5.5, z: -9.5}
+  - id: 1
+    position: {x: -2.5, y: -5.5, z: 9.5}
+  - id: 4
+    position: {x: -2.5, y: -4.5, z: -9.5}
+  - id: 3
+    position: {x: -2.5, y: -4.5, z: 9.5}
+  - id: 5
+    position: {x: -2.5, y: -3.5, z: -9.5}
+  - id: 2
+    position: {x: -2.5, y: -3.5, z: 9.5}
+  - id: 2
+    position: {x: -2.5, y: -2.5, z: -9.5}
+  - id: 1
+    position: {x: -2.5, y: -2.5, z: 9.5}
+  - id: 5
+    position: {x: -2.5, y: -1.5, z: -9.5}
+  - id: 3
+    position: {x: -2.5, y: -1.5, z: 9.5}
+  - id: 2
+    position: {x: -2.5, y: -0.5, z: -9.5}
+  - id: 5
+    position: {x: -2.5, y: -0.5, z: 9.5}
+  - id: 5
+    position: {x: -2.5, y: 0.5, z: -9.5}
+  - id: 5
+    position: {x: -2.5, y: 0.5, z: 9.5}
+  - id: 5
+    position: {x: -2.5, y: 1.5, z: -9.5}
+  - id: 5
+    position: {x: -2.5, y: 1.5, z: 9.5}
+  - id: 2
+    position: {x: -2.5, y: 2.5, z: -9.5}
+  - id: 4
+    position: {x: -2.5, y: 2.5, z: 9.5}
+  - id: 2
+    position: {x: -2.5, y: 3.5, z: -9.5}
+  - id: 3
+    position: {x: -2.5, y: 3.5, z: 9.5}
+  - id: 4
+    position: {x: -2.5, y: 4.5, z: -9.5}
+  - id: 3
+    position: {x: -2.5, y: 4.5, z: 9.5}
+  - id: 3
+    position: {x: -2.5, y: 5.5, z: -9.5}
+  - id: 2
+    position: {x: -2.5, y: 5.5, z: 9.5}
+  - id: 2
+    position: {x: -2.5, y: 6.5, z: -9.5}
+  - id: 4
+    position: {x: -2.5, y: 6.5, z: 9.5}
+  - id: 3
+    position: {x: -2.5, y: 7.5, z: -9.5}
+  - id: 2
+    position: {x: -2.5, y: 7.5, z: 9.5}
+  - id: 3
+    position: {x: -2.5, y: 8.5, z: -9.5}
+  - id: 3
+    position: {x: -2.5, y: 8.5, z: 9.5}
+  - id: 3
+    position: {x: -2.5, y: 9.5, z: -9.5}
+  - id: 2
+    position: {x: -2.5, y: 9.5, z: -8.5}
+  - id: 4
+    position: {x: -2.5, y: 9.5, z: -7.5}
+  - id: 5
+    position: {x: -2.5, y: 9.5, z: -6.5}
+  - id: 3
+    position: {x: -2.5, y: 9.5, z: -5.5}
+  - id: 4
+    position: {x: -2.5, y: 9.5, z: -4.5}
+  - id: 5
+    position: {x: -2.5, y: 9.5, z: -3.5}
+  - id: 4
+    position: {x: -2.5, y: 9.5, z: -2.5}
+  - id: 2
+    position: {x: -2.5, y: 9.5, z: -1.5}
+  - id: 1
+    position: {x: -2.5, y: 9.5, z: -0.5}
+  - id: 5
+    position: {x: -2.5, y: 9.5, z: 0.5}
+  - id: 2
+    position: {x: -2.5, y: 9.5, z: 1.5}
+  - id: 4
+    position: {x: -2.5, y: 9.5, z: 2.5}
+  - id: 4
+    position: {x: -2.5, y: 9.5, z: 3.5}
+  - id: 5
+    position: {x: -2.5, y: 9.5, z: 4.5}
+  - id: 2
+    position: {x: -2.5, y: 9.5, z: 5.5}
+  - id: 5
+    position: {x: -2.5, y: 9.5, z: 6.5}
+  - id: 4
+    position: {x: -2.5, y: 9.5, z: 7.5}
+  - id: 3
+    position: {x: -2.5, y: 9.5, z: 8.5}
+  - id: 4
+    position: {x: -2.5, y: 9.5, z: 9.5}
+  - id: 4
+    position: {x: -1.5, y: -9.5, z: -9.5}
+  - id: 2
+    position: {x: -1.5, y: -9.5, z: -8.5}
+  - id: 2
+    position: {x: -1.5, y: -9.5, z: -7.5}
+  - id: 4
+    position: {x: -1.5, y: -9.5, z: -6.5}
+  - id: 3
+    position: {x: -1.5, y: -9.5, z: -5.5}
+  - id: 3
+    position: {x: -1.5, y: -9.5, z: -4.5}
+  - id: 4
+    position: {x: -1.5, y: -9.5, z: -3.5}
+  - id: 5
+    position: {x: -1.5, y: -9.5, z: -2.5}
+  - id: 5
+    position: {x: -1.5, y: -9.5, z: -1.5}
+  - id: 2
+    position: {x: -1.5, y: -9.5, z: -0.5}
+  - id: 2
+    position: {x: -1.5, y: -9.5, z: 0.5}
+  - id: 3
+    position: {x: -1.5, y: -9.5, z: 1.5}
+  - id: 1
+    position: {x: -1.5, y: -9.5, z: 2.5}
+  - id: 4
+    position: {x: -1.5, y: -9.5, z: 3.5}
+  - id: 5
+    position: {x: -1.5, y: -9.5, z: 4.5}
+  - id: 2
+    position: {x: -1.5, y: -9.5, z: 5.5}
+  - id: 1
+    position: {x: -1.5, y: -9.5, z: 6.5}
+  - id: 4
+    position: {x: -1.5, y: -9.5, z: 7.5}
+  - id: 2
+    position: {x: -1.5, y: -9.5, z: 8.5}
+  - id: 3
+    position: {x: -1.5, y: -9.5, z: 9.5}
+  - id: 5
+    position: {x: -1.5, y: -8.5, z: -9.5}
+  - id: 3
+    position: {x: -1.5, y: -8.5, z: 9.5}
+  - id: 2
+    position: {x: -1.5, y: -7.5, z: -9.5}
+  - id: 4
+    position: {x: -1.5, y: -7.5, z: 9.5}
+  - id: 1
+    position: {x: -1.5, y: -6.5, z: -9.5}
+  - id: 5
+    position: {x: -1.5, y: -6.5, z: 9.5}
+  - id: 3
+    position: {x: -1.5, y: -5.5, z: -9.5}
+  - id: 1
+    position: {x: -1.5, y: -5.5, z: 9.5}
+  - id: 3
+    position: {x: -1.5, y: -4.5, z: -9.5}
+  - id: 2
+    position: {x: -1.5, y: -4.5, z: 9.5}
+  - id: 4
+    position: {x: -1.5, y: -3.5, z: -9.5}
+  - id: 5
+    position: {x: -1.5, y: -3.5, z: 9.5}
+  - id: 5
+    position: {x: -1.5, y: -2.5, z: -9.5}
+  - id: 4
+    position: {x: -1.5, y: -2.5, z: 9.5}
+  - id: 1
+    position: {x: -1.5, y: -1.5, z: -9.5}
+  - id: 5
+    position: {x: -1.5, y: -1.5, z: 9.5}
+  - id: 1
+    position: {x: -1.5, y: -0.5, z: -9.5}
+  - id: 3
+    position: {x: -1.5, y: -0.5, z: 9.5}
+  - id: 1
+    position: {x: -1.5, y: 0.5, z: -9.5}
+  - id: 3
+    position: {x: -1.5, y: 0.5, z: 9.5}
+  - id: 5
+    position: {x: -1.5, y: 1.5, z: -9.5}
+  - id: 2
+    position: {x: -1.5, y: 1.5, z: 9.5}
+  - id: 1
+    position: {x: -1.5, y: 2.5, z: -9.5}
+  - id: 1
+    position: {x: -1.5, y: 2.5, z: 9.5}
+  - id: 2
+    position: {x: -1.5, y: 3.5, z: -9.5}
+  - id: 4
+    position: {x: -1.5, y: 3.5, z: 9.5}
+  - id: 4
+    position: {x: -1.5, y: 4.5, z: -9.5}
+  - id: 4
+    position: {x: -1.5, y: 4.5, z: 9.5}
+  - id: 3
+    position: {x: -1.5, y: 5.5, z: -9.5}
+  - id: 3
+    position: {x: -1.5, y: 5.5, z: 9.5}
+  - id: 2
+    position: {x: -1.5, y: 6.5, z: -9.5}
+  - id: 1
+    position: {x: -1.5, y: 6.5, z: 9.5}
+  - id: 3
+    position: {x: -1.5, y: 7.5, z: -9.5}
+  - id: 3
+    position: {x: -1.5, y: 7.5, z: 9.5}
+  - id: 5
+    position: {x: -1.5, y: 8.5, z: -9.5}
+  - id: 3
+    position: {x: -1.5, y: 8.5, z: 9.5}
+  - id: 2
+    position: {x: -1.5, y: 9.5, z: -9.5}
+  - id: 1
+    position: {x: -1.5, y: 9.5, z: -8.5}
+  - id: 2
+    position: {x: -1.5, y: 9.5, z: -7.5}
+  - id: 3
+    position: {x: -1.5, y: 9.5, z: -6.5}
+  - id: 2
+    position: {x: -1.5, y: 9.5, z: -5.5}
+  - id: 4
+    position: {x: -1.5, y: 9.5, z: -4.5}
+  - id: 5
+    position: {x: -1.5, y: 9.5, z: -3.5}
+  - id: 3
+    position: {x: -1.5, y: 9.5, z: -2.5}
+  - id: 4
+    position: {x: -1.5, y: 9.5, z: -1.5}
+  - id: 2
+    position: {x: -1.5, y: 9.5, z: -0.5}
+  - id: 3
+    position: {x: -1.5, y: 9.5, z: 0.5}
+  - id: 2
+    position: {x: -1.5, y: 9.5, z: 1.5}
+  - id: 1
+    position: {x: -1.5, y: 9.5, z: 2.5}
+  - id: 3
+    position: {x: -1.5, y: 9.5, z: 3.5}
+  - id: 2
+    position: {x: -1.5, y: 9.5, z: 4.5}
+  - id: 4
+    position: {x: -1.5, y: 9.5, z: 5.5}
+  - id: 4
+    position: {x: -1.5, y: 9.5, z: 6.5}
+  - id: 1
+    position: {x: -1.5, y: 9.5, z: 7.5}
+  - id: 1
+    position: {x: -1.5, y: 9.5, z: 8.5}
+  - id: 1
+    position: {x: -1.5, y: 9.5, z: 9.5}
+  - id: 1
+    position: {x: -0.5, y: -9.5, z: -9.5}
+  - id: 4
+    position: {x: -0.5, y: -9.5, z: -8.5}
+  - id: 5
+    position: {x: -0.5, y: -9.5, z: -7.5}
+  - id: 1
+    position: {x: -0.5, y: -9.5, z: -6.5}
+  - id: 1
+    position: {x: -0.5, y: -9.5, z: -5.5}
+  - id: 5
+    position: {x: -0.5, y: -9.5, z: -4.5}
+  - id: 4
+    position: {x: -0.5, y: -9.5, z: -3.5}
+  - id: 1
+    position: {x: -0.5, y: -9.5, z: -2.5}
+  - id: 4
+    position: {x: -0.5, y: -9.5, z: -1.5}
+  - id: 1
+    position: {x: -0.5, y: -9.5, z: -0.5}
+  - id: 5
+    position: {x: -0.5, y: -9.5, z: 0.5}
+  - id: 3
+    position: {x: -0.5, y: -9.5, z: 1.5}
+  - id: 1
+    position: {x: -0.5, y: -9.5, z: 2.5}
+  - id: 3
+    position: {x: -0.5, y: -9.5, z: 3.5}
+  - id: 4
+    position: {x: -0.5, y: -9.5, z: 4.5}
+  - id: 5
+    position: {x: -0.5, y: -9.5, z: 5.5}
+  - id: 2
+    position: {x: -0.5, y: -9.5, z: 6.5}
+  - id: 3
+    position: {x: -0.5, y: -9.5, z: 7.5}
+  - id: 4
+    position: {x: -0.5, y: -9.5, z: 8.5}
+  - id: 1
+    position: {x: -0.5, y: -9.5, z: 9.5}
+  - id: 5
+    position: {x: -0.5, y: -8.5, z: -9.5}
+  - id: 5
+    position: {x: -0.5, y: -8.5, z: 9.5}
+  - id: 1
+    position: {x: -0.5, y: -7.5, z: -9.5}
+  - id: 1
+    position: {x: -0.5, y: -7.5, z: 9.5}
+  - id: 3
+    position: {x: -0.5, y: -6.5, z: -9.5}
+  - id: 4
+    position: {x: -0.5, y: -6.5, z: 9.5}
+  - id: 5
+    position: {x: -0.5, y: -5.5, z: -9.5}
+  - id: 4
+    position: {x: -0.5, y: -5.5, z: 9.5}
+  - id: 2
+    position: {x: -0.5, y: -4.5, z: -9.5}
+  - id: 5
+    position: {x: -0.5, y: -4.5, z: 9.5}
+  - id: 5
+    position: {x: -0.5, y: -3.5, z: -9.5}
+  - id: 1
+    position: {x: -0.5, y: -3.5, z: 9.5}
+  - id: 3
+    position: {x: -0.5, y: -2.5, z: -9.5}
+  - id: 4
+    position: {x: -0.5, y: -2.5, z: 9.5}
+  - id: 4
+    position: {x: -0.5, y: -1.5, z: -9.5}
+  - id: 5
+    position: {x: -0.5, y: -1.5, z: 9.5}
+  - id: 1
+    position: {x: -0.5, y: -0.5, z: -9.5}
+  - id: 1
+    position: {x: -0.5, y: -0.5, z: 9.5}
+  - id: 4
+    position: {x: -0.5, y: 0.5, z: -9.5}
+  - id: 2
+    position: {x: -0.5, y: 0.5, z: 9.5}
+  - id: 4
+    position: {x: -0.5, y: 1.5, z: -9.5}
+  - id: 4
+    position: {x: -0.5, y: 1.5, z: 9.5}
+  - id: 5
+    position: {x: -0.5, y: 2.5, z: -9.5}
+  - id: 3
+    position: {x: -0.5, y: 2.5, z: 9.5}
+  - id: 1
+    position: {x: -0.5, y: 3.5, z: -9.5}
+  - id: 5
+    position: {x: -0.5, y: 3.5, z: 9.5}
+  - id: 4
+    position: {x: -0.5, y: 4.5, z: -9.5}
+  - id: 4
+    position: {x: -0.5, y: 4.5, z: 9.5}
+  - id: 2
+    position: {x: -0.5, y: 5.5, z: -9.5}
+  - id: 4
+    position: {x: -0.5, y: 5.5, z: 9.5}
+  - id: 3
+    position: {x: -0.5, y: 6.5, z: -9.5}
+  - id: 3
+    position: {x: -0.5, y: 6.5, z: 9.5}
+  - id: 2
+    position: {x: -0.5, y: 7.5, z: -9.5}
+  - id: 2
+    position: {x: -0.5, y: 7.5, z: 9.5}
+  - id: 3
+    position: {x: -0.5, y: 8.5, z: -9.5}
+  - id: 4
+    position: {x: -0.5, y: 8.5, z: 9.5}
+  - id: 3
+    position: {x: -0.5, y: 9.5, z: -9.5}
+  - id: 3
+    position: {x: -0.5, y: 9.5, z: -8.5}
+  - id: 3
+    position: {x: -0.5, y: 9.5, z: -7.5}
+  - id: 4
+    position: {x: -0.5, y: 9.5, z: -6.5}
+  - id: 2
+    position: {x: -0.5, y: 9.5, z: -5.5}
+  - id: 2
+    position: {x: -0.5, y: 9.5, z: -4.5}
+  - id: 5
+    position: {x: -0.5, y: 9.5, z: -3.5}
+  - id: 4
+    position: {x: -0.5, y: 9.5, z: -2.5}
+  - id: 2
+    position: {x: -0.5, y: 9.5, z: -1.5}
+  - id: 5
+    position: {x: -0.5, y: 9.5, z: -0.5}
+  - id: 4
+    position: {x: -0.5, y: 9.5, z: 0.5}
+  - id: 3
+    position: {x: -0.5, y: 9.5, z: 1.5}
+  - id: 4
+    position: {x: -0.5, y: 9.5, z: 2.5}
+  - id: 1
+    position: {x: -0.5, y: 9.5, z: 3.5}
+  - id: 3
+    position: {x: -0.5, y: 9.5, z: 4.5}
+  - id: 2
+    position: {x: -0.5, y: 9.5, z: 5.5}
+  - id: 1
+    position: {x: -0.5, y: 9.5, z: 6.5}
+  - id: 2
+    position: {x: -0.5, y: 9.5, z: 7.5}
+  - id: 1
+    position: {x: -0.5, y: 9.5, z: 8.5}
+  - id: 1
+    position: {x: -0.5, y: 9.5, z: 9.5}
+  - id: 2
+    position: {x: 0.5, y: -9.5, z: -9.5}
+  - id: 2
+    position: {x: 0.5, y: -9.5, z: -8.5}
+  - id: 5
+    position: {x: 0.5, y: -9.5, z: -7.5}
+  - id: 3
+    position: {x: 0.5, y: -9.5, z: -6.5}
+  - id: 4
+    position: {x: 0.5, y: -9.5, z: -5.5}
+  - id: 4
+    position: {x: 0.5, y: -9.5, z: -4.5}
+  - id: 1
+    position: {x: 0.5, y: -9.5, z: -3.5}
+  - id: 5
+    position: {x: 0.5, y: -9.5, z: -2.5}
+  - id: 2
+    position: {x: 0.5, y: -9.5, z: -1.5}
+  - id: 1
+    position: {x: 0.5, y: -9.5, z: -0.5}
+  - id: 3
+    position: {x: 0.5, y: -9.5, z: 0.5}
+  - id: 5
+    position: {x: 0.5, y: -9.5, z: 1.5}
+  - id: 1
+    position: {x: 0.5, y: -9.5, z: 2.5}
+  - id: 3
+    position: {x: 0.5, y: -9.5, z: 3.5}
+  - id: 5
+    position: {x: 0.5, y: -9.5, z: 4.5}
+  - id: 1
+    position: {x: 0.5, y: -9.5, z: 5.5}
+  - id: 1
+    position: {x: 0.5, y: -9.5, z: 6.5}
+  - id: 4
+    position: {x: 0.5, y: -9.5, z: 7.5}
+  - id: 1
+    position: {x: 0.5, y: -9.5, z: 8.5}
+  - id: 2
+    position: {x: 0.5, y: -9.5, z: 9.5}
+  - id: 4
+    position: {x: 0.5, y: -8.5, z: -9.5}
+  - id: 1
+    position: {x: 0.5, y: -8.5, z: 9.5}
+  - id: 1
+    position: {x: 0.5, y: -7.5, z: -9.5}
+  - id: 5
+    position: {x: 0.5, y: -7.5, z: 9.5}
+  - id: 5
+    position: {x: 0.5, y: -6.5, z: -9.5}
+  - id: 2
+    position: {x: 0.5, y: -6.5, z: 9.5}
+  - id: 1
+    position: {x: 0.5, y: -5.5, z: -9.5}
+  - id: 4
+    position: {x: 0.5, y: -5.5, z: 9.5}
+  - id: 3
+    position: {x: 0.5, y: -4.5, z: -9.5}
+  - id: 2
+    position: {x: 0.5, y: -4.5, z: 9.5}
+  - id: 3
+    position: {x: 0.5, y: -3.5, z: -9.5}
+  - id: 5
+    position: {x: 0.5, y: -3.5, z: 9.5}
+  - id: 5
+    position: {x: 0.5, y: -2.5, z: -9.5}
+  - id: 5
+    position: {x: 0.5, y: -2.5, z: 9.5}
+  - id: 5
+    position: {x: 0.5, y: -1.5, z: -9.5}
+  - id: 2
+    position: {x: 0.5, y: -1.5, z: 9.5}
+  - id: 2
+    position: {x: 0.5, y: -0.5, z: -9.5}
+  - id: 4
+    position: {x: 0.5, y: -0.5, z: 9.5}
+  - id: 5
+    position: {x: 0.5, y: 0.5, z: -9.5}
+  - id: 3
+    position: {x: 0.5, y: 0.5, z: 9.5}
+  - id: 4
+    position: {x: 0.5, y: 1.5, z: -9.5}
+  - id: 1
+    position: {x: 0.5, y: 1.5, z: 9.5}
+  - id: 2
+    position: {x: 0.5, y: 2.5, z: -9.5}
+  - id: 1
+    position: {x: 0.5, y: 2.5, z: 9.5}
+  - id: 5
+    position: {x: 0.5, y: 3.5, z: -9.5}
+  - id: 1
+    position: {x: 0.5, y: 3.5, z: 9.5}
+  - id: 1
+    position: {x: 0.5, y: 4.5, z: -9.5}
+  - id: 3
+    position: {x: 0.5, y: 4.5, z: 9.5}
+  - id: 4
+    position: {x: 0.5, y: 5.5, z: -9.5}
+  - id: 3
+    position: {x: 0.5, y: 5.5, z: 9.5}
+  - id: 3
+    position: {x: 0.5, y: 6.5, z: -9.5}
+  - id: 3
+    position: {x: 0.5, y: 6.5, z: 9.5}
+  - id: 2
+    position: {x: 0.5, y: 7.5, z: -9.5}
+  - id: 2
+    position: {x: 0.5, y: 7.5, z: 9.5}
+  - id: 1
+    position: {x: 0.5, y: 8.5, z: -9.5}
+  - id: 5
+    position: {x: 0.5, y: 8.5, z: 9.5}
+  - id: 3
+    position: {x: 0.5, y: 9.5, z: -9.5}
+  - id: 3
+    position: {x: 0.5, y: 9.5, z: -8.5}
+  - id: 5
+    position: {x: 0.5, y: 9.5, z: -7.5}
+  - id: 2
+    position: {x: 0.5, y: 9.5, z: -6.5}
+  - id: 2
+    position: {x: 0.5, y: 9.5, z: -5.5}
+  - id: 5
+    position: {x: 0.5, y: 9.5, z: -4.5}
+  - id: 2
+    position: {x: 0.5, y: 9.5, z: -3.5}
+  - id: 1
+    position: {x: 0.5, y: 9.5, z: -2.5}
+  - id: 4
+    position: {x: 0.5, y: 9.5, z: -1.5}
+  - id: 4
+    position: {x: 0.5, y: 9.5, z: -0.5}
+  - id: 4
+    position: {x: 0.5, y: 9.5, z: 0.5}
+  - id: 3
+    position: {x: 0.5, y: 9.5, z: 1.5}
+  - id: 4
+    position: {x: 0.5, y: 9.5, z: 2.5}
+  - id: 5
+    position: {x: 0.5, y: 9.5, z: 3.5}
+  - id: 3
+    position: {x: 0.5, y: 9.5, z: 4.5}
+  - id: 3
+    position: {x: 0.5, y: 9.5, z: 5.5}
+  - id: 2
+    position: {x: 0.5, y: 9.5, z: 6.5}
+  - id: 5
+    position: {x: 0.5, y: 9.5, z: 7.5}
+  - id: 5
+    position: {x: 0.5, y: 9.5, z: 8.5}
+  - id: 1
+    position: {x: 0.5, y: 9.5, z: 9.5}
+  - id: 1
+    position: {x: 1.5, y: -9.5, z: -9.5}
+  - id: 3
+    position: {x: 1.5, y: -9.5, z: -8.5}
+  - id: 5
+    position: {x: 1.5, y: -9.5, z: -7.5}
+  - id: 4
+    position: {x: 1.5, y: -9.5, z: -6.5}
+  - id: 5
+    position: {x: 1.5, y: -9.5, z: -5.5}
+  - id: 5
+    position: {x: 1.5, y: -9.5, z: -4.5}
+  - id: 3
+    position: {x: 1.5, y: -9.5, z: -3.5}
+  - id: 1
+    position: {x: 1.5, y: -9.5, z: -2.5}
+  - id: 2
+    position: {x: 1.5, y: -9.5, z: -1.5}
+  - id: 3
+    position: {x: 1.5, y: -9.5, z: -0.5}
+  - id: 2
+    position: {x: 1.5, y: -9.5, z: 0.5}
+  - id: 1
+    position: {x: 1.5, y: -9.5, z: 1.5}
+  - id: 4
+    position: {x: 1.5, y: -9.5, z: 2.5}
+  - id: 4
+    position: {x: 1.5, y: -9.5, z: 3.5}
+  - id: 4
+    position: {x: 1.5, y: -9.5, z: 4.5}
+  - id: 5
+    position: {x: 1.5, y: -9.5, z: 5.5}
+  - id: 5
+    position: {x: 1.5, y: -9.5, z: 6.5}
+  - id: 1
+    position: {x: 1.5, y: -9.5, z: 7.5}
+  - id: 2
+    position: {x: 1.5, y: -9.5, z: 8.5}
+  - id: 5
+    position: {x: 1.5, y: -9.5, z: 9.5}
+  - id: 2
+    position: {x: 1.5, y: -8.5, z: -9.5}
+  - id: 2
+    position: {x: 1.5, y: -8.5, z: 9.5}
+  - id: 2
+    position: {x: 1.5, y: -7.5, z: -9.5}
+  - id: 4
+    position: {x: 1.5, y: -7.5, z: 9.5}
+  - id: 5
+    position: {x: 1.5, y: -6.5, z: -9.5}
+  - id: 4
+    position: {x: 1.5, y: -6.5, z: 9.5}
+  - id: 4
+    position: {x: 1.5, y: -5.5, z: -9.5}
+  - id: 2
+    position: {x: 1.5, y: -5.5, z: 9.5}
+  - id: 3
+    position: {x: 1.5, y: -4.5, z: -9.5}
+  - id: 5
+    position: {x: 1.5, y: -4.5, z: 9.5}
+  - id: 5
+    position: {x: 1.5, y: -3.5, z: -9.5}
+  - id: 4
+    position: {x: 1.5, y: -3.5, z: 9.5}
+  - id: 2
+    position: {x: 1.5, y: -2.5, z: -9.5}
+  - id: 2
+    position: {x: 1.5, y: -2.5, z: 9.5}
+  - id: 5
+    position: {x: 1.5, y: -1.5, z: -9.5}
+  - id: 4
+    position: {x: 1.5, y: -1.5, z: 9.5}
+  - id: 2
+    position: {x: 1.5, y: -0.5, z: -9.5}
+  - id: 1
+    position: {x: 1.5, y: -0.5, z: 9.5}
+  - id: 5
+    position: {x: 1.5, y: 0.5, z: -9.5}
+  - id: 4
+    position: {x: 1.5, y: 0.5, z: 9.5}
+  - id: 1
+    position: {x: 1.5, y: 1.5, z: -9.5}
+  - id: 5
+    position: {x: 1.5, y: 1.5, z: 9.5}
+  - id: 2
+    position: {x: 1.5, y: 2.5, z: -9.5}
+  - id: 4
+    position: {x: 1.5, y: 2.5, z: 9.5}
+  - id: 1
+    position: {x: 1.5, y: 3.5, z: -9.5}
+  - id: 5
+    position: {x: 1.5, y: 3.5, z: 9.5}
+  - id: 5
+    position: {x: 1.5, y: 4.5, z: -9.5}
+  - id: 2
+    position: {x: 1.5, y: 4.5, z: 9.5}
+  - id: 5
+    position: {x: 1.5, y: 5.5, z: -9.5}
+  - id: 5
+    position: {x: 1.5, y: 5.5, z: 9.5}
+  - id: 5
+    position: {x: 1.5, y: 6.5, z: -9.5}
+  - id: 4
+    position: {x: 1.5, y: 6.5, z: 9.5}
+  - id: 2
+    position: {x: 1.5, y: 7.5, z: -9.5}
+  - id: 5
+    position: {x: 1.5, y: 7.5, z: 9.5}
+  - id: 1
+    position: {x: 1.5, y: 8.5, z: -9.5}
+  - id: 4
+    position: {x: 1.5, y: 8.5, z: 9.5}
+  - id: 4
+    position: {x: 1.5, y: 9.5, z: -9.5}
+  - id: 4
+    position: {x: 1.5, y: 9.5, z: -8.5}
+  - id: 4
+    position: {x: 1.5, y: 9.5, z: -7.5}
+  - id: 5
+    position: {x: 1.5, y: 9.5, z: -6.5}
+  - id: 2
+    position: {x: 1.5, y: 9.5, z: -5.5}
+  - id: 4
+    position: {x: 1.5, y: 9.5, z: -4.5}
+  - id: 1
+    position: {x: 1.5, y: 9.5, z: -3.5}
+  - id: 3
+    position: {x: 1.5, y: 9.5, z: -2.5}
+  - id: 2
+    position: {x: 1.5, y: 9.5, z: -1.5}
+  - id: 4
+    position: {x: 1.5, y: 9.5, z: -0.5}
+  - id: 5
+    position: {x: 1.5, y: 9.5, z: 0.5}
+  - id: 5
+    position: {x: 1.5, y: 9.5, z: 1.5}
+  - id: 1
+    position: {x: 1.5, y: 9.5, z: 2.5}
+  - id: 5
+    position: {x: 1.5, y: 9.5, z: 3.5}
+  - id: 3
+    position: {x: 1.5, y: 9.5, z: 4.5}
+  - id: 5
+    position: {x: 1.5, y: 9.5, z: 5.5}
+  - id: 1
+    position: {x: 1.5, y: 9.5, z: 6.5}
+  - id: 5
+    position: {x: 1.5, y: 9.5, z: 7.5}
+  - id: 1
+    position: {x: 1.5, y: 9.5, z: 8.5}
+  - id: 2
+    position: {x: 1.5, y: 9.5, z: 9.5}
+  - id: 2
+    position: {x: 2.5, y: -9.5, z: -9.5}
+  - id: 3
+    position: {x: 2.5, y: -9.5, z: -8.5}
+  - id: 2
+    position: {x: 2.5, y: -9.5, z: -7.5}
+  - id: 1
+    position: {x: 2.5, y: -9.5, z: -6.5}
+  - id: 3
+    position: {x: 2.5, y: -9.5, z: -5.5}
+  - id: 1
+    position: {x: 2.5, y: -9.5, z: -4.5}
+  - id: 2
+    position: {x: 2.5, y: -9.5, z: -3.5}
+  - id: 2
+    position: {x: 2.5, y: -9.5, z: -2.5}
+  - id: 3
+    position: {x: 2.5, y: -9.5, z: -1.5}
+  - id: 2
+    position: {x: 2.5, y: -9.5, z: -0.5}
+  - id: 2
+    position: {x: 2.5, y: -9.5, z: 0.5}
+  - id: 1
+    position: {x: 2.5, y: -9.5, z: 1.5}
+  - id: 1
+    position: {x: 2.5, y: -9.5, z: 2.5}
+  - id: 2
+    position: {x: 2.5, y: -9.5, z: 3.5}
+  - id: 4
+    position: {x: 2.5, y: -9.5, z: 4.5}
+  - id: 2
+    position: {x: 2.5, y: -9.5, z: 5.5}
+  - id: 3
+    position: {x: 2.5, y: -9.5, z: 6.5}
+  - id: 4
+    position: {x: 2.5, y: -9.5, z: 7.5}
+  - id: 2
+    position: {x: 2.5, y: -9.5, z: 8.5}
+  - id: 2
+    position: {x: 2.5, y: -9.5, z: 9.5}
+  - id: 1
+    position: {x: 2.5, y: -8.5, z: -9.5}
+  - id: 3
+    position: {x: 2.5, y: -8.5, z: 9.5}
+  - id: 1
+    position: {x: 2.5, y: -7.5, z: -9.5}
+  - id: 3
+    position: {x: 2.5, y: -7.5, z: 9.5}
+  - id: 1
+    position: {x: 2.5, y: -6.5, z: -9.5}
+  - id: 1
+    position: {x: 2.5, y: -6.5, z: 9.5}
+  - id: 1
+    position: {x: 2.5, y: -5.5, z: -9.5}
+  - id: 4
+    position: {x: 2.5, y: -5.5, z: 9.5}
+  - id: 4
+    position: {x: 2.5, y: -4.5, z: -9.5}
+  - id: 4
+    position: {x: 2.5, y: -4.5, z: 9.5}
+  - id: 2
+    position: {x: 2.5, y: -3.5, z: -9.5}
+  - id: 1
+    position: {x: 2.5, y: -3.5, z: 9.5}
+  - id: 4
+    position: {x: 2.5, y: -2.5, z: -9.5}
+  - id: 5
+    position: {x: 2.5, y: -2.5, z: 9.5}
+  - id: 2
+    position: {x: 2.5, y: -1.5, z: -9.5}
+  - id: 1
+    position: {x: 2.5, y: -1.5, z: 9.5}
+  - id: 3
+    position: {x: 2.5, y: -0.5, z: -9.5}
+  - id: 2
+    position: {x: 2.5, y: -0.5, z: 9.5}
+  - id: 2
+    position: {x: 2.5, y: 0.5, z: -9.5}
+  - id: 2
+    position: {x: 2.5, y: 0.5, z: 9.5}
+  - id: 1
+    position: {x: 2.5, y: 1.5, z: -9.5}
+  - id: 4
+    position: {x: 2.5, y: 1.5, z: 9.5}
+  - id: 4
+    position: {x: 2.5, y: 2.5, z: -9.5}
+  - id: 1
+    position: {x: 2.5, y: 2.5, z: 9.5}
+  - id: 5
+    position: {x: 2.5, y: 3.5, z: -9.5}
+  - id: 3
+    position: {x: 2.5, y: 3.5, z: 9.5}
+  - id: 1
+    position: {x: 2.5, y: 4.5, z: -9.5}
+  - id: 5
+    position: {x: 2.5, y: 4.5, z: 9.5}
+  - id: 4
+    position: {x: 2.5, y: 5.5, z: -9.5}
+  - id: 2
+    position: {x: 2.5, y: 5.5, z: 9.5}
+  - id: 2
+    position: {x: 2.5, y: 6.5, z: -9.5}
+  - id: 1
+    position: {x: 2.5, y: 6.5, z: 9.5}
+  - id: 2
+    position: {x: 2.5, y: 7.5, z: -9.5}
+  - id: 5
+    position: {x: 2.5, y: 7.5, z: 9.5}
+  - id: 4
+    position: {x: 2.5, y: 8.5, z: -9.5}
+  - id: 2
+    position: {x: 2.5, y: 8.5, z: 9.5}
+  - id: 4
+    position: {x: 2.5, y: 9.5, z: -9.5}
+  - id: 5
+    position: {x: 2.5, y: 9.5, z: -8.5}
+  - id: 3
+    position: {x: 2.5, y: 9.5, z: -7.5}
+  - id: 4
+    position: {x: 2.5, y: 9.5, z: -6.5}
+  - id: 4
+    position: {x: 2.5, y: 9.5, z: -5.5}
+  - id: 3
+    position: {x: 2.5, y: 9.5, z: -4.5}
+  - id: 2
+    position: {x: 2.5, y: 9.5, z: -3.5}
+  - id: 3
+    position: {x: 2.5, y: 9.5, z: -2.5}
+  - id: 1
+    position: {x: 2.5, y: 9.5, z: -1.5}
+  - id: 5
+    position: {x: 2.5, y: 9.5, z: -0.5}
+  - id: 2
+    position: {x: 2.5, y: 9.5, z: 0.5}
+  - id: 2
+    position: {x: 2.5, y: 9.5, z: 1.5}
+  - id: 3
+    position: {x: 2.5, y: 9.5, z: 2.5}
+  - id: 4
+    position: {x: 2.5, y: 9.5, z: 3.5}
+  - id: 2
+    position: {x: 2.5, y: 9.5, z: 4.5}
+  - id: 2
+    position: {x: 2.5, y: 9.5, z: 5.5}
+  - id: 5
+    position: {x: 2.5, y: 9.5, z: 6.5}
+  - id: 3
+    position: {x: 2.5, y: 9.5, z: 7.5}
+  - id: 2
+    position: {x: 2.5, y: 9.5, z: 8.5}
+  - id: 5
+    position: {x: 2.5, y: 9.5, z: 9.5}
+  - id: 1
+    position: {x: 3.5, y: -9.5, z: -9.5}
+  - id: 2
+    position: {x: 3.5, y: -9.5, z: -8.5}
+  - id: 3
+    position: {x: 3.5, y: -9.5, z: -7.5}
+  - id: 5
+    position: {x: 3.5, y: -9.5, z: -6.5}
+  - id: 1
+    position: {x: 3.5, y: -9.5, z: -5.5}
+  - id: 2
+    position: {x: 3.5, y: -9.5, z: -4.5}
+  - id: 2
+    position: {x: 3.5, y: -9.5, z: -3.5}
+  - id: 1
+    position: {x: 3.5, y: -9.5, z: -2.5}
+  - id: 3
+    position: {x: 3.5, y: -9.5, z: -1.5}
+  - id: 2
+    position: {x: 3.5, y: -9.5, z: -0.5}
+  - id: 2
+    position: {x: 3.5, y: -9.5, z: 0.5}
+  - id: 4
+    position: {x: 3.5, y: -9.5, z: 1.5}
+  - id: 2
+    position: {x: 3.5, y: -9.5, z: 2.5}
+  - id: 3
+    position: {x: 3.5, y: -9.5, z: 3.5}
+  - id: 2
+    position: {x: 3.5, y: -9.5, z: 4.5}
+  - id: 4
+    position: {x: 3.5, y: -9.5, z: 5.5}
+  - id: 1
+    position: {x: 3.5, y: -9.5, z: 6.5}
+  - id: 1
+    position: {x: 3.5, y: -9.5, z: 7.5}
+  - id: 4
+    position: {x: 3.5, y: -9.5, z: 8.5}
+  - id: 4
+    position: {x: 3.5, y: -9.5, z: 9.5}
+  - id: 2
+    position: {x: 3.5, y: -8.5, z: -9.5}
+  - id: 2
+    position: {x: 3.5, y: -8.5, z: 9.5}
+  - id: 4
+    position: {x: 3.5, y: -7.5, z: -9.5}
+  - id: 4
+    position: {x: 3.5, y: -7.5, z: 9.5}
+  - id: 4
+    position: {x: 3.5, y: -6.5, z: -9.5}
+  - id: 4
+    position: {x: 3.5, y: -6.5, z: 9.5}
+  - id: 5
+    position: {x: 3.5, y: -5.5, z: -9.5}
+  - id: 3
+    position: {x: 3.5, y: -5.5, z: 9.5}
+  - id: 5
+    position: {x: 3.5, y: -4.5, z: -9.5}
+  - id: 2
+    position: {x: 3.5, y: -4.5, z: 9.5}
+  - id: 1
+    position: {x: 3.5, y: -3.5, z: -9.5}
+  - id: 5
+    position: {x: 3.5, y: -3.5, z: 9.5}
+  - id: 3
+    position: {x: 3.5, y: -2.5, z: -9.5}
+  - id: 2
+    position: {x: 3.5, y: -2.5, z: 9.5}
+  - id: 2
+    position: {x: 3.5, y: -1.5, z: -9.5}
+  - id: 4
+    position: {x: 3.5, y: -1.5, z: 9.5}
+  - id: 2
+    position: {x: 3.5, y: -0.5, z: -9.5}
+  - id: 5
+    position: {x: 3.5, y: -0.5, z: 9.5}
+  - id: 1
+    position: {x: 3.5, y: 0.5, z: -9.5}
+  - id: 5
+    position: {x: 3.5, y: 0.5, z: 9.5}
+  - id: 4
+    position: {x: 3.5, y: 1.5, z: -9.5}
+  - id: 4
+    position: {x: 3.5, y: 1.5, z: 9.5}
+  - id: 4
+    position: {x: 3.5, y: 2.5, z: -9.5}
+  - id: 1
+    position: {x: 3.5, y: 2.5, z: 9.5}
+  - id: 4
+    position: {x: 3.5, y: 3.5, z: -9.5}
+  - id: 1
+    position: {x: 3.5, y: 3.5, z: 9.5}
+  - id: 1
+    position: {x: 3.5, y: 4.5, z: -9.5}
+  - id: 4
+    position: {x: 3.5, y: 4.5, z: 9.5}
+  - id: 4
+    position: {x: 3.5, y: 5.5, z: -9.5}
+  - id: 5
+    position: {x: 3.5, y: 5.5, z: 9.5}
+  - id: 1
+    position: {x: 3.5, y: 6.5, z: -9.5}
+  - id: 4
+    position: {x: 3.5, y: 6.5, z: 9.5}
+  - id: 1
+    position: {x: 3.5, y: 7.5, z: -9.5}
+  - id: 4
+    position: {x: 3.5, y: 7.5, z: 9.5}
+  - id: 2
+    position: {x: 3.5, y: 8.5, z: -9.5}
+  - id: 5
+    position: {x: 3.5, y: 8.5, z: 9.5}
+  - id: 3
+    position: {x: 3.5, y: 9.5, z: -9.5}
+  - id: 4
+    position: {x: 3.5, y: 9.5, z: -8.5}
+  - id: 5
+    position: {x: 3.5, y: 9.5, z: -7.5}
+  - id: 3
+    position: {x: 3.5, y: 9.5, z: -6.5}
+  - id: 4
+    position: {x: 3.5, y: 9.5, z: -5.5}
+  - id: 3
+    position: {x: 3.5, y: 9.5, z: -4.5}
+  - id: 3
+    position: {x: 3.5, y: 9.5, z: -3.5}
+  - id: 5
+    position: {x: 3.5, y: 9.5, z: -2.5}
+  - id: 4
+    position: {x: 3.5, y: 9.5, z: -1.5}
+  - id: 2
+    position: {x: 3.5, y: 9.5, z: -0.5}
+  - id: 3
+    position: {x: 3.5, y: 9.5, z: 0.5}
+  - id: 2
+    position: {x: 3.5, y: 9.5, z: 1.5}
+  - id: 3
+    position: {x: 3.5, y: 9.5, z: 2.5}
+  - id: 3
+    position: {x: 3.5, y: 9.5, z: 3.5}
+  - id: 1
+    position: {x: 3.5, y: 9.5, z: 4.5}
+  - id: 4
+    position: {x: 3.5, y: 9.5, z: 5.5}
+  - id: 2
+    position: {x: 3.5, y: 9.5, z: 6.5}
+  - id: 4
+    position: {x: 3.5, y: 9.5, z: 7.5}
+  - id: 3
+    position: {x: 3.5, y: 9.5, z: 8.5}
+  - id: 3
+    position: {x: 3.5, y: 9.5, z: 9.5}
+  - id: 2
+    position: {x: 4.5, y: -9.5, z: -9.5}
+  - id: 5
+    position: {x: 4.5, y: -9.5, z: -8.5}
+  - id: 3
+    position: {x: 4.5, y: -9.5, z: -7.5}
+  - id: 5
+    position: {x: 4.5, y: -9.5, z: -6.5}
+  - id: 4
+    position: {x: 4.5, y: -9.5, z: -5.5}
+  - id: 1
+    position: {x: 4.5, y: -9.5, z: -4.5}
+  - id: 4
+    position: {x: 4.5, y: -9.5, z: -3.5}
+  - id: 4
+    position: {x: 4.5, y: -9.5, z: -2.5}
+  - id: 4
+    position: {x: 4.5, y: -9.5, z: -1.5}
+  - id: 5
+    position: {x: 4.5, y: -9.5, z: -0.5}
+  - id: 2
+    position: {x: 4.5, y: -9.5, z: 0.5}
+  - id: 3
+    position: {x: 4.5, y: -9.5, z: 1.5}
+  - id: 2
+    position: {x: 4.5, y: -9.5, z: 2.5}
+  - id: 3
+    position: {x: 4.5, y: -9.5, z: 3.5}
+  - id: 2
+    position: {x: 4.5, y: -9.5, z: 4.5}
+  - id: 5
+    position: {x: 4.5, y: -9.5, z: 5.5}
+  - id: 4
+    position: {x: 4.5, y: -9.5, z: 6.5}
+  - id: 3
+    position: {x: 4.5, y: -9.5, z: 7.5}
+  - id: 4
+    position: {x: 4.5, y: -9.5, z: 8.5}
+  - id: 3
+    position: {x: 4.5, y: -9.5, z: 9.5}
+  - id: 5
+    position: {x: 4.5, y: -8.5, z: -9.5}
+  - id: 3
+    position: {x: 4.5, y: -8.5, z: 9.5}
+  - id: 5
+    position: {x: 4.5, y: -7.5, z: -9.5}
+  - id: 1
+    position: {x: 4.5, y: -7.5, z: 9.5}
+  - id: 4
+    position: {x: 4.5, y: -6.5, z: -9.5}
+  - id: 2
+    position: {x: 4.5, y: -6.5, z: 9.5}
+  - id: 2
+    position: {x: 4.5, y: -5.5, z: -9.5}
+  - id: 2
+    position: {x: 4.5, y: -5.5, z: 9.5}
+  - id: 2
+    position: {x: 4.5, y: -4.5, z: -9.5}
+  - id: 4
+    position: {x: 4.5, y: -4.5, z: 9.5}
+  - id: 1
+    position: {x: 4.5, y: -3.5, z: -9.5}
+  - id: 1
+    position: {x: 4.5, y: -3.5, z: 9.5}
+  - id: 2
+    position: {x: 4.5, y: -2.5, z: -9.5}
+  - id: 5
+    position: {x: 4.5, y: -2.5, z: 9.5}
+  - id: 4
+    position: {x: 4.5, y: -1.5, z: -9.5}
+  - id: 1
+    position: {x: 4.5, y: -1.5, z: 9.5}
+  - id: 3
+    position: {x: 4.5, y: -0.5, z: -9.5}
+  - id: 4
+    position: {x: 4.5, y: -0.5, z: 9.5}
+  - id: 2
+    position: {x: 4.5, y: 0.5, z: -9.5}
+  - id: 3
+    position: {x: 4.5, y: 0.5, z: 9.5}
+  - id: 4
+    position: {x: 4.5, y: 1.5, z: -9.5}
+  - id: 2
+    position: {x: 4.5, y: 1.5, z: 9.5}
+  - id: 3
+    position: {x: 4.5, y: 2.5, z: -9.5}
+  - id: 3
+    position: {x: 4.5, y: 2.5, z: 9.5}
+  - id: 3
+    position: {x: 4.5, y: 3.5, z: -9.5}
+  - id: 3
+    position: {x: 4.5, y: 3.5, z: 9.5}
+  - id: 4
+    position: {x: 4.5, y: 4.5, z: -9.5}
+  - id: 2
+    position: {x: 4.5, y: 4.5, z: 9.5}
+  - id: 3
+    position: {x: 4.5, y: 5.5, z: -9.5}
+  - id: 1
+    position: {x: 4.5, y: 5.5, z: 9.5}
+  - id: 3
+    position: {x: 4.5, y: 6.5, z: -9.5}
+  - id: 3
+    position: {x: 4.5, y: 6.5, z: 9.5}
+  - id: 1
+    position: {x: 4.5, y: 7.5, z: -9.5}
+  - id: 5
+    position: {x: 4.5, y: 7.5, z: 9.5}
+  - id: 2
+    position: {x: 4.5, y: 8.5, z: -9.5}
+  - id: 3
+    position: {x: 4.5, y: 8.5, z: 9.5}
+  - id: 1
+    position: {x: 4.5, y: 9.5, z: -9.5}
+  - id: 1
+    position: {x: 4.5, y: 9.5, z: -8.5}
+  - id: 4
+    position: {x: 4.5, y: 9.5, z: -7.5}
+  - id: 1
+    position: {x: 4.5, y: 9.5, z: -6.5}
+  - id: 5
+    position: {x: 4.5, y: 9.5, z: -5.5}
+  - id: 5
+    position: {x: 4.5, y: 9.5, z: -4.5}
+  - id: 5
+    position: {x: 4.5, y: 9.5, z: -3.5}
+  - id: 1
+    position: {x: 4.5, y: 9.5, z: -2.5}
+  - id: 4
+    position: {x: 4.5, y: 9.5, z: -1.5}
+  - id: 3
+    position: {x: 4.5, y: 9.5, z: -0.5}
+  - id: 1
+    position: {x: 4.5, y: 9.5, z: 0.5}
+  - id: 3
+    position: {x: 4.5, y: 9.5, z: 1.5}
+  - id: 5
+    position: {x: 4.5, y: 9.5, z: 2.5}
+  - id: 2
+    position: {x: 4.5, y: 9.5, z: 3.5}
+  - id: 3
+    position: {x: 4.5, y: 9.5, z: 4.5}
+  - id: 2
+    position: {x: 4.5, y: 9.5, z: 5.5}
+  - id: 4
+    position: {x: 4.5, y: 9.5, z: 6.5}
+  - id: 5
+    position: {x: 4.5, y: 9.5, z: 7.5}
+  - id: 4
+    position: {x: 4.5, y: 9.5, z: 8.5}
+  - id: 1
+    position: {x: 4.5, y: 9.5, z: 9.5}
+  - id: 1
+    position: {x: 5.5, y: -9.5, z: -9.5}
+  - id: 3
+    position: {x: 5.5, y: -9.5, z: -8.5}
+  - id: 2
+    position: {x: 5.5, y: -9.5, z: -7.5}
+  - id: 1
+    position: {x: 5.5, y: -9.5, z: -6.5}
+  - id: 4
+    position: {x: 5.5, y: -9.5, z: -5.5}
+  - id: 3
+    position: {x: 5.5, y: -9.5, z: -4.5}
+  - id: 5
+    position: {x: 5.5, y: -9.5, z: -3.5}
+  - id: 4
+    position: {x: 5.5, y: -9.5, z: -2.5}
+  - id: 3
+    position: {x: 5.5, y: -9.5, z: -1.5}
+  - id: 1
+    position: {x: 5.5, y: -9.5, z: -0.5}
+  - id: 3
+    position: {x: 5.5, y: -9.5, z: 0.5}
+  - id: 1
+    position: {x: 5.5, y: -9.5, z: 1.5}
+  - id: 3
+    position: {x: 5.5, y: -9.5, z: 2.5}
+  - id: 1
+    position: {x: 5.5, y: -9.5, z: 3.5}
+  - id: 5
+    position: {x: 5.5, y: -9.5, z: 4.5}
+  - id: 2
+    position: {x: 5.5, y: -9.5, z: 5.5}
+  - id: 2
+    position: {x: 5.5, y: -9.5, z: 6.5}
+  - id: 2
+    position: {x: 5.5, y: -9.5, z: 7.5}
+  - id: 2
+    position: {x: 5.5, y: -9.5, z: 8.5}
+  - id: 3
+    position: {x: 5.5, y: -9.5, z: 9.5}
+  - id: 4
+    position: {x: 5.5, y: -8.5, z: -9.5}
+  - id: 2
+    position: {x: 5.5, y: -8.5, z: 9.5}
+  - id: 4
+    position: {x: 5.5, y: -7.5, z: -9.5}
+  - id: 1
+    position: {x: 5.5, y: -7.5, z: 9.5}
+  - id: 3
+    position: {x: 5.5, y: -6.5, z: -9.5}
+  - id: 1
+    position: {x: 5.5, y: -6.5, z: 9.5}
+  - id: 5
+    position: {x: 5.5, y: -5.5, z: -9.5}
+  - id: 3
+    position: {x: 5.5, y: -5.5, z: 9.5}
+  - id: 1
+    position: {x: 5.5, y: -4.5, z: -9.5}
+  - id: 1
+    position: {x: 5.5, y: -4.5, z: 9.5}
+  - id: 5
+    position: {x: 5.5, y: -3.5, z: -9.5}
+  - id: 4
+    position: {x: 5.5, y: -3.5, z: 9.5}
+  - id: 5
+    position: {x: 5.5, y: -2.5, z: -9.5}
+  - id: 1
+    position: {x: 5.5, y: -2.5, z: 9.5}
+  - id: 3
+    position: {x: 5.5, y: -1.5, z: -9.5}
+  - id: 5
+    position: {x: 5.5, y: -1.5, z: 9.5}
+  - id: 5
+    position: {x: 5.5, y: -0.5, z: -9.5}
+  - id: 1
+    position: {x: 5.5, y: -0.5, z: 9.5}
+  - id: 5
+    position: {x: 5.5, y: 0.5, z: -9.5}
+  - id: 4
+    position: {x: 5.5, y: 0.5, z: 9.5}
+  - id: 3
+    position: {x: 5.5, y: 1.5, z: -9.5}
+  - id: 1
+    position: {x: 5.5, y: 1.5, z: 9.5}
+  - id: 2
+    position: {x: 5.5, y: 2.5, z: -9.5}
+  - id: 3
+    position: {x: 5.5, y: 2.5, z: 9.5}
+  - id: 5
+    position: {x: 5.5, y: 3.5, z: -9.5}
+  - id: 5
+    position: {x: 5.5, y: 3.5, z: 9.5}
+  - id: 5
+    position: {x: 5.5, y: 4.5, z: -9.5}
+  - id: 2
+    position: {x: 5.5, y: 4.5, z: 9.5}
+  - id: 2
+    position: {x: 5.5, y: 5.5, z: -9.5}
+  - id: 2
+    position: {x: 5.5, y: 5.5, z: 9.5}
+  - id: 5
+    position: {x: 5.5, y: 6.5, z: -9.5}
+  - id: 3
+    position: {x: 5.5, y: 6.5, z: 9.5}
+  - id: 3
+    position: {x: 5.5, y: 7.5, z: -9.5}
+  - id: 1
+    position: {x: 5.5, y: 7.5, z: 9.5}
+  - id: 1
+    position: {x: 5.5, y: 8.5, z: -9.5}
+  - id: 5
+    position: {x: 5.5, y: 8.5, z: 9.5}
+  - id: 2
+    position: {x: 5.5, y: 9.5, z: -9.5}
+  - id: 4
+    position: {x: 5.5, y: 9.5, z: -8.5}
+  - id: 5
+    position: {x: 5.5, y: 9.5, z: -7.5}
+  - id: 4
+    position: {x: 5.5, y: 9.5, z: -6.5}
+  - id: 5
+    position: {x: 5.5, y: 9.5, z: -5.5}
+  - id: 2
+    position: {x: 5.5, y: 9.5, z: -4.5}
+  - id: 5
+    position: {x: 5.5, y: 9.5, z: -3.5}
+  - id: 3
+    position: {x: 5.5, y: 9.5, z: -2.5}
+  - id: 1
+    position: {x: 5.5, y: 9.5, z: -1.5}
+  - id: 2
+    position: {x: 5.5, y: 9.5, z: -0.5}
+  - id: 4
+    position: {x: 5.5, y: 9.5, z: 0.5}
+  - id: 3
+    position: {x: 5.5, y: 9.5, z: 1.5}
+  - id: 3
+    position: {x: 5.5, y: 9.5, z: 2.5}
+  - id: 2
+    position: {x: 5.5, y: 9.5, z: 3.5}
+  - id: 5
+    position: {x: 5.5, y: 9.5, z: 4.5}
+  - id: 3
+    position: {x: 5.5, y: 9.5, z: 5.5}
+  - id: 5
+    position: {x: 5.5, y: 9.5, z: 6.5}
+  - id: 4
+    position: {x: 5.5, y: 9.5, z: 7.5}
+  - id: 1
+    position: {x: 5.5, y: 9.5, z: 8.5}
+  - id: 5
+    position: {x: 5.5, y: 9.5, z: 9.5}
+  - id: 4
+    position: {x: 6.5, y: -9.5, z: -9.5}
+  - id: 4
+    position: {x: 6.5, y: -9.5, z: -8.5}
+  - id: 5
+    position: {x: 6.5, y: -9.5, z: -7.5}
+  - id: 2
+    position: {x: 6.5, y: -9.5, z: -6.5}
+  - id: 3
+    position: {x: 6.5, y: -9.5, z: -5.5}
+  - id: 5
+    position: {x: 6.5, y: -9.5, z: -4.5}
+  - id: 3
+    position: {x: 6.5, y: -9.5, z: -3.5}
+  - id: 5
+    position: {x: 6.5, y: -9.5, z: -2.5}
+  - id: 3
+    position: {x: 6.5, y: -9.5, z: -1.5}
+  - id: 1
+    position: {x: 6.5, y: -9.5, z: -0.5}
+  - id: 4
+    position: {x: 6.5, y: -9.5, z: 0.5}
+  - id: 5
+    position: {x: 6.5, y: -9.5, z: 1.5}
+  - id: 2
+    position: {x: 6.5, y: -9.5, z: 2.5}
+  - id: 1
+    position: {x: 6.5, y: -9.5, z: 3.5}
+  - id: 5
+    position: {x: 6.5, y: -9.5, z: 4.5}
+  - id: 2
+    position: {x: 6.5, y: -9.5, z: 5.5}
+  - id: 1
+    position: {x: 6.5, y: -9.5, z: 6.5}
+  - id: 2
+    position: {x: 6.5, y: -9.5, z: 7.5}
+  - id: 2
+    position: {x: 6.5, y: -9.5, z: 8.5}
+  - id: 1
+    position: {x: 6.5, y: -9.5, z: 9.5}
+  - id: 1
+    position: {x: 6.5, y: -8.5, z: -9.5}
+  - id: 5
+    position: {x: 6.5, y: -8.5, z: 9.5}
+  - id: 4
+    position: {x: 6.5, y: -7.5, z: -9.5}
+  - id: 4
+    position: {x: 6.5, y: -7.5, z: 9.5}
+  - id: 3
+    position: {x: 6.5, y: -6.5, z: -9.5}
+  - id: 1
+    position: {x: 6.5, y: -6.5, z: 9.5}
+  - id: 1
+    position: {x: 6.5, y: -5.5, z: -9.5}
+  - id: 2
+    position: {x: 6.5, y: -5.5, z: 9.5}
+  - id: 5
+    position: {x: 6.5, y: -4.5, z: -9.5}
+  - id: 4
+    position: {x: 6.5, y: -4.5, z: 9.5}
+  - id: 1
+    position: {x: 6.5, y: -3.5, z: -9.5}
+  - id: 5
+    position: {x: 6.5, y: -3.5, z: 9.5}
+  - id: 1
+    position: {x: 6.5, y: -2.5, z: -9.5}
+  - id: 5
+    position: {x: 6.5, y: -2.5, z: 9.5}
+  - id: 1
+    position: {x: 6.5, y: -1.5, z: -9.5}
+  - id: 3
+    position: {x: 6.5, y: -1.5, z: 9.5}
+  - id: 1
+    position: {x: 6.5, y: -0.5, z: -9.5}
+  - id: 4
+    position: {x: 6.5, y: -0.5, z: 9.5}
+  - id: 1
+    position: {x: 6.5, y: 0.5, z: -9.5}
+  - id: 4
+    position: {x: 6.5, y: 0.5, z: 9.5}
+  - id: 4
+    position: {x: 6.5, y: 1.5, z: -9.5}
+  - id: 1
+    position: {x: 6.5, y: 1.5, z: 9.5}
+  - id: 5
+    position: {x: 6.5, y: 2.5, z: -9.5}
+  - id: 3
+    position: {x: 6.5, y: 2.5, z: 9.5}
+  - id: 4
+    position: {x: 6.5, y: 3.5, z: -9.5}
+  - id: 3
+    position: {x: 6.5, y: 3.5, z: 9.5}
+  - id: 3
+    position: {x: 6.5, y: 4.5, z: -9.5}
+  - id: 3
+    position: {x: 6.5, y: 4.5, z: 9.5}
+  - id: 4
+    position: {x: 6.5, y: 5.5, z: -9.5}
+  - id: 2
+    position: {x: 6.5, y: 5.5, z: 9.5}
+  - id: 3
+    position: {x: 6.5, y: 6.5, z: -9.5}
+  - id: 4
+    position: {x: 6.5, y: 6.5, z: 9.5}
+  - id: 2
+    position: {x: 6.5, y: 7.5, z: -9.5}
+  - id: 3
+    position: {x: 6.5, y: 7.5, z: 9.5}
+  - id: 3
+    position: {x: 6.5, y: 8.5, z: -9.5}
+  - id: 3
+    position: {x: 6.5, y: 8.5, z: 9.5}
+  - id: 4
+    position: {x: 6.5, y: 9.5, z: -9.5}
+  - id: 4
+    position: {x: 6.5, y: 9.5, z: -8.5}
+  - id: 2
+    position: {x: 6.5, y: 9.5, z: -7.5}
+  - id: 4
+    position: {x: 6.5, y: 9.5, z: -6.5}
+  - id: 5
+    position: {x: 6.5, y: 9.5, z: -5.5}
+  - id: 2
+    position: {x: 6.5, y: 9.5, z: -4.5}
+  - id: 1
+    position: {x: 6.5, y: 9.5, z: -3.5}
+  - id: 5
+    position: {x: 6.5, y: 9.5, z: -2.5}
+  - id: 4
+    position: {x: 6.5, y: 9.5, z: -1.5}
+  - id: 3
+    position: {x: 6.5, y: 9.5, z: -0.5}
+  - id: 1
+    position: {x: 6.5, y: 9.5, z: 0.5}
+  - id: 4
+    position: {x: 6.5, y: 9.5, z: 1.5}
+  - id: 5
+    position: {x: 6.5, y: 9.5, z: 2.5}
+  - id: 4
+    position: {x: 6.5, y: 9.5, z: 3.5}
+  - id: 2
+    position: {x: 6.5, y: 9.5, z: 4.5}
+  - id: 2
+    position: {x: 6.5, y: 9.5, z: 5.5}
+  - id: 1
+    position: {x: 6.5, y: 9.5, z: 6.5}
+  - id: 2
+    position: {x: 6.5, y: 9.5, z: 7.5}
+  - id: 3
+    position: {x: 6.5, y: 9.5, z: 8.5}
+  - id: 4
+    position: {x: 6.5, y: 9.5, z: 9.5}
+  - id: 3
+    position: {x: 7.5, y: -9.5, z: -9.5}
+  - id: 5
+    position: {x: 7.5, y: -9.5, z: -8.5}
+  - id: 4
+    position: {x: 7.5, y: -9.5, z: -7.5}
+  - id: 1
+    position: {x: 7.5, y: -9.5, z: -6.5}
+  - id: 1
+    position: {x: 7.5, y: -9.5, z: -5.5}
+  - id: 3
+    position: {x: 7.5, y: -9.5, z: -4.5}
+  - id: 4
+    position: {x: 7.5, y: -9.5, z: -3.5}
+  - id: 5
+    position: {x: 7.5, y: -9.5, z: -2.5}
+  - id: 4
+    position: {x: 7.5, y: -9.5, z: -1.5}
+  - id: 1
+    position: {x: 7.5, y: -9.5, z: -0.5}
+  - id: 3
+    position: {x: 7.5, y: -9.5, z: 0.5}
+  - id: 2
+    position: {x: 7.5, y: -9.5, z: 1.5}
+  - id: 4
+    position: {x: 7.5, y: -9.5, z: 2.5}
+  - id: 3
+    position: {x: 7.5, y: -9.5, z: 3.5}
+  - id: 2
+    position: {x: 7.5, y: -9.5, z: 4.5}
+  - id: 5
+    position: {x: 7.5, y: -9.5, z: 5.5}
+  - id: 1
+    position: {x: 7.5, y: -9.5, z: 6.5}
+  - id: 5
+    position: {x: 7.5, y: -9.5, z: 7.5}
+  - id: 3
+    position: {x: 7.5, y: -9.5, z: 8.5}
+  - id: 5
+    position: {x: 7.5, y: -9.5, z: 9.5}
+  - id: 3
+    position: {x: 7.5, y: -8.5, z: -9.5}
+  - id: 3
+    position: {x: 7.5, y: -8.5, z: 9.5}
+  - id: 2
+    position: {x: 7.5, y: -7.5, z: -9.5}
+  - id: 3
+    position: {x: 7.5, y: -7.5, z: 9.5}
+  - id: 3
+    position: {x: 7.5, y: -6.5, z: -9.5}
+  - id: 4
+    position: {x: 7.5, y: -6.5, z: 9.5}
+  - id: 2
+    position: {x: 7.5, y: -5.5, z: -9.5}
+  - id: 2
+    position: {x: 7.5, y: -5.5, z: 9.5}
+  - id: 2
+    position: {x: 7.5, y: -4.5, z: -9.5}
+  - id: 2
+    position: {x: 7.5, y: -4.5, z: 9.5}
+  - id: 2
+    position: {x: 7.5, y: -3.5, z: -9.5}
+  - id: 2
+    position: {x: 7.5, y: -3.5, z: 9.5}
+  - id: 4
+    position: {x: 7.5, y: -2.5, z: -9.5}
+  - id: 2
+    position: {x: 7.5, y: -2.5, z: 9.5}
+  - id: 5
+    position: {x: 7.5, y: -1.5, z: -9.5}
+  - id: 2
+    position: {x: 7.5, y: -1.5, z: 9.5}
+  - id: 3
+    position: {x: 7.5, y: -0.5, z: -9.5}
+  - id: 2
+    position: {x: 7.5, y: -0.5, z: 9.5}
+  - id: 3
+    position: {x: 7.5, y: 0.5, z: -9.5}
+  - id: 3
+    position: {x: 7.5, y: 0.5, z: 9.5}
+  - id: 5
+    position: {x: 7.5, y: 1.5, z: -9.5}
+  - id: 1
+    position: {x: 7.5, y: 1.5, z: 9.5}
+  - id: 3
+    position: {x: 7.5, y: 2.5, z: -9.5}
+  - id: 2
+    position: {x: 7.5, y: 2.5, z: 9.5}
+  - id: 1
+    position: {x: 7.5, y: 3.5, z: -9.5}
+  - id: 1
+    position: {x: 7.5, y: 3.5, z: 9.5}
+  - id: 4
+    position: {x: 7.5, y: 4.5, z: -9.5}
+  - id: 2
+    position: {x: 7.5, y: 4.5, z: 9.5}
+  - id: 1
+    position: {x: 7.5, y: 5.5, z: -9.5}
+  - id: 5
+    position: {x: 7.5, y: 5.5, z: 9.5}
+  - id: 4
+    position: {x: 7.5, y: 6.5, z: -9.5}
+  - id: 5
+    position: {x: 7.5, y: 6.5, z: 9.5}
+  - id: 2
+    position: {x: 7.5, y: 7.5, z: -9.5}
+  - id: 2
+    position: {x: 7.5, y: 7.5, z: 9.5}
+  - id: 4
+    position: {x: 7.5, y: 8.5, z: -9.5}
+  - id: 1
+    position: {x: 7.5, y: 8.5, z: 9.5}
+  - id: 2
+    position: {x: 7.5, y: 9.5, z: -9.5}
+  - id: 1
+    position: {x: 7.5, y: 9.5, z: -8.5}
+  - id: 3
+    position: {x: 7.5, y: 9.5, z: -7.5}
+  - id: 5
+    position: {x: 7.5, y: 9.5, z: -6.5}
+  - id: 1
+    position: {x: 7.5, y: 9.5, z: -5.5}
+  - id: 3
+    position: {x: 7.5, y: 9.5, z: -4.5}
+  - id: 2
+    position: {x: 7.5, y: 9.5, z: -3.5}
+  - id: 3
+    position: {x: 7.5, y: 9.5, z: -2.5}
+  - id: 1
+    position: {x: 7.5, y: 9.5, z: -1.5}
+  - id: 1
+    position: {x: 7.5, y: 9.5, z: -0.5}
+  - id: 1
+    position: {x: 7.5, y: 9.5, z: 0.5}
+  - id: 3
+    position: {x: 7.5, y: 9.5, z: 1.5}
+  - id: 5
+    position: {x: 7.5, y: 9.5, z: 2.5}
+  - id: 4
+    position: {x: 7.5, y: 9.5, z: 3.5}
+  - id: 4
+    position: {x: 7.5, y: 9.5, z: 4.5}
+  - id: 1
+    position: {x: 7.5, y: 9.5, z: 5.5}
+  - id: 4
+    position: {x: 7.5, y: 9.5, z: 6.5}
+  - id: 3
+    position: {x: 7.5, y: 9.5, z: 7.5}
+  - id: 1
+    position: {x: 7.5, y: 9.5, z: 8.5}
+  - id: 1
+    position: {x: 7.5, y: 9.5, z: 9.5}
+  - id: 2
+    position: {x: 8.5, y: -9.5, z: -9.5}
+  - id: 2
+    position: {x: 8.5, y: -9.5, z: -8.5}
+  - id: 4
+    position: {x: 8.5, y: -9.5, z: -7.5}
+  - id: 3
+    position: {x: 8.5, y: -9.5, z: -6.5}
+  - id: 3
+    position: {x: 8.5, y: -9.5, z: -5.5}
+  - id: 4
+    position: {x: 8.5, y: -9.5, z: -4.5}
+  - id: 3
+    position: {x: 8.5, y: -9.5, z: -3.5}
+  - id: 4
+    position: {x: 8.5, y: -9.5, z: -2.5}
+  - id: 1
+    position: {x: 8.5, y: -9.5, z: -1.5}
+  - id: 1
+    position: {x: 8.5, y: -9.5, z: -0.5}
+  - id: 4
+    position: {x: 8.5, y: -9.5, z: 0.5}
+  - id: 1
+    position: {x: 8.5, y: -9.5, z: 1.5}
+  - id: 2
+    position: {x: 8.5, y: -9.5, z: 2.5}
+  - id: 1
+    position: {x: 8.5, y: -9.5, z: 3.5}
+  - id: 4
+    position: {x: 8.5, y: -9.5, z: 4.5}
+  - id: 5
+    position: {x: 8.5, y: -9.5, z: 5.5}
+  - id: 3
+    position: {x: 8.5, y: -9.5, z: 6.5}
+  - id: 3
+    position: {x: 8.5, y: -9.5, z: 7.5}
+  - id: 3
+    position: {x: 8.5, y: -9.5, z: 8.5}
+  - id: 3
+    position: {x: 8.5, y: -9.5, z: 9.5}
+  - id: 5
+    position: {x: 8.5, y: -8.5, z: -9.5}
+  - id: 1
+    position: {x: 8.5, y: -8.5, z: 9.5}
+  - id: 5
+    position: {x: 8.5, y: -7.5, z: -9.5}
+  - id: 2
+    position: {x: 8.5, y: -7.5, z: 9.5}
+  - id: 4
+    position: {x: 8.5, y: -6.5, z: -9.5}
+  - id: 3
+    position: {x: 8.5, y: -6.5, z: 9.5}
+  - id: 4
+    position: {x: 8.5, y: -5.5, z: -9.5}
+  - id: 5
+    position: {x: 8.5, y: -5.5, z: 9.5}
+  - id: 2
+    position: {x: 8.5, y: -4.5, z: -9.5}
+  - id: 5
+    position: {x: 8.5, y: -4.5, z: 9.5}
+  - id: 1
+    position: {x: 8.5, y: -3.5, z: -9.5}
+  - id: 2
+    position: {x: 8.5, y: -3.5, z: 9.5}
+  - id: 2
+    position: {x: 8.5, y: -2.5, z: -9.5}
+  - id: 3
+    position: {x: 8.5, y: -2.5, z: 9.5}
+  - id: 3
+    position: {x: 8.5, y: -1.5, z: -9.5}
+  - id: 1
+    position: {x: 8.5, y: -1.5, z: 9.5}
+  - id: 5
+    position: {x: 8.5, y: -0.5, z: -9.5}
+  - id: 4
+    position: {x: 8.5, y: -0.5, z: 9.5}
+  - id: 1
+    position: {x: 8.5, y: 0.5, z: -9.5}
+  - id: 3
+    position: {x: 8.5, y: 0.5, z: 9.5}
+  - id: 4
+    position: {x: 8.5, y: 1.5, z: -9.5}
+  - id: 4
+    position: {x: 8.5, y: 1.5, z: 9.5}
+  - id: 5
+    position: {x: 8.5, y: 2.5, z: -9.5}
+  - id: 5
+    position: {x: 8.5, y: 2.5, z: 9.5}
+  - id: 4
+    position: {x: 8.5, y: 3.5, z: -9.5}
+  - id: 5
+    position: {x: 8.5, y: 3.5, z: 9.5}
+  - id: 4
+    position: {x: 8.5, y: 4.5, z: -9.5}
+  - id: 1
+    position: {x: 8.5, y: 4.5, z: 9.5}
+  - id: 2
+    position: {x: 8.5, y: 5.5, z: -9.5}
+  - id: 2
+    position: {x: 8.5, y: 5.5, z: 9.5}
+  - id: 3
+    position: {x: 8.5, y: 6.5, z: -9.5}
+  - id: 4
+    position: {x: 8.5, y: 6.5, z: 9.5}
+  - id: 5
+    position: {x: 8.5, y: 7.5, z: -9.5}
+  - id: 1
+    position: {x: 8.5, y: 7.5, z: 9.5}
+  - id: 1
+    position: {x: 8.5, y: 8.5, z: -9.5}
+  - id: 4
+    position: {x: 8.5, y: 8.5, z: 9.5}
+  - id: 3
+    position: {x: 8.5, y: 9.5, z: -9.5}
+  - id: 5
+    position: {x: 8.5, y: 9.5, z: -8.5}
+  - id: 3
+    position: {x: 8.5, y: 9.5, z: -7.5}
+  - id: 4
+    position: {x: 8.5, y: 9.5, z: -6.5}
+  - id: 5
+    position: {x: 8.5, y: 9.5, z: -5.5}
+  - id: 1
+    position: {x: 8.5, y: 9.5, z: -4.5}
+  - id: 3
+    position: {x: 8.5, y: 9.5, z: -3.5}
+  - id: 2
+    position: {x: 8.5, y: 9.5, z: -2.5}
+  - id: 2
+    position: {x: 8.5, y: 9.5, z: -1.5}
+  - id: 4
+    position: {x: 8.5, y: 9.5, z: -0.5}
+  - id: 3
+    position: {x: 8.5, y: 9.5, z: 0.5}
+  - id: 1
+    position: {x: 8.5, y: 9.5, z: 1.5}
+  - id: 5
+    position: {x: 8.5, y: 9.5, z: 2.5}
+  - id: 3
+    position: {x: 8.5, y: 9.5, z: 3.5}
+  - id: 2
+    position: {x: 8.5, y: 9.5, z: 4.5}
+  - id: 3
+    position: {x: 8.5, y: 9.5, z: 5.5}
+  - id: 2
+    position: {x: 8.5, y: 9.5, z: 6.5}
+  - id: 4
+    position: {x: 8.5, y: 9.5, z: 7.5}
+  - id: 3
+    position: {x: 8.5, y: 9.5, z: 8.5}
+  - id: 2
+    position: {x: 8.5, y: 9.5, z: 9.5}
+  - id: 1
+    position: {x: 9.5, y: -9.5, z: -9.5}
+  - id: 4
+    position: {x: 9.5, y: -9.5, z: -8.5}
+  - id: 5
+    position: {x: 9.5, y: -9.5, z: -7.5}
+  - id: 5
+    position: {x: 9.5, y: -9.5, z: -6.5}
+  - id: 2
+    position: {x: 9.5, y: -9.5, z: -5.5}
+  - id: 1
+    position: {x: 9.5, y: -9.5, z: -4.5}
+  - id: 2
+    position: {x: 9.5, y: -9.5, z: -3.5}
+  - id: 2
+    position: {x: 9.5, y: -9.5, z: -2.5}
+  - id: 4
+    position: {x: 9.5, y: -9.5, z: -1.5}
+  - id: 5
+    position: {x: 9.5, y: -9.5, z: -0.5}
+  - id: 2
+    position: {x: 9.5, y: -9.5, z: 0.5}
+  - id: 2
+    position: {x: 9.5, y: -9.5, z: 1.5}
+  - id: 3
+    position: {x: 9.5, y: -9.5, z: 2.5}
+  - id: 2
+    position: {x: 9.5, y: -9.5, z: 3.5}
+  - id: 3
+    position: {x: 9.5, y: -9.5, z: 4.5}
+  - id: 2
+    position: {x: 9.5, y: -9.5, z: 5.5}
+  - id: 1
+    position: {x: 9.5, y: -9.5, z: 6.5}
+  - id: 3
+    position: {x: 9.5, y: -9.5, z: 7.5}
+  - id: 3
+    position: {x: 9.5, y: -9.5, z: 8.5}
+  - id: 3
+    position: {x: 9.5, y: -9.5, z: 9.5}
+  - id: 5
+    position: {x: 9.5, y: -8.5, z: -9.5}
+  - id: 3
+    position: {x: 9.5, y: -8.5, z: -8.5}
+  - id: 2
+    position: {x: 9.5, y: -8.5, z: -7.5}
+  - id: 2
+    position: {x: 9.5, y: -8.5, z: -6.5}
+  - id: 1
+    position: {x: 9.5, y: -8.5, z: -5.5}
+  - id: 4
+    position: {x: 9.5, y: -8.5, z: -4.5}
+  - id: 1
+    position: {x: 9.5, y: -8.5, z: -3.5}
+  - id: 3
+    position: {x: 9.5, y: -8.5, z: -2.5}
+  - id: 1
+    position: {x: 9.5, y: -8.5, z: -1.5}
+  - id: 5
+    position: {x: 9.5, y: -8.5, z: -0.5}
+  - id: 4
+    position: {x: 9.5, y: -8.5, z: 0.5}
+  - id: 1
+    position: {x: 9.5, y: -8.5, z: 1.5}
+  - id: 3
+    position: {x: 9.5, y: -8.5, z: 2.5}
+  - id: 3
+    position: {x: 9.5, y: -8.5, z: 3.5}
+  - id: 3
+    position: {x: 9.5, y: -8.5, z: 4.5}
+  - id: 1
+    position: {x: 9.5, y: -8.5, z: 5.5}
+  - id: 5
+    position: {x: 9.5, y: -8.5, z: 6.5}
+  - id: 1
+    position: {x: 9.5, y: -8.5, z: 7.5}
+  - id: 4
+    position: {x: 9.5, y: -8.5, z: 8.5}
+  - id: 4
+    position: {x: 9.5, y: -8.5, z: 9.5}
+  - id: 4
+    position: {x: 9.5, y: -7.5, z: -9.5}
+  - id: 2
+    position: {x: 9.5, y: -7.5, z: -8.5}
+  - id: 5
+    position: {x: 9.5, y: -7.5, z: -7.5}
+  - id: 5
+    position: {x: 9.5, y: -7.5, z: -6.5}
+  - id: 5
+    position: {x: 9.5, y: -7.5, z: -5.5}
+  - id: 3
+    position: {x: 9.5, y: -7.5, z: -4.5}
+  - id: 4
+    position: {x: 9.5, y: -7.5, z: -3.5}
+  - id: 2
+    position: {x: 9.5, y: -7.5, z: -2.5}
+  - id: 1
+    position: {x: 9.5, y: -7.5, z: -1.5}
+  - id: 1
+    position: {x: 9.5, y: -7.5, z: -0.5}
+  - id: 1
+    position: {x: 9.5, y: -7.5, z: 0.5}
+  - id: 3
+    position: {x: 9.5, y: -7.5, z: 1.5}
+  - id: 5
+    position: {x: 9.5, y: -7.5, z: 2.5}
+  - id: 1
+    position: {x: 9.5, y: -7.5, z: 3.5}
+  - id: 2
+    position: {x: 9.5, y: -7.5, z: 4.5}
+  - id: 2
+    position: {x: 9.5, y: -7.5, z: 5.5}
+  - id: 5
+    position: {x: 9.5, y: -7.5, z: 6.5}
+  - id: 3
+    position: {x: 9.5, y: -7.5, z: 7.5}
+  - id: 4
+    position: {x: 9.5, y: -7.5, z: 8.5}
+  - id: 3
+    position: {x: 9.5, y: -7.5, z: 9.5}
+  - id: 1
+    position: {x: 9.5, y: -6.5, z: -9.5}
+  - id: 2
+    position: {x: 9.5, y: -6.5, z: -8.5}
+  - id: 1
+    position: {x: 9.5, y: -6.5, z: -7.5}
+  - id: 4
+    position: {x: 9.5, y: -6.5, z: -6.5}
+  - id: 4
+    position: {x: 9.5, y: -6.5, z: -5.5}
+  - id: 5
+    position: {x: 9.5, y: -6.5, z: -4.5}
+  - id: 5
+    position: {x: 9.5, y: -6.5, z: -3.5}
+  - id: 4
+    position: {x: 9.5, y: -6.5, z: -2.5}
+  - id: 4
+    position: {x: 9.5, y: -6.5, z: -1.5}
+  - id: 2
+    position: {x: 9.5, y: -6.5, z: -0.5}
+  - id: 2
+    position: {x: 9.5, y: -6.5, z: 0.5}
+  - id: 3
+    position: {x: 9.5, y: -6.5, z: 1.5}
+  - id: 4
+    position: {x: 9.5, y: -6.5, z: 2.5}
+  - id: 5
+    position: {x: 9.5, y: -6.5, z: 3.5}
+  - id: 1
+    position: {x: 9.5, y: -6.5, z: 4.5}
+  - id: 3
+    position: {x: 9.5, y: -6.5, z: 5.5}
+  - id: 3
+    position: {x: 9.5, y: -6.5, z: 6.5}
+  - id: 2
+    position: {x: 9.5, y: -6.5, z: 7.5}
+  - id: 4
+    position: {x: 9.5, y: -6.5, z: 8.5}
+  - id: 3
+    position: {x: 9.5, y: -6.5, z: 9.5}
+  - id: 3
+    position: {x: 9.5, y: -5.5, z: -9.5}
+  - id: 5
+    position: {x: 9.5, y: -5.5, z: -8.5}
+  - id: 4
+    position: {x: 9.5, y: -5.5, z: -7.5}
+  - id: 2
+    position: {x: 9.5, y: -5.5, z: -6.5}
+  - id: 2
+    position: {x: 9.5, y: -5.5, z: -5.5}
+  - id: 2
+    position: {x: 9.5, y: -5.5, z: -4.5}
+  - id: 2
+    position: {x: 9.5, y: -5.5, z: -3.5}
+  - id: 2
+    position: {x: 9.5, y: -5.5, z: -2.5}
+  - id: 2
+    position: {x: 9.5, y: -5.5, z: -1.5}
+  - id: 2
+    position: {x: 9.5, y: -5.5, z: -0.5}
+  - id: 3
+    position: {x: 9.5, y: -5.5, z: 0.5}
+  - id: 1
+    position: {x: 9.5, y: -5.5, z: 1.5}
+  - id: 2
+    position: {x: 9.5, y: -5.5, z: 2.5}
+  - id: 4
+    position: {x: 9.5, y: -5.5, z: 3.5}
+  - id: 3
+    position: {x: 9.5, y: -5.5, z: 4.5}
+  - id: 5
+    position: {x: 9.5, y: -5.5, z: 5.5}
+  - id: 5
+    position: {x: 9.5, y: -5.5, z: 6.5}
+  - id: 3
+    position: {x: 9.5, y: -5.5, z: 7.5}
+  - id: 3
+    position: {x: 9.5, y: -5.5, z: 8.5}
+  - id: 5
+    position: {x: 9.5, y: -5.5, z: 9.5}
+  - id: 5
+    position: {x: 9.5, y: -4.5, z: -9.5}
+  - id: 1
+    position: {x: 9.5, y: -4.5, z: -8.5}
+  - id: 3
+    position: {x: 9.5, y: -4.5, z: -7.5}
+  - id: 1
+    position: {x: 9.5, y: -4.5, z: -6.5}
+  - id: 5
+    position: {x: 9.5, y: -4.5, z: -5.5}
+  - id: 1
+    position: {x: 9.5, y: -4.5, z: -4.5}
+  - id: 3
+    position: {x: 9.5, y: -4.5, z: -3.5}
+  - id: 1
+    position: {x: 9.5, y: -4.5, z: -2.5}
+  - id: 5
+    position: {x: 9.5, y: -4.5, z: -1.5}
+  - id: 3
+    position: {x: 9.5, y: -4.5, z: -0.5}
+  - id: 1
+    position: {x: 9.5, y: -4.5, z: 0.5}
+  - id: 5
+    position: {x: 9.5, y: -4.5, z: 1.5}
+  - id: 3
+    position: {x: 9.5, y: -4.5, z: 2.5}
+  - id: 2
+    position: {x: 9.5, y: -4.5, z: 3.5}
+  - id: 4
+    position: {x: 9.5, y: -4.5, z: 4.5}
+  - id: 4
+    position: {x: 9.5, y: -4.5, z: 5.5}
+  - id: 5
+    position: {x: 9.5, y: -4.5, z: 6.5}
+  - id: 1
+    position: {x: 9.5, y: -4.5, z: 7.5}
+  - id: 2
+    position: {x: 9.5, y: -4.5, z: 8.5}
+  - id: 2
+    position: {x: 9.5, y: -4.5, z: 9.5}
+  - id: 3
+    position: {x: 9.5, y: -3.5, z: -9.5}
+  - id: 5
+    position: {x: 9.5, y: -3.5, z: -8.5}
+  - id: 3
+    position: {x: 9.5, y: -3.5, z: -7.5}
+  - id: 5
+    position: {x: 9.5, y: -3.5, z: -6.5}
+  - id: 1
+    position: {x: 9.5, y: -3.5, z: -5.5}
+  - id: 3
+    position: {x: 9.5, y: -3.5, z: -4.5}
+  - id: 5
+    position: {x: 9.5, y: -3.5, z: -3.5}
+  - id: 4
+    position: {x: 9.5, y: -3.5, z: -2.5}
+  - id: 2
+    position: {x: 9.5, y: -3.5, z: -1.5}
+  - id: 1
+    position: {x: 9.5, y: -3.5, z: -0.5}
+  - id: 1
+    position: {x: 9.5, y: -3.5, z: 0.5}
+  - id: 2
+    position: {x: 9.5, y: -3.5, z: 1.5}
+  - id: 3
+    position: {x: 9.5, y: -3.5, z: 2.5}
+  - id: 3
+    position: {x: 9.5, y: -3.5, z: 3.5}
+  - id: 4
+    position: {x: 9.5, y: -3.5, z: 4.5}
+  - id: 1
+    position: {x: 9.5, y: -3.5, z: 5.5}
+  - id: 5
+    position: {x: 9.5, y: -3.5, z: 6.5}
+  - id: 3
+    position: {x: 9.5, y: -3.5, z: 7.5}
+  - id: 1
+    position: {x: 9.5, y: -3.5, z: 8.5}
+  - id: 2
+    position: {x: 9.5, y: -3.5, z: 9.5}
+  - id: 4
+    position: {x: 9.5, y: -2.5, z: -9.5}
+  - id: 4
+    position: {x: 9.5, y: -2.5, z: -8.5}
+  - id: 3
+    position: {x: 9.5, y: -2.5, z: -7.5}
+  - id: 5
+    position: {x: 9.5, y: -2.5, z: -6.5}
+  - id: 1
+    position: {x: 9.5, y: -2.5, z: -5.5}
+  - id: 3
+    position: {x: 9.5, y: -2.5, z: -4.5}
+  - id: 4
+    position: {x: 9.5, y: -2.5, z: -3.5}
+  - id: 1
+    position: {x: 9.5, y: -2.5, z: -2.5}
+  - id: 3
+    position: {x: 9.5, y: -2.5, z: -1.5}
+  - id: 1
+    position: {x: 9.5, y: -2.5, z: -0.5}
+  - id: 5
+    position: {x: 9.5, y: -2.5, z: 0.5}
+  - id: 3
+    position: {x: 9.5, y: -2.5, z: 1.5}
+  - id: 2
+    position: {x: 9.5, y: -2.5, z: 2.5}
+  - id: 3
+    position: {x: 9.5, y: -2.5, z: 3.5}
+  - id: 2
+    position: {x: 9.5, y: -2.5, z: 4.5}
+  - id: 5
+    position: {x: 9.5, y: -2.5, z: 5.5}
+  - id: 3
+    position: {x: 9.5, y: -2.5, z: 6.5}
+  - id: 2
+    position: {x: 9.5, y: -2.5, z: 7.5}
+  - id: 2
+    position: {x: 9.5, y: -2.5, z: 8.5}
+  - id: 5
+    position: {x: 9.5, y: -2.5, z: 9.5}
+  - id: 2
+    position: {x: 9.5, y: -1.5, z: -9.5}
+  - id: 2
+    position: {x: 9.5, y: -1.5, z: -8.5}
+  - id: 2
+    position: {x: 9.5, y: -1.5, z: -7.5}
+  - id: 3
+    position: {x: 9.5, y: -1.5, z: -6.5}
+  - id: 5
+    position: {x: 9.5, y: -1.5, z: -5.5}
+  - id: 1
+    position: {x: 9.5, y: -1.5, z: -4.5}
+  - id: 3
+    position: {x: 9.5, y: -1.5, z: -3.5}
+  - id: 2
+    position: {x: 9.5, y: -1.5, z: -2.5}
+  - id: 1
+    position: {x: 9.5, y: -1.5, z: -1.5}
+  - id: 1
+    position: {x: 9.5, y: -1.5, z: -0.5}
+  - id: 4
+    position: {x: 9.5, y: -1.5, z: 0.5}
+  - id: 2
+    position: {x: 9.5, y: -1.5, z: 1.5}
+  - id: 5
+    position: {x: 9.5, y: -1.5, z: 2.5}
+  - id: 3
+    position: {x: 9.5, y: -1.5, z: 3.5}
+  - id: 5
+    position: {x: 9.5, y: -1.5, z: 4.5}
+  - id: 1
+    position: {x: 9.5, y: -1.5, z: 5.5}
+  - id: 4
+    position: {x: 9.5, y: -1.5, z: 6.5}
+  - id: 1
+    position: {x: 9.5, y: -1.5, z: 7.5}
+  - id: 5
+    position: {x: 9.5, y: -1.5, z: 8.5}
+  - id: 5
+    position: {x: 9.5, y: -1.5, z: 9.5}
+  - id: 1
+    position: {x: 9.5, y: -0.5, z: -9.5}
+  - id: 2
+    position: {x: 9.5, y: -0.5, z: -8.5}
+  - id: 5
+    position: {x: 9.5, y: -0.5, z: -7.5}
+  - id: 5
+    position: {x: 9.5, y: -0.5, z: -6.5}
+  - id: 4
+    position: {x: 9.5, y: -0.5, z: -5.5}
+  - id: 1
+    position: {x: 9.5, y: -0.5, z: -4.5}
+  - id: 3
+    position: {x: 9.5, y: -0.5, z: -3.5}
+  - id: 3
+    position: {x: 9.5, y: -0.5, z: -2.5}
+  - id: 2
+    position: {x: 9.5, y: -0.5, z: -1.5}
+  - id: 4
+    position: {x: 9.5, y: -0.5, z: -0.5}
+  - id: 4
+    position: {x: 9.5, y: -0.5, z: 0.5}
+  - id: 1
+    position: {x: 9.5, y: -0.5, z: 1.5}
+  - id: 2
+    position: {x: 9.5, y: -0.5, z: 2.5}
+  - id: 3
+    position: {x: 9.5, y: -0.5, z: 3.5}
+  - id: 4
+    position: {x: 9.5, y: -0.5, z: 4.5}
+  - id: 4
+    position: {x: 9.5, y: -0.5, z: 5.5}
+  - id: 4
+    position: {x: 9.5, y: -0.5, z: 6.5}
+  - id: 5
+    position: {x: 9.5, y: -0.5, z: 7.5}
+  - id: 4
+    position: {x: 9.5, y: -0.5, z: 8.5}
+  - id: 2
+    position: {x: 9.5, y: -0.5, z: 9.5}
+  - id: 1
+    position: {x: 9.5, y: 0.5, z: -9.5}
+  - id: 3
+    position: {x: 9.5, y: 0.5, z: -8.5}
+  - id: 2
+    position: {x: 9.5, y: 0.5, z: -7.5}
+  - id: 1
+    position: {x: 9.5, y: 0.5, z: -6.5}
+  - id: 4
+    position: {x: 9.5, y: 0.5, z: -5.5}
+  - id: 3
+    position: {x: 9.5, y: 0.5, z: -4.5}
+  - id: 2
+    position: {x: 9.5, y: 0.5, z: -3.5}
+  - id: 4
+    position: {x: 9.5, y: 0.5, z: -2.5}
+  - id: 2
+    position: {x: 9.5, y: 0.5, z: -1.5}
+  - id: 5
+    position: {x: 9.5, y: 0.5, z: -0.5}
+  - id: 5
+    position: {x: 9.5, y: 0.5, z: 0.5}
+  - id: 3
+    position: {x: 9.5, y: 0.5, z: 1.5}
+  - id: 5
+    position: {x: 9.5, y: 0.5, z: 2.5}
+  - id: 1
+    position: {x: 9.5, y: 0.5, z: 3.5}
+  - id: 3
+    position: {x: 9.5, y: 0.5, z: 4.5}
+  - id: 2
+    position: {x: 9.5, y: 0.5, z: 5.5}
+  - id: 4
+    position: {x: 9.5, y: 0.5, z: 6.5}
+  - id: 5
+    position: {x: 9.5, y: 0.5, z: 7.5}
+  - id: 1
+    position: {x: 9.5, y: 0.5, z: 8.5}
+  - id: 4
+    position: {x: 9.5, y: 0.5, z: 9.5}
+  - id: 3
+    position: {x: 9.5, y: 1.5, z: -9.5}
+  - id: 3
+    position: {x: 9.5, y: 1.5, z: -8.5}
+  - id: 5
+    position: {x: 9.5, y: 1.5, z: -7.5}
+  - id: 2
+    position: {x: 9.5, y: 1.5, z: -6.5}
+  - id: 3
+    position: {x: 9.5, y: 1.5, z: -5.5}
+  - id: 1
+    position: {x: 9.5, y: 1.5, z: -4.5}
+  - id: 3
+    position: {x: 9.5, y: 1.5, z: -3.5}
+  - id: 4
+    position: {x: 9.5, y: 1.5, z: -2.5}
+  - id: 5
+    position: {x: 9.5, y: 1.5, z: -1.5}
+  - id: 2
+    position: {x: 9.5, y: 1.5, z: -0.5}
+  - id: 2
+    position: {x: 9.5, y: 1.5, z: 0.5}
+  - id: 3
+    position: {x: 9.5, y: 1.5, z: 1.5}
+  - id: 1
+    position: {x: 9.5, y: 1.5, z: 2.5}
+  - id: 1
+    position: {x: 9.5, y: 1.5, z: 3.5}
+  - id: 4
+    position: {x: 9.5, y: 1.5, z: 4.5}
+  - id: 2
+    position: {x: 9.5, y: 1.5, z: 5.5}
+  - id: 4
+    position: {x: 9.5, y: 1.5, z: 6.5}
+  - id: 1
+    position: {x: 9.5, y: 1.5, z: 7.5}
+  - id: 1
+    position: {x: 9.5, y: 1.5, z: 8.5}
+  - id: 5
+    position: {x: 9.5, y: 1.5, z: 9.5}
+  - id: 1
+    position: {x: 9.5, y: 2.5, z: -9.5}
+  - id: 5
+    position: {x: 9.5, y: 2.5, z: -8.5}
+  - id: 4
+    position: {x: 9.5, y: 2.5, z: -7.5}
+  - id: 2
+    position: {x: 9.5, y: 2.5, z: -6.5}
+  - id: 4
+    position: {x: 9.5, y: 2.5, z: -5.5}
+  - id: 4
+    position: {x: 9.5, y: 2.5, z: -4.5}
+  - id: 1
+    position: {x: 9.5, y: 2.5, z: -3.5}
+  - id: 4
+    position: {x: 9.5, y: 2.5, z: -2.5}
+  - id: 2
+    position: {x: 9.5, y: 2.5, z: -1.5}
+  - id: 4
+    position: {x: 9.5, y: 2.5, z: -0.5}
+  - id: 2
+    position: {x: 9.5, y: 2.5, z: 0.5}
+  - id: 4
+    position: {x: 9.5, y: 2.5, z: 1.5}
+  - id: 1
+    position: {x: 9.5, y: 2.5, z: 2.5}
+  - id: 3
+    position: {x: 9.5, y: 2.5, z: 3.5}
+  - id: 3
+    position: {x: 9.5, y: 2.5, z: 4.5}
+  - id: 5
+    position: {x: 9.5, y: 2.5, z: 5.5}
+  - id: 5
+    position: {x: 9.5, y: 2.5, z: 6.5}
+  - id: 5
+    position: {x: 9.5, y: 2.5, z: 7.5}
+  - id: 3
+    position: {x: 9.5, y: 2.5, z: 8.5}
+  - id: 3
+    position: {x: 9.5, y: 2.5, z: 9.5}
+  - id: 5
+    position: {x: 9.5, y: 3.5, z: -9.5}
+  - id: 1
+    position: {x: 9.5, y: 3.5, z: -8.5}
+  - id: 1
+    position: {x: 9.5, y: 3.5, z: -7.5}
+  - id: 5
+    position: {x: 9.5, y: 3.5, z: -6.5}
+  - id: 3
+    position: {x: 9.5, y: 3.5, z: -5.5}
+  - id: 3
+    position: {x: 9.5, y: 3.5, z: -4.5}
+  - id: 1
+    position: {x: 9.5, y: 3.5, z: -3.5}
+  - id: 3
+    position: {x: 9.5, y: 3.5, z: -2.5}
+  - id: 3
+    position: {x: 9.5, y: 3.5, z: -1.5}
+  - id: 2
+    position: {x: 9.5, y: 3.5, z: -0.5}
+  - id: 5
+    position: {x: 9.5, y: 3.5, z: 0.5}
+  - id: 2
+    position: {x: 9.5, y: 3.5, z: 1.5}
+  - id: 1
+    position: {x: 9.5, y: 3.5, z: 2.5}
+  - id: 2
+    position: {x: 9.5, y: 3.5, z: 3.5}
+  - id: 5
+    position: {x: 9.5, y: 3.5, z: 4.5}
+  - id: 2
+    position: {x: 9.5, y: 3.5, z: 5.5}
+  - id: 5
+    position: {x: 9.5, y: 3.5, z: 6.5}
+  - id: 5
+    position: {x: 9.5, y: 3.5, z: 7.5}
+  - id: 4
+    position: {x: 9.5, y: 3.5, z: 8.5}
+  - id: 5
+    position: {x: 9.5, y: 3.5, z: 9.5}
+  - id: 3
+    position: {x: 9.5, y: 4.5, z: -9.5}
+  - id: 4
+    position: {x: 9.5, y: 4.5, z: -8.5}
+  - id: 2
+    position: {x: 9.5, y: 4.5, z: -7.5}
+  - id: 4
+    position: {x: 9.5, y: 4.5, z: -6.5}
+  - id: 3
+    position: {x: 9.5, y: 4.5, z: -5.5}
+  - id: 2
+    position: {x: 9.5, y: 4.5, z: -4.5}
+  - id: 2
+    position: {x: 9.5, y: 4.5, z: -3.5}
+  - id: 2
+    position: {x: 9.5, y: 4.5, z: -2.5}
+  - id: 5
+    position: {x: 9.5, y: 4.5, z: -1.5}
+  - id: 2
+    position: {x: 9.5, y: 4.5, z: -0.5}
+  - id: 4
+    position: {x: 9.5, y: 4.5, z: 0.5}
+  - id: 4
+    position: {x: 9.5, y: 4.5, z: 1.5}
+  - id: 3
+    position: {x: 9.5, y: 4.5, z: 2.5}
+  - id: 2
+    position: {x: 9.5, y: 4.5, z: 3.5}
+  - id: 4
+    position: {x: 9.5, y: 4.5, z: 4.5}
+  - id: 5
+    position: {x: 9.5, y: 4.5, z: 5.5}
+  - id: 2
+    position: {x: 9.5, y: 4.5, z: 6.5}
+  - id: 1
+    position: {x: 9.5, y: 4.5, z: 7.5}
+  - id: 3
+    position: {x: 9.5, y: 4.5, z: 8.5}
+  - id: 5
+    position: {x: 9.5, y: 4.5, z: 9.5}
+  - id: 1
+    position: {x: 9.5, y: 5.5, z: -9.5}
+  - id: 2
+    position: {x: 9.5, y: 5.5, z: -8.5}
+  - id: 4
+    position: {x: 9.5, y: 5.5, z: -7.5}
+  - id: 5
+    position: {x: 9.5, y: 5.5, z: -6.5}
+  - id: 5
+    position: {x: 9.5, y: 5.5, z: -5.5}
+  - id: 3
+    position: {x: 9.5, y: 5.5, z: -4.5}
+  - id: 1
+    position: {x: 9.5, y: 5.5, z: -3.5}
+  - id: 4
+    position: {x: 9.5, y: 5.5, z: -2.5}
+  - id: 3
+    position: {x: 9.5, y: 5.5, z: -1.5}
+  - id: 2
+    position: {x: 9.5, y: 5.5, z: -0.5}
+  - id: 1
+    position: {x: 9.5, y: 5.5, z: 0.5}
+  - id: 2
+    position: {x: 9.5, y: 5.5, z: 1.5}
+  - id: 5
+    position: {x: 9.5, y: 5.5, z: 2.5}
+  - id: 4
+    position: {x: 9.5, y: 5.5, z: 3.5}
+  - id: 5
+    position: {x: 9.5, y: 5.5, z: 4.5}
+  - id: 3
+    position: {x: 9.5, y: 5.5, z: 5.5}
+  - id: 3
+    position: {x: 9.5, y: 5.5, z: 6.5}
+  - id: 5
+    position: {x: 9.5, y: 5.5, z: 7.5}
+  - id: 4
+    position: {x: 9.5, y: 5.5, z: 8.5}
+  - id: 5
+    position: {x: 9.5, y: 5.5, z: 9.5}
+  - id: 5
+    position: {x: 9.5, y: 6.5, z: -9.5}
+  - id: 1
+    position: {x: 9.5, y: 6.5, z: -8.5}
+  - id: 1
+    position: {x: 9.5, y: 6.5, z: -7.5}
+  - id: 5
+    position: {x: 9.5, y: 6.5, z: -6.5}
+  - id: 2
+    position: {x: 9.5, y: 6.5, z: -5.5}
+  - id: 4
+    position: {x: 9.5, y: 6.5, z: -4.5}
+  - id: 3
+    position: {x: 9.5, y: 6.5, z: -3.5}
+  - id: 3
+    position: {x: 9.5, y: 6.5, z: -2.5}
+  - id: 1
+    position: {x: 9.5, y: 6.5, z: -1.5}
+  - id: 1
+    position: {x: 9.5, y: 6.5, z: -0.5}
+  - id: 2
+    position: {x: 9.5, y: 6.5, z: 0.5}
+  - id: 1
+    position: {x: 9.5, y: 6.5, z: 1.5}
+  - id: 5
+    position: {x: 9.5, y: 6.5, z: 2.5}
+  - id: 3
+    position: {x: 9.5, y: 6.5, z: 3.5}
+  - id: 2
+    position: {x: 9.5, y: 6.5, z: 4.5}
+  - id: 1
+    position: {x: 9.5, y: 6.5, z: 5.5}
+  - id: 5
+    position: {x: 9.5, y: 6.5, z: 6.5}
+  - id: 3
+    position: {x: 9.5, y: 6.5, z: 7.5}
+  - id: 3
+    position: {x: 9.5, y: 6.5, z: 8.5}
+  - id: 4
+    position: {x: 9.5, y: 6.5, z: 9.5}
+  - id: 1
+    position: {x: 9.5, y: 7.5, z: -9.5}
+  - id: 2
+    position: {x: 9.5, y: 7.5, z: -8.5}
+  - id: 4
+    position: {x: 9.5, y: 7.5, z: -7.5}
+  - id: 2
+    position: {x: 9.5, y: 7.5, z: -6.5}
+  - id: 5
+    position: {x: 9.5, y: 7.5, z: -5.5}
+  - id: 1
+    position: {x: 9.5, y: 7.5, z: -4.5}
+  - id: 5
+    position: {x: 9.5, y: 7.5, z: -3.5}
+  - id: 5
+    position: {x: 9.5, y: 7.5, z: -2.5}
+  - id: 3
+    position: {x: 9.5, y: 7.5, z: -1.5}
+  - id: 2
+    position: {x: 9.5, y: 7.5, z: -0.5}
+  - id: 3
+    position: {x: 9.5, y: 7.5, z: 0.5}
+  - id: 1
+    position: {x: 9.5, y: 7.5, z: 1.5}
+  - id: 2
+    position: {x: 9.5, y: 7.5, z: 2.5}
+  - id: 1
+    position: {x: 9.5, y: 7.5, z: 3.5}
+  - id: 5
+    position: {x: 9.5, y: 7.5, z: 4.5}
+  - id: 4
+    position: {x: 9.5, y: 7.5, z: 5.5}
+  - id: 3
+    position: {x: 9.5, y: 7.5, z: 6.5}
+  - id: 5
+    position: {x: 9.5, y: 7.5, z: 7.5}
+  - id: 3
+    position: {x: 9.5, y: 7.5, z: 8.5}
+  - id: 5
+    position: {x: 9.5, y: 7.5, z: 9.5}
+  - id: 2
+    position: {x: 9.5, y: 8.5, z: -9.5}
+  - id: 1
+    position: {x: 9.5, y: 8.5, z: -8.5}
+  - id: 5
+    position: {x: 9.5, y: 8.5, z: -7.5}
+  - id: 2
+    position: {x: 9.5, y: 8.5, z: -6.5}
+  - id: 1
+    position: {x: 9.5, y: 8.5, z: -5.5}
+  - id: 2
+    position: {x: 9.5, y: 8.5, z: -4.5}
+  - id: 2
+    position: {x: 9.5, y: 8.5, z: -3.5}
+  - id: 4
+    position: {x: 9.5, y: 8.5, z: -2.5}
+  - id: 3
+    position: {x: 9.5, y: 8.5, z: -1.5}
+  - id: 4
+    position: {x: 9.5, y: 8.5, z: -0.5}
+  - id: 5
+    position: {x: 9.5, y: 8.5, z: 0.5}
+  - id: 1
+    position: {x: 9.5, y: 8.5, z: 1.5}
+  - id: 5
+    position: {x: 9.5, y: 8.5, z: 2.5}
+  - id: 5
+    position: {x: 9.5, y: 8.5, z: 3.5}
+  - id: 4
+    position: {x: 9.5, y: 8.5, z: 4.5}
+  - id: 2
+    position: {x: 9.5, y: 8.5, z: 5.5}
+  - id: 5
+    position: {x: 9.5, y: 8.5, z: 6.5}
+  - id: 3
+    position: {x: 9.5, y: 8.5, z: 7.5}
+  - id: 1
+    position: {x: 9.5, y: 8.5, z: 8.5}
+  - id: 3
+    position: {x: 9.5, y: 8.5, z: 9.5}
+  - id: 3
+    position: {x: 9.5, y: 9.5, z: -9.5}
+  - id: 1
+    position: {x: 9.5, y: 9.5, z: -8.5}
+  - id: 3
+    position: {x: 9.5, y: 9.5, z: -7.5}
+  - id: 5
+    position: {x: 9.5, y: 9.5, z: -6.5}
+  - id: 2
+    position: {x: 9.5, y: 9.5, z: -5.5}
+  - id: 3
+    position: {x: 9.5, y: 9.5, z: -4.5}
+  - id: 2
+    position: {x: 9.5, y: 9.5, z: -3.5}
+  - id: 5
+    position: {x: 9.5, y: 9.5, z: -2.5}
+  - id: 5
+    position: {x: 9.5, y: 9.5, z: -1.5}
+  - id: 3
+    position: {x: 9.5, y: 9.5, z: -0.5}
+  - id: 5
+    position: {x: 9.5, y: 9.5, z: 0.5}
+  - id: 2
+    position: {x: 9.5, y: 9.5, z: 1.5}
+  - id: 2
+    position: {x: 9.5, y: 9.5, z: 2.5}
+  - id: 1
+    position: {x: 9.5, y: 9.5, z: 3.5}
+  - id: 3
+    position: {x: 9.5, y: 9.5, z: 4.5}
+  - id: 2
+    position: {x: 9.5, y: 9.5, z: 5.5}
+  - id: 5
+    position: {x: 9.5, y: 9.5, z: 6.5}
+  - id: 4
+    position: {x: 9.5, y: 9.5, z: 7.5}
+  - id: 2
+    position: {x: 9.5, y: 9.5, z: 8.5}
+  - id: 4
+    position: {x: 9.5, y: 9.5, z: 9.5}

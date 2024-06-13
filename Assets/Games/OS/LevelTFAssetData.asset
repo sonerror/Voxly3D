@@ -19,53 +19,32 @@ MonoBehaviour:
       inited: 1
       fakeValue: 0
       fakeValueActive: 0
-    levelDatas: {fileID: 11400000, guid: f27322a250995d0409bc1f84230d55c7, type: 2}
+    levelDatas: {fileID: 11400000, guid: 47c9d38f3c80b104b8a56978d13b26cd, type: 2}
   - id:
       currentCryptoKey: 1795573316
       hiddenValue: 1795573317
       inited: 1
       fakeValue: 1
       fakeValueActive: 1
-    levelDatas: {fileID: 11400000, guid: 15726945994956146bf33c2195044455, type: 2}
+    levelDatas: {fileID: 11400000, guid: 08f817360993240468da66649544bf58, type: 2}
   - id:
       currentCryptoKey: 1795573316
       hiddenValue: 1795573318
       inited: 1
       fakeValue: 2
       fakeValueActive: 1
-    levelDatas: {fileID: 11400000, guid: a5d326d01a8f11d448ddd9ac92ddab7b, type: 2}
+    levelDatas: {fileID: 11400000, guid: c72a02e79b497264181eb73b1611633b, type: 2}
   - id:
-      currentCryptoKey: 1317210263
-      hiddenValue: 1317210259
+      currentCryptoKey: 1795573316
+      hiddenValue: 1795573319
+      inited: 1
+      fakeValue: 3
+      fakeValueActive: 1
+    levelDatas: {fileID: 11400000, guid: 6e3fe5d8906668948a4a9c759547170e, type: 2}
+  - id:
+      currentCryptoKey: 1795573316
+      hiddenValue: 1795573312
       inited: 1
       fakeValue: 4
       fakeValueActive: 1
-    levelDatas: {fileID: 11400000, guid: 83d1f68b38d620743b0fd000b62a58b2, type: 2}
-  - id:
-      currentCryptoKey: 1317210263
-      hiddenValue: 1317210258
-      inited: 1
-      fakeValue: 5
-      fakeValueActive: 1
-    levelDatas: {fileID: 11400000, guid: 5af26a3df17cb1247bdb2a07e89398f2, type: 2}
-  - id:
-      currentCryptoKey: 1317210263
-      hiddenValue: 1317210257
-      inited: 1
-      fakeValue: 6
-      fakeValueActive: 1
-    levelDatas: {fileID: 11400000, guid: 713393918cbd2fa49a9bfc286e57c8f1, type: 2}
-  - id:
-      currentCryptoKey: 1317210263
-      hiddenValue: 1317210256
-      inited: 1
-      fakeValue: 7
-      fakeValueActive: 1
-    levelDatas: {fileID: 11400000, guid: 713393918cbd2fa49a9bfc286e57c8f1, type: 2}
-  - id:
-      currentCryptoKey: 1317210263
-      hiddenValue: 1317210271
-      inited: 1
-      fakeValue: 8
-      fakeValueActive: 1
-    levelDatas: {fileID: 11400000, guid: 5266ce770b89b164788490c98b76d3eb, type: 2}
+    levelDatas: {fileID: 11400000, guid: cdb35bb88c45b714480b9b5ee273df16, type: 2}

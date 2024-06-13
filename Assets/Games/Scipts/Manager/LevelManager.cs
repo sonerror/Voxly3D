@@ -11,6 +11,8 @@ public class LevelManager : Singleton<LevelManager>
     public GameObject voxelPiece;
     public int _IDSelected;
     public bool areDrawing = false;
+    public int indexIDLV = 0;
+    public List<int> idButton = new List<int>();
     private void OnEnable()
     {
         EventManager.OnLoadNewScene += OnLoadNewScene;
@@ -26,13 +28,30 @@ public class LevelManager : Singleton<LevelManager>
         if (SceneController.Ins.currentSceneName.Equals("GamePlay") && !UIManager.Ins.IsOpened<Home>())
         {
             LoadLevel();
-            SetAcTextAll(false);
         }
+        idButton = GetUniqueIDsFromLevelData(levelDataTFAssetData);
+        idButton.Sort();
     }
+
+    public List<int> GetUniqueIDsFromLevelData(LevelDataTFAssetData levelDataTFAssetData)
+    {
+        HashSet<int> uniqueIDs = new HashSet<int>();
+
+        foreach (LevelDataTFDataModel model in levelDataTFAssetData.levelDataTFDataModels)
+        {
+            foreach (TransformData data in model.levelDatas.transformDataList)
+            {
+                uniqueIDs.Add(data.id);
+            }
+        }
+
+        return new List<int>(uniqueIDs);
+    }
+
     public void LoadLevel()
     {
         DestroyCurrentLevel();
-        InstantiateLevel(8);
+        InstantiateLevel(indexIDLV);
         levelCurrent.gameObject.SetActive(true);
         levelCurrent.Onint();
     }
@@ -40,11 +59,12 @@ public class LevelManager : Singleton<LevelManager>
     {
         levelCurrent = Instantiate(_levelIndex);
         LevelData levelDataTF = levelDataTFAssetData.GetLevelDataWithID(indexLevel).levelDatas;
-        foreach(TransformData tf in levelDataTF.transformDataList)
+        foreach (TransformData tf in levelDataTF.transformDataList)
         {
             VoxelPiece v = SimplePool.Spawn<VoxelPiece>(PoolType.VoxelPiece);
-            v.TF.SetParent(null);
+            v.ID = tf.id;
             v.Oninit();
+            v.TF.SetParent(null);
             v.TF.position = tf.position;
             v.TF.SetParent(levelCurrent.container);
         }
@@ -61,12 +81,11 @@ public class LevelManager : Singleton<LevelManager>
             {
                 if (levelCurrent.voxelPieces[i].ID == _IDSelected)
                 {
-                    Debug.LogError(levelCurrent.voxelPieces[i].ID);
-                    MatManager.Ins.ChangeMat(levelCurrent.voxelPieces[i], 1);
+                    MatManager.Ins.ChangeMatNumberSelectCurent(levelCurrent.voxelPieces[i], levelCurrent.voxelPieces[i].ID);
                 }
                 else
                 {
-                    MatManager.Ins.ChangeMat(levelCurrent.voxelPieces[i], 0);
+                    MatManager.Ins.ChangeMatNumber(levelCurrent.voxelPieces[i], levelCurrent.voxelPieces[i].ID);
                 }
             }
         }
@@ -75,59 +94,91 @@ public class LevelManager : Singleton<LevelManager>
     {
         _IDSelected = idInput;
     }
-    public void CheckWinLose()
+    public int CountVoxelPiecesWithID(int targetID)
     {
+        int count = 0;
+        foreach (var voxelPiece in levelCurrent.voxelPieces)
+        {
+            if (voxelPiece.ID == targetID)
+            {
+                count++;
+            }
+        }
+        return count;
+    }
+    public void CheckWinLose(int id)
+    {
+        if (levelCurrent.CountSumVoxel() > 0)
+        {
+            if (levelCurrent.CountVoxel(id) <= 0)
+            {
+                Debug.LogError(levelCurrent.CountVoxel(id) + " het id " + id);
+            }
+        }
+        else
+        {
+            Debug.LogError("Win");
+        }
+    }
+    public void SetMatZoomIn()
+    {
+        for (int i = 0; i < levelCurrent.quantity; i++)
+        {
+            if (levelCurrent.voxelPieces[i].isVoxel != true)
+            {
+                MatManager.Ins.ChangeMatNumber(levelCurrent.voxelPieces[i], levelCurrent.voxelPieces[i].ID);
+            }
+        }
+    }
+    public void SetMatZoomOut()
+    {
+        for (int i = 0; i < levelCurrent.quantity; i++)
+        {
+            if (levelCurrent.voxelPieces[i].isVoxel != true)
+            {
+                ChangeMatCurrent(levelCurrent.voxelPieces[i]);
+            }
+        }
+    }
+    public void ChangeMatCurrent(VoxelPiece voxelPiece)
+    {
+        if (voxelPiece.ID == 1)
+        {
+            MatManager.Ins.ChangeMatCurent(voxelPiece, 0);
+        }
+        if (voxelPiece.ID == 2)
+        {
+            MatManager.Ins.ChangeMatCurent(voxelPiece, 1);
+        }
+        if (voxelPiece.ID == 3)
+        {
+            MatManager.Ins.ChangeMatCurent(voxelPiece, 2);
+        }
+        if (voxelPiece.ID == 4)
+        {
+            MatManager.Ins.ChangeMatCurent(voxelPiece, 2);
+        }
+        if (voxelPiece.ID == 5)
+        {
+            MatManager.Ins.ChangeMatCurent(voxelPiece, 1);
+        }
+        if (voxelPiece.ID == 6)
+        {
+            MatManager.Ins.ChangeMatCurent(voxelPiece, 0);
+        }
+    }
+}
+public static class TransformDataHelper
+{
+    public static List<int> GetUniqueIDs(List<TransformData> dataList)
+    {
+        HashSet<int> uniqueIDs = new HashSet<int>();
 
-    }
-    public void SetActiveText(int _idInput)
-    {
-        for (int i = 0; i < levelCurrent.quantity; i++)
+        foreach (TransformData data in dataList)
         {
-            if (levelCurrent.voxelPieces[i].ID == _idInput)
-            {
-                for (int j = 0; j < levelCurrent.voxelPieces[i].textIDUI.Count; j++)
-                {
-                    levelCurrent.voxelPieces[i].textIDUI[j].gameObject.SetActive(false);
-                }
-            }
+            uniqueIDs.Add(data.id);
         }
-    }
-    public void SetAcTextF(VoxelPiece voxelPiece)
-    {
-        for (int j = 0; j < voxelPiece.textIDUI.Count; j++)
-        {
-            voxelPiece.textIDUI[j].gameObject.SetActive(false);
-        }
-    }
-    public void SetAcTextAll(bool _isVoxce)
-    {
-        for (int i = 0; i < levelCurrent.quantity; i++)
-        {
-            for (int j = 0; j < levelCurrent.voxelPieces[i].textIDUI.Count; j++)
-            {
-                levelCurrent.voxelPieces[i].textIDUI[j].gameObject.SetActive(_isVoxce);
-            }
-        }
-    }
-    public void SetAcText()
-    {
-        for (int i = 0; i < levelCurrent.quantity; i++)
-        {
-            if (levelCurrent.voxelPieces[i].isVoxel == true)
-            {
-                for (int j = 0; j < levelCurrent.voxelPieces[i].textIDUI.Count; j++)
-                {
-                    levelCurrent.voxelPieces[i].textIDUI[j].gameObject.SetActive(false);
-                }
-            }
-            else
-            {
-                for (int j = 0; j < levelCurrent.voxelPieces[i].textIDUI.Count; j++)
-                {
-                    levelCurrent.voxelPieces[i].textIDUI[j].gameObject.SetActive(true);
-                }
-            }
-        }
-    }
 
+        return new List<int>(uniqueIDs);
+    }
 }

@@ -1,3 +1,4 @@
+using CodeStage.AntiCheat.ObscuredTypes;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -14,10 +15,12 @@ public class LevelData : ScriptableObject
 [Serializable]
 public class TransformData
 {
+    public int id;
     public Vector3 position;
 
-    public TransformData(Vector3 position)
+    public TransformData(int id,Vector3 position)
     {
+        this.id = id;
         this.position = position;
     }
 }

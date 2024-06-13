@@ -5,10 +5,17 @@ using UnityEngine.UI;
 
 public class GamePlay : UICanvas
 {
+    public Transform tfButton;
     public override void Open()
     {
         base.Open();
     }
+    public void Oninit()
+    {
+
+    }
+
+
     public void btnID(int idInput)
     {
         LevelManager.Ins.CheckID(idInput);

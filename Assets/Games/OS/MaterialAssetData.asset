@@ -48,3 +48,17 @@ MonoBehaviour:
       fakeValue: 4
       fakeValueActive: 1
     mats: {fileID: 2100000, guid: 9c8790ba54979e4428e1e1166e0226b4, type: 2}
+  - id:
+      currentCryptoKey: 1299628124
+      hiddenValue: 1299628121
+      inited: 1
+      fakeValue: 5
+      fakeValueActive: 1
+    mats: {fileID: 2100000, guid: f4286e1dbe7e3ef4bb9c41e1fc6293f0, type: 2}
+  - id:
+      currentCryptoKey: 1299628124
+      hiddenValue: 1299628122
+      inited: 1
+      fakeValue: 6
+      fakeValueActive: 1
+    mats: {fileID: 2100000, guid: 2d4ad60323f1e60468246e0218502ae6, type: 2}

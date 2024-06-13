@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
-using CodeStage.AntiCheat.ObscuredTypes;
 
 #if UNITY_EDITOR
 public class SpawnLevel : EditorWindow
@@ -10,7 +9,7 @@ public class SpawnLevel : EditorWindow
     private int sizeY = 3;
     private int sizeZ = 3;
     private Transform tf;
-    private List<Vector3> cubePositions = new List<Vector3>();
+    private List<TransformData> cubeDataList = new List<TransformData>();
     private LevelDataTFAssetData levelDataAsset;
     private int levelID;
     private LevelData levelData;
@@ -27,6 +26,7 @@ public class SpawnLevel : EditorWindow
         {
             SaveCubePositions();
         }
+
         GUILayout.Label("Cube Grid Settings", EditorStyles.boldLabel);
 
         sizeX = EditorGUILayout.IntField("Size X", sizeX);
@@ -43,9 +43,9 @@ public class SpawnLevel : EditorWindow
 
         GUILayout.Label("Cube Positions:", EditorStyles.boldLabel);
 
-        foreach (Vector3 pos in cubePositions)
+        foreach (TransformData data in cubeDataList)
         {
-            GUILayout.Label(pos.ToString());
+            GUILayout.Label($"Position: {data.position}, ID: {data.id}");
         }
 
         GUILayout.Space(20);
@@ -57,35 +57,28 @@ public class SpawnLevel : EditorWindow
 
     private void GenerateCubePositions()
     {
-        cubePositions.Clear();
+        cubeDataList.Clear();
+
+        Vector3 center = new Vector3((sizeX - 1) / 2f, (sizeY - 1) / 2f, (sizeZ - 1) / 2f);
 
         for (int x = 0; x < sizeX; x++)
         {
             for (int y = 0; y < sizeY; y++)
             {
+                int id = 1;
                 for (int z = 0; z < sizeZ; z++)
                 {
                     if (x == 0 || x == sizeX - 1 || y == 0 || y == sizeY - 1 || z == 0 || z == sizeZ - 1)
                     {
-                        if (x == 0 || x == sizeX - 1 || y == 0 || y == sizeY - 1 || z == 0 || z == sizeZ - 1)
-                        {
-                            Vector3 position = new Vector3(x, y, z);
-                            cubePositions.Add(position);
-
-                            if (tf != null)
-                            {
-                                GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-                                cube.transform.position = position;
-                                cube.transform.parent = tf;
-                            }
-                        }
+                        Vector3 position = new Vector3(x, y, z) - center;
+                        cubeDataList.Add(new TransformData(id, position));
                     }
+                    id++;
+                    if (id > 5) id = 1;
                 }
             }
         }
     }
-
-
     private void SaveCubePositions()
     {
         string folderPath = "Assets/Games/OS/Level";
@@ -105,9 +98,9 @@ public class SpawnLevel : EditorWindow
 
         levelData.transformDataList.Clear();
 
-        foreach (Vector3 pos in cubePositions)
+        foreach (TransformData data in cubeDataList)
         {
-            levelData.transformDataList.Add(new TransformData(pos));
+            levelData.transformDataList.Add(data);
         }
 
         EditorUtility.SetDirty(levelData);

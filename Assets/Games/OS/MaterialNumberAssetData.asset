@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 337af68c3891e6e4a879a053e1cdd960, type: 3}
+  m_Name: MaterialNumberAssetData
+  m_EditorClassIdentifier: 
+  matDataModels:
+  - id:
+      currentCryptoKey: 1839143875
+      hiddenValue: 1839143874
+      inited: 1
+      fakeValue: 1
+      fakeValueActive: 1
+    mats: {fileID: 2100000, guid: 7693483c0a1a69d468fa0bd3bc1b7de0, type: 2}
+  - id:
+      currentCryptoKey: 1839143875
+      hiddenValue: 1839143873
+      inited: 1
+      fakeValue: 2
+      fakeValueActive: 1
+    mats: {fileID: 2100000, guid: 1aea2c719d032e64e981dfc30f862652, type: 2}
+  - id:
+      currentCryptoKey: 1839143875
+      hiddenValue: 1839143872
+      inited: 1
+      fakeValue: 3
+      fakeValueActive: 1
+    mats: {fileID: 2100000, guid: a3cb4acd379c5544b891848e05c60983, type: 2}
+  - id:
+      currentCryptoKey: 1839143875
+      hiddenValue: 1839143879
+      inited: 1
+      fakeValue: 4
+      fakeValueActive: 1
+    mats: {fileID: 2100000, guid: 450284ffbf3289a419ae618c350e05ad, type: 2}
+  - id:
+      currentCryptoKey: 1839143875
+      hiddenValue: 1839143878
+      inited: 1
+      fakeValue: 5
+      fakeValueActive: 1
+    mats: {fileID: 2100000, guid: 2ed6971fb30dabe4194f27625b6f5610, type: 2}

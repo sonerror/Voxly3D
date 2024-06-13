@@ -59,11 +59,13 @@ public class ZoomWithMouseWheel : MonoBehaviour
         cam.fieldOfView = Mathf.Clamp(cam.fieldOfView, minFOV, maxFOV);
         if(cam.fieldOfView < maxFOV/2)
         {
-            LevelManager.Ins.SetAcText();
+            LevelManager.Ins.SetMatZoomIn();
+            LevelManager.Ins.ChangematFormID();
         }
         else
         {
-            LevelManager.Ins.SetAcTextAll(false);
+            LevelManager.Ins.SetMatZoomOut();
+            
         }
     }
 
