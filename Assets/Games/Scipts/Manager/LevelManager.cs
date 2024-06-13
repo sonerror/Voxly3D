@@ -29,25 +29,10 @@ public class LevelManager : Singleton<LevelManager>
         {
             LoadLevel();
         }
-        idButton = GetUniqueIDsFromLevelData(levelDataTFAssetData);
         idButton.Sort();
     }
 
-    public List<int> GetUniqueIDsFromLevelData(LevelDataTFAssetData levelDataTFAssetData)
-    {
-        HashSet<int> uniqueIDs = new HashSet<int>();
-
-        foreach (LevelDataTFDataModel model in levelDataTFAssetData.levelDataTFDataModels)
-        {
-            foreach (TransformData data in model.levelDatas.transformDataList)
-            {
-                uniqueIDs.Add(data.id);
-            }
-        }
-
-        return new List<int>(uniqueIDs);
-    }
-
+  
     public void LoadLevel()
     {
         DestroyCurrentLevel();

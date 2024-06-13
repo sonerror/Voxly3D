@@ -21,5 +21,5 @@ public class Home : UICanvas
             UIManager.Ins.bg.gameObject.SetActive(false);
         }, true, true);
     }
-
+  
 }
