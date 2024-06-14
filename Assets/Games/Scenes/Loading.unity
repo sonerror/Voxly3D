@@ -264,7 +264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Pool:
   - root: {fileID: 1695010349}
-    prefab: {fileID: 135754985573464870, guid: 4f6df3e41a08d714989a8c7debb9483d, type: 3}
+    prefab: {fileID: 650095259047781375, guid: 54dc63f86c11ae94ba8e49fc81f6b4c3, type: 3}
     amount: 1000
     collect: 0
   Particle: []
@@ -475,11 +475,13 @@ MonoBehaviour:
   levelDataTFAssetData: {fileID: 11400000, guid: 010f39fe13d0b894aa2922ab243cfff1, type: 2}
   _levelIndex: {fileID: 7530654936316132915, guid: 9ce306f13d0fab74f8b346ec014e85d1, type: 3}
   levelCurrent: {fileID: 0}
-  voxelPiece: {fileID: 6472578994916745053, guid: 4f6df3e41a08d714989a8c7debb9483d, type: 3}
+  voxelPiece: {fileID: 6712506451386001462, guid: 54dc63f86c11ae94ba8e49fc81f6b4c3, type: 3}
   _IDSelected: 0
   areDrawing: 0
-  indexIDLV: 4
+  indexIDLV: 0
   idButton: 
+  levels25D:
+  - {fileID: 304532811487450911, guid: 592bb9495ce594a438dbc0c53a6ee32d, type: 3}
 --- !u!1 &883175416
 GameObject:
   m_ObjectHideFlags: 0
@@ -882,7 +884,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   materialAssetData: {fileID: 11400000, guid: 28da674ee7a59434e818d9d39622feba, type: 2}
   materialNumber: {fileID: 11400000, guid: 98d6029684fc9a94c8a780034abd7453, type: 2}
-  materialNumberSelect: {fileID: 11400000, guid: 120b5e353e838aa42865a2bcb5e7e0c3, type: 2}
   matCurrent:
   - {fileID: 2100000, guid: 70e55c5126c101941b13ca5e53601d63, type: 2}
   - {fileID: 2100000, guid: c5ebceb973dce4448ba83e79c8d59e93, type: 2}

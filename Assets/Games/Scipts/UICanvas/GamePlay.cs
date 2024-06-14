@@ -15,7 +15,6 @@ public class GamePlay : UICanvas
     {
         EventManager.OnLoadNewScene -= OnLoadNewScene;
     }
-
     public override void Open()
     {
         base.Open();
@@ -38,6 +37,5 @@ public class GamePlay : UICanvas
     {
         UIManager.Ins.CloseUI<GamePlay>();
         UIManager.Ins.OpenUI<Home>();
-        LevelManager.Ins.levelCurrent.gameObject.SetActive(false);
     }
 }

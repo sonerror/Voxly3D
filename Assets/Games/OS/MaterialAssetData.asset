@@ -19,14 +19,14 @@ MonoBehaviour:
       inited: 1
       fakeValue: 0
       fakeValueActive: 1
-    mats: {fileID: 2100000, guid: 6f2435c9c4ad5d948a5c746f6a9d1f94, type: 2}
+    mats: {fileID: 2100000, guid: 2d4ad60323f1e60468246e0218502ae6, type: 2}
   - id:
       currentCryptoKey: 1998667719
       hiddenValue: 1998667718
       inited: 1
       fakeValue: 1
       fakeValueActive: 1
-    mats: {fileID: 2100000, guid: e7616b4b489aeac48b4c31753c4836f4, type: 2}
+    mats: {fileID: 2100000, guid: ac1486bb575701846bacb72506149368, type: 2}
   - id:
       currentCryptoKey: 1431804035
       hiddenValue: 1431804033
@@ -61,4 +61,4 @@ MonoBehaviour:
       inited: 1
       fakeValue: 6
       fakeValueActive: 1
-    mats: {fileID: 2100000, guid: 2d4ad60323f1e60468246e0218502ae6, type: 2}
+    mats: {fileID: 2100000, guid: 6f2435c9c4ad5d948a5c746f6a9d1f94, type: 2}

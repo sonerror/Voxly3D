@@ -31,6 +31,5 @@ public class RotateAround : MonoBehaviour
             transform.rotation = rotationX * transform.rotation;
             lastMousePosition = currentMousePosition;
         }
-
     }
 }

@@ -5,12 +5,12 @@ public class ZoomWithMouseWheel : MonoBehaviour
     public enum ZoomState { Position, FOV }
     public ZoomState zoomState = ZoomState.Position;
 
-    public Transform target; 
+    public Transform target;
     public float zoomSpeed = 10f;
-    public float minZoom = 5f; 
-    public float maxZoom = 50f; 
-    public float minFOV = 15f; 
-    public float maxFOV = 90f; 
+    public float minZoom = 5f;
+    public float maxZoom = 50f;
+    public float minFOV = 15f;
+    public float maxFOV = 90f;
 
     private Camera cam;
 
@@ -18,12 +18,10 @@ public class ZoomWithMouseWheel : MonoBehaviour
     {
         cam = Camera.main;
     }
-
     void Update()
     {
         HandleZoom();
     }
-
     void HandleZoom()
     {
         float scrollInput = Input.GetAxis("Mouse ScrollWheel");
@@ -40,11 +38,9 @@ public class ZoomWithMouseWheel : MonoBehaviour
             }
         }
     }
-
     void ZoomByPosition(float scrollInput)
     {
         if (target == null) return;
-
         float distance = Vector3.Distance(cam.transform.position, target.position);
         distance -= scrollInput * zoomSpeed;
         distance = Mathf.Clamp(distance, minZoom, maxZoom);
@@ -52,12 +48,11 @@ public class ZoomWithMouseWheel : MonoBehaviour
         Vector3 direction = (cam.transform.position - target.position).normalized;
         cam.transform.position = target.position + direction * distance;
     }
-
     void ZoomByFOV(float scrollInput)
     {
         cam.fieldOfView -= scrollInput * zoomSpeed;
         cam.fieldOfView = Mathf.Clamp(cam.fieldOfView, minFOV, maxFOV);
-        if(cam.fieldOfView < maxFOV/2)
+        if (cam.fieldOfView < maxFOV / 2)
         {
             LevelManager.Ins.SetMatZoomIn();
             LevelManager.Ins.ChangematFormID();
@@ -65,9 +60,6 @@ public class ZoomWithMouseWheel : MonoBehaviour
         else
         {
             LevelManager.Ins.SetMatZoomOut();
-            
         }
     }
-
-  
 }

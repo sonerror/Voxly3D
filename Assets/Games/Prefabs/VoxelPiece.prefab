@@ -1127,6 +1127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolType: 25
+  ID: 0
   textIDUI:
   - {fileID: 7519371635472306995}
   - {fileID: 3645173456902609510}

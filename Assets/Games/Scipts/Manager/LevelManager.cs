@@ -13,15 +13,35 @@ public class LevelManager : Singleton<LevelManager>
     public bool areDrawing = false;
     public int indexIDLV = 0;
     public List<int> idButton = new List<int>();
+    public List<Level> levels25D = new List<Level>();
 
 
-  
+    private void OnEnable()
+    {
+        EventManager.OnLoadNewScene += OnLoadNewScene;
+    }
+
+    private void OnDestroy()
+    {
+        EventManager.OnLoadNewScene -= OnLoadNewScene;
+    }
+    public void OnLoadNewScene()
+    {
+        if (SceneController.Ins.currentSceneName.Equals("GamePlay") && !UIManager.Ins.IsOpened<Home>())
+        {
+           LoadLevel();
+        }
+    }
     public void LoadLevel()
     {
         DestroyCurrentLevel();
         InstantiateLevel(indexIDLV);
         levelCurrent.gameObject.SetActive(true);
         levelCurrent.Onint();
+    }
+    public void InstantiateLevel25D(int indexLevel)
+    {
+        levelCurrent = Instantiate(levels25D[indexLevel]);
     }
     public void InstantiateLevel(int indexLevel)
     {
@@ -39,7 +59,12 @@ public class LevelManager : Singleton<LevelManager>
     }
     public void DestroyCurrentLevel()
     {
-        if (levelCurrent) Destroy(levelCurrent.gameObject);
+        if (levelCurrent)
+        {
+            _IDSelected = 0;
+            Destroy(levelCurrent.gameObject);
+        }
+
     }
     public void ChangematFormID()
     {
@@ -49,7 +74,7 @@ public class LevelManager : Singleton<LevelManager>
             {
                 if (levelCurrent.voxelPieces[i].ID == _IDSelected)
                 {
-                    MatManager.Ins.ChangeMatNumberSelectCurent(levelCurrent.voxelPieces[i], levelCurrent.voxelPieces[i].ID);
+                    levelCurrent.voxelPieces[i].mesh.material.color = new Color(0.25f, 0.25f, 0.25f);
                 }
                 else
                 {
@@ -146,7 +171,6 @@ public static class TransformDataHelper
         {
             uniqueIDs.Add(data.id);
         }
-
         return new List<int>(uniqueIDs);
     }
 }

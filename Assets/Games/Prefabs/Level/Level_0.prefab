@@ -83,6 +83,7 @@ MonoBehaviour:
   isTutorialClick: 0
   isTutorialRotate: 0
   container: {fileID: 3976220074199064438}
+  ID_1: 0
 --- !u!114 &7671494390013428408
 MonoBehaviour:
   m_ObjectHideFlags: 0

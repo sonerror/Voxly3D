@@ -13,6 +13,7 @@ TagManager:
   - Water
   - UI
   - Voxel
+  - UI_new
   - 
   - 
   - 
@@ -36,8 +37,7 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - HLOD
   m_SortingLayers:
   - name: Default
     uniqueID: 0

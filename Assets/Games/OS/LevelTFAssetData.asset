@@ -48,3 +48,38 @@ MonoBehaviour:
       fakeValue: 4
       fakeValueActive: 1
     levelDatas: {fileID: 11400000, guid: cdb35bb88c45b714480b9b5ee273df16, type: 2}
+  - id:
+      currentCryptoKey: 1795573316
+      hiddenValue: 1795573313
+      inited: 1
+      fakeValue: 5
+      fakeValueActive: 1
+    levelDatas: {fileID: 11400000, guid: 992e8c9771a4b4c4898a25e63fcab2d6, type: 2}
+  - id:
+      currentCryptoKey: 1795573316
+      hiddenValue: 1795573314
+      inited: 1
+      fakeValue: 6
+      fakeValueActive: 1
+    levelDatas: {fileID: 11400000, guid: 4b7a5d4073ba6094bad45d35859b938c, type: 2}
+  - id:
+      currentCryptoKey: 1795573316
+      hiddenValue: 1795573315
+      inited: 1
+      fakeValue: 7
+      fakeValueActive: 1
+    levelDatas: {fileID: 11400000, guid: b6991cc1f216e3b40b2150dcc7725d70, type: 2}
+  - id:
+      currentCryptoKey: 1795573316
+      hiddenValue: 1795573324
+      inited: 1
+      fakeValue: 8
+      fakeValueActive: 1
+    levelDatas: {fileID: 11400000, guid: dee06c0c21b52f54e9a2e1605728b2a4, type: 2}
+  - id:
+      currentCryptoKey: 1795573316
+      hiddenValue: 1795573325
+      inited: 1
+      fakeValue: 9
+      fakeValueActive: 1
+    levelDatas: {fileID: 11400000, guid: 2b12c2197e8050f4f9e1b4e75d96fe3a, type: 2}

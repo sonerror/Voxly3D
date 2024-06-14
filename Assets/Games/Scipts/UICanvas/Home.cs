@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro.EditorUtilities;
 using UnityEngine;
 
 public class Home : UICanvas
@@ -8,13 +9,15 @@ public class Home : UICanvas
     {
         base.Open();
     }
-    public void OnLoadNewScene()
+
+    public void Btn_Play()
     {
-        UIManager.Ins.CloseUI<Home>();
-        UIManager.Ins.OpenUI<GamePlay>();
-        if (SceneController.Ins.currentSceneName.Equals("GamePlay") && !UIManager.Ins.IsOpened<Home>())
+        SceneController.Ins.ChangeScene("GamePlay", () =>
         {
-            LevelManager.Ins.LoadLevel();
-        }
+            UIManager.Ins.CloseUI<Home>();
+            UIManager.Ins.OpenUI<GamePlay>();
+            UIManager.Ins.bg.gameObject.SetActive(false);
+        }, true, true);
+       
     }
 }

@@ -29,6 +29,7 @@ public class GameManager : Singleton<GameManager>
             Ins != null
            
             && UIManager.Ins != null
+            && LevelManager.Ins != null
             )
         );
         UIManager.Ins.OpenUI<Loading>();
