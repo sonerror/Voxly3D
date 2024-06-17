@@ -20,9 +20,12 @@ public class GamePlay : UICanvas
         base.Open();
         Oninit();
     }
+    public override void CloseDirectly()
+    {
+        base.CloseDirectly();
+    }
     public void OnLoadNewScene()
     {
-       
     }
     public void Oninit()
     {
@@ -35,7 +38,9 @@ public class GamePlay : UICanvas
     }
     public void BtnBack()
     {
-        UIManager.Ins.CloseUI<GamePlay>();
-        UIManager.Ins.OpenUI<Home>();
+        SceneController.Ins.ChangeScene("GamePlay", () => {
+            UIManager.Ins.CloseAll();
+            UIManager.Ins.OpenUI<Home>();
+        }, true, true);
     }
 }

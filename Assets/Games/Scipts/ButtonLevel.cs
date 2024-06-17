@@ -13,10 +13,15 @@ public class ButtonLevel : MonoBehaviour
     }
     public void Loadata()
     {
+        if(buttonLevelCellUIs == null)
+        {
+            buttonLevelCellUIs = new List<ButtonLevelCellUI>();
+        }
         for (int i = 0; i < LevelManager.Ins.levelDataTFAssetData.levelDataTFDataModels.Count; i++)
         {
             ButtonLevelCellUI btn = Instantiate(buttonLevelCellUI, tfButton);
             buttonLevelCellUIs.Add(btn);
+            btn.LoadData(LevelManager.Ins.levelDataTFAssetData.levelDataTFDataModels[i].id);
         }
     }
     public void LoadataCell(int id)

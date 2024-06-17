@@ -20,7 +20,6 @@ public class LevelManager : Singleton<LevelManager>
     {
         EventManager.OnLoadNewScene += OnLoadNewScene;
     }
-
     private void OnDestroy()
     {
         EventManager.OnLoadNewScene -= OnLoadNewScene;
@@ -59,10 +58,11 @@ public class LevelManager : Singleton<LevelManager>
     }
     public void DestroyCurrentLevel()
     {
-        if (levelCurrent)
+        if (levelCurrent != null)
         {
             _IDSelected = 0;
             Destroy(levelCurrent.gameObject);
+            Debug.LogError("Destroy = = = = = = = ");
         }
 
     }

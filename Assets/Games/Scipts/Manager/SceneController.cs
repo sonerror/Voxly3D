@@ -15,16 +15,15 @@ public class SceneController : Singleton<SceneController>
         ChangeScene(SceneManager.GetActiveScene().name, OnComplete, isFadeOut, isFadeIn);
         currentSceneName = SceneManager.GetActiveScene().name;
     }
-
     public void ChangeScene(string sceneName, Action OnComplete, bool isFadeOut, bool isFadeIn)
     {
         if (isLoadingNewScene) return;
-        StartCoroutine(I_ChangeScene(sceneName,OnComplete, isFadeOut,isFadeIn));
+        StartCoroutine(I_ChangeScene(sceneName, OnComplete, isFadeOut, isFadeIn));
     }
-
     IEnumerator I_ChangeScene(string sceneName, Action OnComplete, bool isFadeOut, bool isFadeIn)
     {
         isLoadingNewScene = true;
+        // Fade Out
         if (isFadeOut)
         {
             animator.gameObject.SetActive(true);
@@ -36,23 +35,17 @@ public class SceneController : Singleton<SceneController>
         {
             animator.gameObject.SetActive(false);
         }
-
         SimplePool.CollectAll();
-
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName);
         while (!asyncLoad.isDone)
         {
             yield return null;
         }
-
         Scene scene = SceneManager.GetSceneByName(sceneName);
         yield return new WaitUntil(() => scene.IsValid() && scene.isLoaded);
         currentSceneName = sceneName;
-
-
         OnComplete?.Invoke();
         EventManager.TriggerLoadNewScene();
-        // Fade In
         if (isFadeIn)
         {
             animator.gameObject.SetActive(true);
@@ -63,10 +56,7 @@ public class SceneController : Singleton<SceneController>
         {
             animator.gameObject.SetActive(false);
         }
-
-
         isLoadingNewScene = false;
-
         yield return null;
     }
 
