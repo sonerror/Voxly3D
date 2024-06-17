@@ -176,6 +176,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3563473784163885510}
   - component: {fileID: 8852589844293776163}
+  - component: {fileID: -121720996010357116}
+  - component: {fileID: -6372345866382427982}
   m_Layer: 0
   m_Name: CakeTest
   m_TagString: Untagged
@@ -217,6 +219,38 @@ MonoBehaviour:
   isTutorialRotate: 0
   container: {fileID: 4062012963997203012}
   ID_1: 0
+--- !u!114 &-121720996010357116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4944682699574059083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e66be121e9ca1e47b23f5e0fd835ebc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateMouseSpeed: 20
+--- !u!114 &-6372345866382427982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4944682699574059083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c19542d83906b174d95697af1f00dfa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zoomState: 1
+  target: {fileID: 0}
+  zoomSpeed: 0.1
+  minZoom: 5
+  maxZoom: 50
+  minFOV: 0.5
+  maxFOV: 2
 --- !u!1 &8339833289845504509
 GameObject:
   m_ObjectHideFlags: 0

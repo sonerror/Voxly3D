@@ -17,18 +17,18 @@ public class ButtonLevel : MonoBehaviour
         {
             buttonLevelCellUIs = new List<ButtonLevelCellUI>();
         }
-        for (int i = 0; i < LevelManager.Ins.levelDataTFAssetData.levelDataTFDataModels.Count; i++)
+        for (int i = 0; i < LevelManager.Ins.levelDataAssetData.dataLevels.Count; i++)
         {
             ButtonLevelCellUI btn = Instantiate(buttonLevelCellUI, tfButton);
             buttonLevelCellUIs.Add(btn);
-            btn.LoadData(LevelManager.Ins.levelDataTFAssetData.levelDataTFDataModels[i].id);
+            btn.LoadData(LevelManager.Ins.levelDataAssetData.dataLevels[i].id);
         }
     }
     public void LoadataCell(int id)
     {
-        for (int i = 0; i < LevelManager.Ins.levelDataTFAssetData.levelDataTFDataModels.Count; i++)
+        for (int i = 0; i < LevelManager.Ins.levelDataAssetData.dataLevels.Count; i++)
         {
-            id = LevelManager.Ins.levelDataTFAssetData.levelDataTFDataModels[i].id;
+            id = LevelManager.Ins.levelDataAssetData.dataLevels[i].id;
         }
     }
 }

@@ -17,6 +17,8 @@ public class ZoomWithMouseWheel : MonoBehaviour
     void Start()
     {
         cam = Camera.main;
+        target = gameObject.transform;
+        cam.fieldOfView = maxFOV;
     }
     void Update()
     {
@@ -42,7 +44,7 @@ public class ZoomWithMouseWheel : MonoBehaviour
     {
         if (target == null) return;
         float distance = Vector3.Distance(cam.transform.position, target.position);
-        distance -= scrollInput * zoomSpeed;
+        distance -= scrollInput * maxFOV / 10;
         distance = Mathf.Clamp(distance, minZoom, maxZoom);
 
         Vector3 direction = (cam.transform.position - target.position).normalized;
@@ -52,7 +54,7 @@ public class ZoomWithMouseWheel : MonoBehaviour
     {
         cam.fieldOfView -= scrollInput * zoomSpeed;
         cam.fieldOfView = Mathf.Clamp(cam.fieldOfView, minFOV, maxFOV);
-        if (cam.fieldOfView < maxFOV / 2)
+        if (cam.fieldOfView < maxFOV / 1.4)
         {
             LevelManager.Ins.SetMatZoomIn();
             LevelManager.Ins.ChangematFormID();

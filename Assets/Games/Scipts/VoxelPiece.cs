@@ -8,8 +8,13 @@ public class VoxelPiece : GameUnit
 {
     public int ID;
     public MeshRenderer mesh;
+    public Material material;
     public bool isVoxel = false;
-   
+    public void Start()
+    {
+        mesh = GetComponent<MeshRenderer>();
+        material = mesh.material;
+    }
     public void Oninit()
     {
         LevelManager.Ins.ChangeMatCurrent(this);

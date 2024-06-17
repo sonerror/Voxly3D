@@ -426,6 +426,7 @@ MonoBehaviour:
   - {fileID: 2120918184011404945, guid: 6471cd5f9b17f004f9b372ba16c692ff, type: 3}
   - {fileID: 6565287564351532025, guid: 4c12d30e8f0e3fa44ba61be61827ebff, type: 3}
   - {fileID: 6941864843590555215, guid: 04b3c07ed1dee76459bb6ba99346b988, type: 3}
+  - {fileID: 614979916153278048, guid: 0fc982633f6d11e45bc4c97d0b649c1f, type: 3}
   CanvasParentTF: {fileID: 1692685246}
   bg: {fileID: 2118870615}
 --- !u!1 &507201642
@@ -473,15 +474,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelDataTFAssetData: {fileID: 11400000, guid: 010f39fe13d0b894aa2922ab243cfff1, type: 2}
+  levelDataAssetData: {fileID: 11400000, guid: 6d631a11ed020ac4587f865ea6a94d72, type: 2}
   _levelIndex: {fileID: 7530654936316132915, guid: 9ce306f13d0fab74f8b346ec014e85d1, type: 3}
   levelCurrent: {fileID: 0}
   voxelPiece: {fileID: 6712506451386001462, guid: 54dc63f86c11ae94ba8e49fc81f6b4c3, type: 3}
-  _IDSelected: 0
+  iDSelected: 0
   areDrawing: 0
-  indexIDLV: 0
+  indexLevel: 0
   idButton: 
   levels25D:
   - {fileID: 8852589844293776163, guid: 008018e462136c346979763b2e0eeeff, type: 3}
+  isSpawnPrefas: 1
+  listID: 
 --- !u!1 &883175416
 GameObject:
   m_ObjectHideFlags: 0
@@ -698,7 +702,7 @@ Transform:
   m_GameObject: {fileID: 1384624980}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -0.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

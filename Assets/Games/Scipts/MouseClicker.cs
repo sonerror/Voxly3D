@@ -48,21 +48,21 @@ public class MouseClicker : MonoBehaviour
         Debug.DrawRay(ray.origin, ray.direction * 100f, Color.green, 0.5f);
         if (Physics.Raycast(ray, out hit, 1000f, mask))
         {
-            piece = hit.collider.GetComponentInParent<VoxelPiece>();
+            piece = hit.collider.GetComponent<VoxelPiece>();
             StartCoroutine(IE_Draw());
         }
     }
     IEnumerator IE_Draw()
     {
         yield return new WaitForEndOfFrame();
-        if (piece.isVoxel != true && piece.ID == LevelManager.Ins._IDSelected)
+        if (piece.isVoxel != true && piece.ID == LevelManager.Ins.iDSelected)
         {
             LevelManager.Ins.areDrawing = true;
         }
 
-        if (piece != null && piece.ID == LevelManager.Ins._IDSelected)
+        if (piece != null && piece.ID == LevelManager.Ins.iDSelected)
         {
-            MatManager.Ins.ChangeMat(piece, LevelManager.Ins._IDSelected);
+            MatManager.Ins.ChangeMat(piece);
             piece.isVoxel = true;
             LevelManager.Ins.CheckWinLose(piece.ID);
         }

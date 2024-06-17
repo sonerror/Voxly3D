@@ -7,9 +7,9 @@ public class MatManager : Singleton<MatManager>
     public MaterialAssetData materialAssetData;
     public MaterialAssetData materialNumber;
     public List<Material> matCurrent = new List<Material>();
-    public void ChangeMat(VoxelPiece voxelPiece,int _id)
+    public void ChangeMat(VoxelPiece voxelPiece)
     {
-        voxelPiece.mesh.material = materialAssetData.GetMatWithID(_id).mats;
+        voxelPiece.mesh.material = voxelPiece.material;
     }
     public void ChangeMatNumber(VoxelPiece voxelPiece, int _id)
     {

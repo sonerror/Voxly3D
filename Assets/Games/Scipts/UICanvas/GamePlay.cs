@@ -5,16 +5,7 @@ using UnityEngine.UI;
 
 public class GamePlay : UICanvas
 {
-    public List<Button> buttons = new List<Button>();
-    private void OnEnable()
-    {
-        EventManager.OnLoadNewScene += OnLoadNewScene;
-    }
-
-    private void OnDisable()
-    {
-        EventManager.OnLoadNewScene -= OnLoadNewScene;
-    }
+    public ButtonSwatchCellUI buttonSwatchCellUI;
     public override void Open()
     {
         base.Open();
@@ -42,5 +33,7 @@ public class GamePlay : UICanvas
             UIManager.Ins.CloseAll();
             UIManager.Ins.OpenUI<Home>();
         }, true, true);
+        LevelManager.Ins.iDSelected = 0;
+
     }
 }

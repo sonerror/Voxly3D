@@ -16,5 +16,6 @@ public class LevelDataAssetData : ScriptableObject
 public class LevelDataModel
 {
     public ObscuredInt id;
-    public Level levels;
+    public Level level;
+    public Sprite sprite;
 }

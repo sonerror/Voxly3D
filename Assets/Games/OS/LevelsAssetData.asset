@@ -19,46 +19,21 @@ MonoBehaviour:
       inited: 1
       fakeValue: 0
       fakeValueActive: 0
-    levels: {fileID: 7530654936316132915, guid: 9ce306f13d0fab74f8b346ec014e85d1, type: 3}
+    level: {fileID: 3764230617713546173, guid: 0f2ac159edf9cf944a5f4324953e18fb, type: 3}
+    sprite: {fileID: 21300000, guid: c3d683f9a857f304fb115ba817542020, type: 3}
   - id:
       currentCryptoKey: 1973678324
       hiddenValue: 1973678325
       inited: 1
       fakeValue: 1
       fakeValueActive: 1
-    levels: {fileID: 7530654936316132915, guid: 20bdccdb42245cd4291652339eb3fc6d, type: 3}
+    level: {fileID: 3820299845203129698, guid: 61d0f4f8cdf11a4488940f2dbaae6787, type: 3}
+    sprite: {fileID: 21300000, guid: c3d683f9a857f304fb115ba817542020, type: 3}
   - id:
       currentCryptoKey: 1725370881
       hiddenValue: 1725370883
       inited: 1
       fakeValue: 2
       fakeValueActive: 1
-    levels: {fileID: 7530654936316132915, guid: 256379802a0df7447b3b66f802f520b7, type: 3}
-  - id:
-      currentCryptoKey: 1725370881
-      hiddenValue: 1725370882
-      inited: 1
-      fakeValue: 3
-      fakeValueActive: 1
-    levels: {fileID: 7530654936316132915, guid: 256379802a0df7447b3b66f802f520b7, type: 3}
-  - id:
-      currentCryptoKey: 1725370881
-      hiddenValue: 1725370885
-      inited: 1
-      fakeValue: 4
-      fakeValueActive: 1
-    levels: {fileID: 7530654936316132915, guid: 36ea7f8d4277c4f48aa0136fc689d298, type: 3}
-  - id:
-      currentCryptoKey: 1725370881
-      hiddenValue: 1725370884
-      inited: 1
-      fakeValue: 5
-      fakeValueActive: 1
-    levels: {fileID: 7530654936316132915, guid: 18cb5b9f040ecec4a9dcff533a872452, type: 3}
-  - id:
-      currentCryptoKey: 1725370881
-      hiddenValue: 1725370887
-      inited: 1
-      fakeValue: 6
-      fakeValueActive: 1
-    levels: {fileID: 7530654936316132915, guid: 73e4cc69d6515554a87fcfcce0d8273d, type: 3}
+    level: {fileID: 4142216120926623980, guid: e14c8da0f77d7e044989711b21bc7bb4, type: 3}
+    sprite: {fileID: 21300000, guid: c3d683f9a857f304fb115ba817542020, type: 3}

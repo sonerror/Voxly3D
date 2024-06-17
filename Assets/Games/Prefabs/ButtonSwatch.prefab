@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9017965682840966587}
   - component: {fileID: 7194766919155810219}
   - component: {fileID: 2763122907969094103}
+  - component: {fileID: 4583175916342148208}
   m_Layer: 5
   m_Name: ButtonSwatch
   m_TagString: Untagged
@@ -121,8 +122,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GamePlay, Assembly-CSharp
+      - m_Target: {fileID: 4583175916342148208}
+        m_TargetAssemblyTypeName: ButtonSwatch, Assembly-CSharp
         m_MethodName: btnID
         m_Mode: 1
         m_Arguments:
@@ -133,6 +134,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &4583175916342148208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4374451531042988258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f8e5262f49b6604fa0a952a1b185cc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 0
+  textID: {fileID: 1376340827823845872}
 --- !u!1 &6909390969280615109
 GameObject:
   m_ObjectHideFlags: 0

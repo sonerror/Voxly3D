@@ -6,15 +6,18 @@ using UnityEngine.Windows;
 public class LevelManager : Singleton<LevelManager>
 {
     public LevelDataTFAssetData levelDataTFAssetData;
+    public LevelDataAssetData levelDataAssetData;
+
     public Level _levelIndex;
     public Level levelCurrent;
     public GameObject voxelPiece;
-    public int _IDSelected;
+    public int iDSelected;
     public bool areDrawing = false;
-    public int indexIDLV = 0;
+    public int indexLevel = 0;
     public List<int> idButton = new List<int>();
     public List<Level> levels25D = new List<Level>();
-
+    public bool isSpawnPrefas = false;
+    public List<int> listID = new List<int>();
 
     private void OnEnable()
     {
@@ -26,17 +29,85 @@ public class LevelManager : Singleton<LevelManager>
     }
     public void OnLoadNewScene()
     {
-        if (SceneController.Ins.currentSceneName.Equals("GamePlay") && !UIManager.Ins.IsOpened<Home>())
+        if (isSpawnPrefas == true)
         {
-           LoadLevel();
+            LoadLevelPrefabs();
+        }
+        else
+        {
+            if (SceneController.Ins.currentSceneName.Equals("GamePlay") && !UIManager.Ins.IsOpened<Home>())
+            {
+                LoadLevel();
+            }
         }
     }
     public void LoadLevel()
     {
         DestroyCurrentLevel();
-        InstantiateLevel(indexIDLV);
+        InstantiateLevel(indexLevel);
         levelCurrent.gameObject.SetActive(true);
         levelCurrent.Onint();
+    }
+   
+    public void LoadLevelPrefabs()
+    {
+        DestroyCurrentLevel();
+        InstantiateLevelPrefabs(indexLevel);
+        levelCurrent.gameObject.SetActive(true);
+        levelCurrent.Onint();
+        StartCoroutine(SetIDToVoxel());
+        StartCoroutine(IE_LoadCellButtonSwatch());
+    }
+
+
+    IEnumerator IE_LoadCellButtonSwatch()
+    {
+        if(UIManager.Ins.IsOpened<Home>() == false)
+        {
+            yield return new WaitForEndOfFrame();
+            yield return new WaitForEndOfFrame();
+            yield return new WaitForEndOfFrame();
+            yield return new WaitForEndOfFrame();
+            UIManager.Ins.OpenUI<GamePlay>().buttonSwatchCellUI.LoadData();
+        }
+    }
+    IEnumerator SetIDToVoxel()
+    {
+        yield return new WaitForEndOfFrame();
+        yield return new WaitForEndOfFrame();
+        yield return new WaitForEndOfFrame();
+        yield return new WaitForEndOfFrame();
+
+        Dictionary<string, int> materialToID = new Dictionary<string, int>();
+        int currentID = 1;
+        listID.Clear();
+        foreach (var voxelPiece in levelCurrent.voxelPieces)
+        {
+            string materialName = voxelPiece.material.name;
+
+            if (!materialToID.ContainsKey(materialName))
+            {
+                materialToID[materialName] = currentID;
+                listID.Add(currentID);
+                currentID++;
+            }
+
+            voxelPiece.ID = materialToID[materialName];
+        }
+    }
+
+    public void InstantiateLevelPrefabs(int indexLevel)
+    {
+        levelCurrent = Instantiate(levelDataAssetData.GetLevelWithID(indexLevel).level);
+    }
+
+
+    public void NextLevel()
+    {
+        indexLevel++;
+        SceneController.Ins.LoadCurrentScene(() =>
+        {
+        }, false, false);
     }
     public void InstantiateLevel25D(int indexLevel)
     {
@@ -60,7 +131,7 @@ public class LevelManager : Singleton<LevelManager>
     {
         if (levelCurrent != null)
         {
-            _IDSelected = 0;
+            iDSelected = 0;
             Destroy(levelCurrent.gameObject);
             Debug.LogError("Destroy = = = = = = = ");
         }
@@ -72,7 +143,7 @@ public class LevelManager : Singleton<LevelManager>
         {
             if (levelCurrent.voxelPieces[i].isVoxel != true)
             {
-                if (levelCurrent.voxelPieces[i].ID == _IDSelected)
+                if (levelCurrent.voxelPieces[i].ID == iDSelected)
                 {
                     levelCurrent.voxelPieces[i].mesh.material.color = new Color(0.25f, 0.25f, 0.25f);
                 }
@@ -85,7 +156,7 @@ public class LevelManager : Singleton<LevelManager>
     }
     public void CheckID(int idInput)
     {
-        _IDSelected = idInput;
+        iDSelected = idInput;
     }
     public int CountVoxelPiecesWithID(int targetID)
     {
@@ -105,11 +176,17 @@ public class LevelManager : Singleton<LevelManager>
         {
             if (levelCurrent.CountVoxel(id) <= 0)
             {
+                listID.Remove(id);
+                iDSelected = listID[0];
+                UIManager.Ins.OpenUI<GamePlay>().buttonSwatchCellUI.LoadData();
                 Debug.LogError(levelCurrent.CountVoxel(id) + " het id " + id);
+
             }
         }
         else
         {
+            UIManager.Ins.CloseAll();
+            UIManager.Ins.OpenUI<Win>();
             Debug.LogError("Win");
         }
     }
@@ -156,6 +233,23 @@ public class LevelManager : Singleton<LevelManager>
             MatManager.Ins.ChangeMatCurent(voxelPiece, 1);
         }
         if (voxelPiece.ID == 6)
+        {
+            MatManager.Ins.ChangeMatCurent(voxelPiece, 0);
+        }
+        if (voxelPiece.ID == 7)
+        {
+            MatManager.Ins.ChangeMatCurent(voxelPiece, 1);
+
+        }
+        if (voxelPiece.ID == 8)
+        {
+            MatManager.Ins.ChangeMatCurent(voxelPiece, 2);
+        }
+        if (voxelPiece.ID == 9)
+        {
+            MatManager.Ins.ChangeMatCurent(voxelPiece, 1);
+        }
+        if (voxelPiece.ID == 10)
         {
             MatManager.Ins.ChangeMatCurent(voxelPiece, 0);
         }

@@ -5,20 +5,18 @@ using UnityEngine;
 
 public class Level : MonoBehaviour
 {
-    public VoxelPiece[] voxelPieces;
+    public List<VoxelPiece> voxelPieces;
+
     public int quantity;
     public bool isTutorialClick;
     public bool isTutorialRotate;
     public Transform container;
     public int ID_1 = 0;
-    void Start()
-    {
-        Onint();
-    }
+ 
     public void Onint()
     {
-        voxelPieces = GetComponentsInChildren<VoxelPiece>();
-        quantity = voxelPieces.Length;
+        voxelPieces = new List<VoxelPiece>(GetComponentsInChildren<VoxelPiece>());
+        quantity = voxelPieces.Count;
     }
     public int CountVoxelPiecesWithID(int targetID)
     {
