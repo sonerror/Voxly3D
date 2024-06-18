@@ -2,31 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ButtonSwatch : MonoBehaviour
 {
     public int id;
     public TextMeshProUGUI textID;
+    public Image imgBG;
+    public Button button;
     public void Start()
     {
         textID.text = id.ToString();
     }
+
     public void btnID()
     {
         LevelManager.Ins.CheckID(id);
         LevelManager.Ins.ChangematFormID();
-        SelectButton();
     }
-
-    public void SelectButton()
+    public void SetBG(Color color)
     {
-        if (LevelManager.Ins.iDSelected != 0)
-        {
-            if (LevelManager.Ins.iDSelected == id)
-            {
-                gameObject.transform.localScale *= 1.5f;
-                gameObject.transform.localPosition += new Vector3(0, 1, 0);
-            }
-        }
+        imgBG.color = color;
     }
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,18 +10,10 @@ public class GamePlay : UICanvas
     public override void Open()
     {
         base.Open();
-        Oninit();
     }
     public override void CloseDirectly()
     {
         base.CloseDirectly();
-    }
-    public void OnLoadNewScene()
-    {
-    }
-    public void Oninit()
-    {
-
     }
     public void btnID(int idInput)
     {
@@ -29,11 +22,15 @@ public class GamePlay : UICanvas
     }
     public void BtnBack()
     {
-        SceneController.Ins.ChangeScene("GamePlay", () => {
+        LevelManager.Ins.DestroyCurrentLevel();
+        SceneController.Ins.ChangeScene("GamePlay", () =>
+        {
+           
+            buttonSwatchCellUI.DestroyButton();
             UIManager.Ins.CloseAll();
             UIManager.Ins.OpenUI<Home>();
         }, true, true);
         LevelManager.Ins.iDSelected = 0;
-
+        MatManager.Ins.ClearListID();
     }
 }

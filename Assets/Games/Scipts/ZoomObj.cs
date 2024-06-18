@@ -44,7 +44,7 @@ public class ZoomWithMouseWheel : MonoBehaviour
     {
         if (target == null) return;
         float distance = Vector3.Distance(cam.transform.position, target.position);
-        distance -= scrollInput * maxFOV / 10;
+        distance -= scrollInput * maxZoom / zoomSpeed;
         distance = Mathf.Clamp(distance, minZoom, maxZoom);
 
         Vector3 direction = (cam.transform.position - target.position).normalized;
@@ -52,15 +52,17 @@ public class ZoomWithMouseWheel : MonoBehaviour
     }
     void ZoomByFOV(float scrollInput)
     {
-        cam.fieldOfView -= scrollInput * zoomSpeed;
+        cam.fieldOfView -= scrollInput * (maxFOV / 10);
         cam.fieldOfView = Mathf.Clamp(cam.fieldOfView, minFOV, maxFOV);
         if (cam.fieldOfView < maxFOV / 1.4)
         {
             LevelManager.Ins.SetMatZoomIn();
             LevelManager.Ins.ChangematFormID();
+            LevelManager.Ins.isChangeMatSl = true;
         }
         else
         {
+            LevelManager.Ins.isChangeMatSl = false;
             LevelManager.Ins.SetMatZoomOut();
         }
     }

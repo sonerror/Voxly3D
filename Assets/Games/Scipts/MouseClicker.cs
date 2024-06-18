@@ -6,6 +6,7 @@ public class MouseClicker : MonoBehaviour
 {
     public Vector3 mousePos;
     public VoxelPiece piece;
+    public LayerMask layerMask;
     void Update()
     {
         if (Input.GetMouseButtonDown(0) && !UI_Hover.IsPointerOverUIElement()) // Nhấn chuột
@@ -44,27 +45,30 @@ public class MouseClicker : MonoBehaviour
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
-        LayerMask mask = LayerMask.GetMask("Voxel");
+       
         Debug.DrawRay(ray.origin, ray.direction * 100f, Color.green, 0.5f);
-        if (Physics.Raycast(ray, out hit, 1000f, mask))
+        if (Physics.Raycast(ray, out hit, 1000f, layerMask))
         {
-            piece = hit.collider.GetComponent<VoxelPiece>();
+            piece = hit.collider.GetComponentInParent<VoxelPiece>();
             StartCoroutine(IE_Draw());
         }
     }
     IEnumerator IE_Draw()
     {
         yield return new WaitForEndOfFrame();
-        if (piece.isVoxel != true && piece.ID == LevelManager.Ins.iDSelected)
+        if (piece != null)
         {
-            LevelManager.Ins.areDrawing = true;
-        }
+            if (piece.isVoxel != true && piece.ID == LevelManager.Ins.iDSelected)
+            {
+                LevelManager.Ins.areDrawing = true;
+            }
 
-        if (piece != null && piece.ID == LevelManager.Ins.iDSelected)
-        {
-            MatManager.Ins.ChangeMat(piece);
-            piece.isVoxel = true;
-            LevelManager.Ins.CheckWinLose(piece.ID);
+            if (piece != null && piece.ID == LevelManager.Ins.iDSelected)
+            {
+                MatManager.Ins.ChangeMat(piece);
+                piece.isVoxel = true;
+                LevelManager.Ins.CheckWinLose(piece.ID);
+            }
         }
     }
 }

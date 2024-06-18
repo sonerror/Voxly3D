@@ -18,4 +18,5 @@ public class LevelDataTFDataModel
 {
     public ObscuredInt id;
     public LevelData levelDatas;
+    public Sprite sprite;
 }

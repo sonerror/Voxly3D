@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3976220074199064438}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: VoxelPiece
-  m_TagString: Untagged
+  m_TagString: VoxelPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -43,9 +43,9 @@ GameObject:
   - component: {fileID: 7530654936316132915}
   - component: {fileID: 7671494390013428408}
   - component: {fileID: 6098488288244656244}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Level_0
-  m_TagString: Untagged
+  m_TagString: VoxelPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -111,8 +111,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zoomState: 1
   target: {fileID: 4373519065341805499}
-  zoomSpeed: 20
-  minZoom: 10
-  maxZoom: 20
-  minFOV: 10
-  maxFOV: 80
+  zoomSpeed: 5
+  minZoom: 1
+  maxZoom: 8
+  minFOV: 1
+  maxFOV: 6

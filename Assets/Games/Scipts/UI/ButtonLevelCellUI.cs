@@ -14,7 +14,7 @@ public class ButtonLevelCellUI : MonoBehaviour
     {
         id = _id;
         text.text = (id + 1).ToString();
-        sprite.sprite = LevelManager.Ins.levelDataAssetData.GetLevelWithID(id).sprite;
+        sprite.sprite = LevelManager.Ins.levelDataTFAssetData.GetLevelDataWithID(id).sprite;
     }
     public void btnIndexLevel()
     {

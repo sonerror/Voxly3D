@@ -37,7 +37,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0.000061035, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &3452186449400633343
 CanvasRenderer:
@@ -334,8 +334,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 121.25, y: 300}
-  m_SizeDelta: {x: 837.49, y: 255}
+  m_AnchoredPosition: {x: 120, y: 300}
+  m_SizeDelta: {x: 840, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &26984018759204427
 CanvasRenderer:
@@ -419,6 +419,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonSwatch: {fileID: 4583175916342148208, guid: 59864898c81cede469fa256e6da9a9db, type: 3}
   tf: {fileID: 8186086585171498705}
+  buttonSwatches: []
+  tfContent: {fileID: 8186086585171498705}
 --- !u!1 &5632542558000259034
 GameObject:
   m_ObjectHideFlags: 0
@@ -717,10 +719,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1073237384124457191}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0004, y: 0}
-  m_SizeDelta: {x: 2632.9785, y: 238}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 127.5}
+  m_SizeDelta: {x: 3437.9995, y: 255}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &8319669522698421901
 MonoBehaviour:

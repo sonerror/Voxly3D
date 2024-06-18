@@ -8,19 +8,32 @@ using UnityEngine;
 
 public class LevelData : ScriptableObject
 {
-    [SerializeField]
-    public List<TransformData> transformDataList = new List<TransformData>();
+    public int levelID;
+    public List<TransformData> tfData;
+    public List<MaterialData> materials;
 
 }
 [Serializable]
 public class TransformData
 {
-    public int id;
     public Vector3 position;
-
-    public TransformData(int id,Vector3 position)
+    public int realColorID;
+    public int defaultColorID;
+    public TransformData(Vector3 position, int realColorID, int defaultColorID)
     {
-        this.id = id;
         this.position = position;
+        this.realColorID = realColorID;
+        this.defaultColorID = defaultColorID;
+    }
+}
+[System.Serializable]
+public class MaterialData
+{
+    public Material material;
+    public int colorID;
+    public MaterialData(Material material, int colorId)
+    {
+        this.material = material;
+        this.colorID = colorId;
     }
 }
