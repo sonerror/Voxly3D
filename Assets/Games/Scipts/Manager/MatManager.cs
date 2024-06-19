@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class MatManager : Singleton<MatManager>
 {
-    public MaterialAssetData materialAssetData;
     public MaterialAssetData materialNumber;
     public List<Material> matCurrent = new List<Material>();
+    public List<MaterialData> listIDBtn = new List<MaterialData>();
     public List<MaterialData> listID = new List<MaterialData>();
+    
     public void ChangeMat(VoxelPiece voxelPiece)
     {
         voxelPiece.mesh.material = listID.Find(m => m.colorID == voxelPiece.ID).material;
@@ -22,9 +23,9 @@ public class MatManager : Singleton<MatManager>
     }
     public void ClearListID()
     {
-        if (listID != null)
+        if (listIDBtn != null)
         {
-            listID.Clear();
+            listIDBtn.Clear();
         }
     }
 }

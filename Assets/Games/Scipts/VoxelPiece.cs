@@ -12,6 +12,7 @@ public class VoxelPiece : GameUnit
    
     public void Oninit()
     {
+        isVoxel = false;
         LevelManager.Ins.ChangeMatCurrent(this);
     }
 }

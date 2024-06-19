@@ -4,32 +4,72 @@ using UnityEngine;
 
 public class RotateAround : MonoBehaviour
 {
-    public float rotateMouseSpeed;
-    private Vector3 lastMousePosition;
-    private bool isMouseDragging;
-
-    private void Update()
+    public float rotateSpeed = 1f;
+    private Vector2? lastTouchPos;
+    private bool isDragging = false;
+    void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        HandleMouseInput();
+        HandleTouchInput();
+    }
+    void HandleMouseInput()
+    {
+        if (Input.GetMouseButtonDown(0) && !UI_Hover.IsPointerOverUIElement())
         {
-            isMouseDragging = true;
-            lastMousePosition = Input.mousePosition;
+            isDragging = true;
+            lastTouchPos = Input.mousePosition;
         }
-        else if (Input.GetMouseButtonUp(0) || Input.touchCount == 2)
+        else if (Input.GetMouseButtonUp(0) && !UI_Hover.IsPointerOverUIElement())
         {
-            isMouseDragging = false;
+            isDragging = false;
+            lastTouchPos = null;
         }
+        if (isDragging && LevelManager.Ins.areDrawing == false)
+        {
+            Vector2 currentTouchPos = (Vector2)Input.mousePosition;
+            if (lastTouchPos.HasValue)
+            {
+                Vector2 delta = currentTouchPos - lastTouchPos.Value;
 
-        if (isMouseDragging && Input.touchCount < 2 && LevelManager.Ins.areDrawing == false && !UI_Hover.IsPointerOverUIElement())
-        {
-            Vector3 currentMousePosition = Input.mousePosition;
-            float deltaX = currentMousePosition.x - lastMousePosition.x;
-            float deltaY = currentMousePosition.y - lastMousePosition.y;
-            Quaternion rotationX = Quaternion.Euler(deltaY * rotateMouseSpeed * Time.deltaTime, 0f, 0f);
-            Quaternion rotationY = Quaternion.Euler(0f, -deltaX * rotateMouseSpeed * Time.deltaTime, 0f);
-            transform.rotation = rotationY * transform.rotation;
-            transform.rotation = rotationX * transform.rotation;
-            lastMousePosition = currentMousePosition;
+                float rotationX = delta.y * rotateSpeed * Time.deltaTime;
+                float rotationY = -delta.x * rotateSpeed * Time.deltaTime;
+
+                transform.Rotate(Vector3.up, rotationY, Space.World);
+                transform.Rotate(Vector3.right, rotationX, Space.World);
+            }
+            lastTouchPos = currentTouchPos;
         }
     }
+    void HandleTouchInput()
+    {
+        if (Input.touchCount > 0 && !UI_Hover.IsPointerOverUIElement() && Input.touchCount < 2)
+        {
+            Touch touch = Input.GetTouch(0);
+
+            switch (touch.phase)
+            {
+                case TouchPhase.Began:
+                    lastTouchPos = touch.position;
+                    break;
+
+                case TouchPhase.Moved:
+                    if (lastTouchPos != null)
+                    {
+                        Vector2 currentTouchPos = touch.position;
+                        Vector2 delta = currentTouchPos - lastTouchPos.Value;
+                        float rotationX = delta.y * rotateSpeed * Time.deltaTime;
+                        float rotationY = -delta.x * rotateSpeed * Time.deltaTime;
+                        transform.Rotate(Vector3.up, rotationY, Space.World);
+                        transform.Rotate(Vector3.right, rotationX, Space.World);
+                        lastTouchPos = currentTouchPos;
+                    }
+                    break;
+
+                case TouchPhase.Ended:
+                    lastTouchPos = null;
+                    break;
+            }
+        }
+    }
+
 }

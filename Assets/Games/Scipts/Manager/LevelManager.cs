@@ -15,9 +15,6 @@ public class LevelManager : Singleton<LevelManager>
     public int iDSelected;
     public bool areDrawing = false;
     public int indexLevel = 0;
-    public List<int> idButton = new List<int>();
-    public bool isSpawnPrefas = false;
-    public List<int> listIDs = new List<int>();
     public bool isChangeMatSl = false;
 
     private void OnEnable()
@@ -30,16 +27,9 @@ public class LevelManager : Singleton<LevelManager>
     }
     public void OnLoadNewScene()
     {
-        if (isSpawnPrefas == true)
+        if (SceneController.Ins.currentSceneName.Equals("GamePlay") && !UIManager.Ins.IsOpened<Home>())
         {
-            LoadLevelPrefabs();
-        }
-        else
-        {
-            if (SceneController.Ins.currentSceneName.Equals("GamePlay") && !UIManager.Ins.IsOpened<Home>())
-            {
-                LoadLevel();
-            }
+            LoadLevel();
         }
     }
     public void LoadLevel()
@@ -58,7 +48,6 @@ public class LevelManager : Singleton<LevelManager>
         InstantiateLevelPrefabs(indexLevel);
         levelCurrent.gameObject.SetActive(true);
         levelCurrent.Onint();
-        //StartCoroutine(SetIDToVoxel());
         StartCoroutine(IE_LoadCellButtonSwatch());
     }
 
@@ -74,37 +63,10 @@ public class LevelManager : Singleton<LevelManager>
             UIManager.Ins.OpenUI<GamePlay>().buttonSwatchCellUI.LoadData();
         }
     }
-    /*    IEnumerator SetIDToVoxel()
-        {
-            yield return new WaitForEndOfFrame();
-            yield return new WaitForEndOfFrame();
-            yield return new WaitForEndOfFrame();
-            yield return new WaitForEndOfFrame();
-
-            Dictionary<string, int> materialToID = new Dictionary<string, int>();
-            int currentID = 1;
-            listID.Clear();
-            foreach (var voxelPiece in levelCurrent.voxelPieces)
-            {
-                string materialName = voxelPiece.material.name;
-
-                if (!materialToID.ContainsKey(materialName))
-                {
-                    materialToID[materialName] = currentID;
-                    listID.Add(currentID);
-                    currentID++;
-                }
-
-                voxelPiece.ID = materialToID[materialName];
-            }
-        }*/
-
     public void InstantiateLevelPrefabs(int indexLevel)
     {
         levelCurrent = Instantiate(levelDataAssetData.GetLevelWithID(indexLevel).level);
     }
-
-
     public void NextLevel()
     {
         indexLevel++;
@@ -113,13 +75,12 @@ public class LevelManager : Singleton<LevelManager>
         {
         }, false, false);
     }
-
     public void InstantiateLevel(int indexLevel)
     {
         levelCurrent = Instantiate(_levelIndex);
         LevelData levelDataTF = levelDataTFAssetData.GetLevelDataWithID(indexLevel).levelDatas;
         MatManager.Ins.listID = new List<MaterialData>(levelDataTF.materials);
-        listIDs = MatManager.Ins.listID.Select(m => m.colorID).ToList();
+        MatManager.Ins.listIDBtn = new List<MaterialData>(levelDataTF.materials);
         foreach (TransformData tf in levelDataTF.tfData)
         {
             VoxelPiece v = SimplePool.Spawn<VoxelPiece>(PoolType.VoxelPiece);
@@ -128,6 +89,10 @@ public class LevelManager : Singleton<LevelManager>
             v.TF.SetParent(null);
             v.TF.position = tf.position;
             v.TF.SetParent(levelCurrent.container);
+            if (indexLevel == 0)
+            {
+                v.TF.localScale = new Vector3(5, 5, 5);
+            }
         }
     }
     public void DestroyCurrentLevel()
@@ -148,7 +113,7 @@ public class LevelManager : Singleton<LevelManager>
                 {
                     if (levelCurrent.voxelPieces[i].ID == iDSelected)
                     {
-                        levelCurrent.voxelPieces[i].mesh.material.color = new Color(0.25f, 0.25f, 0.25f);
+                        levelCurrent.voxelPieces[i].mesh.material.color = new Color32(54, 69, 79, 255);
                     }
                     else
                     {
@@ -180,19 +145,28 @@ public class LevelManager : Singleton<LevelManager>
         {
             if (levelCurrent.CountVoxel(id) <= 0)
             {
-                listIDs.Remove(id);
-                iDSelected = listIDs[0];
-                UIManager.Ins.OpenUI<GamePlay>().buttonSwatchCellUI.LoadData();
+                StartCoroutine(IE_ResetUI(id));
                 ChangematFormID();
-                Debug.LogError(levelCurrent.CountVoxel(id) + " het id " + id);
             }
         }
         else
         {
             UIManager.Ins.CloseAll();
             UIManager.Ins.OpenUI<Win>();
-            Debug.LogError("Win");
         }
+    }
+    IEnumerator IE_ResetUI(int id)
+    {
+        yield return new WaitForEndOfFrame();
+        MatManager.Ins.listIDBtn.RemoveAll(i => i.colorID == id);
+        yield return new WaitForEndOfFrame();
+        yield return new WaitForEndOfFrame();
+        //iDSelected = MatManager.Ins.listIDBtn[MatManager.Ins.listIDBtn.Count - 1].colorID;
+        iDSelected = MatManager.Ins.listIDBtn[0].colorID;
+        yield return new WaitForEndOfFrame();
+        yield return new WaitForEndOfFrame();
+        UIManager.Ins.OpenUI<GamePlay>().buttonSwatchCellUI.LoadData();
+        yield return new WaitForEndOfFrame();
     }
     public void SetMatZoomIn()
     {
@@ -216,46 +190,12 @@ public class LevelManager : Singleton<LevelManager>
     }
     public void ChangeMatCurrent(VoxelPiece voxelPiece)
     {
-        if (voxelPiece.ID == 1)
-        {
-            MatManager.Ins.ChangeMatCurent(voxelPiece, 0);
-        }
-        if (voxelPiece.ID == 2)
-        {
-            MatManager.Ins.ChangeMatCurent(voxelPiece, 1);
-        }
-        if (voxelPiece.ID == 3)
-        {
-            MatManager.Ins.ChangeMatCurent(voxelPiece, 2);
-        }
-        if (voxelPiece.ID == 4)
-        {
-            MatManager.Ins.ChangeMatCurent(voxelPiece, 2);
-        }
-        if (voxelPiece.ID == 5)
-        {
-            MatManager.Ins.ChangeMatCurent(voxelPiece, 1);
-        }
-        if (voxelPiece.ID == 6)
-        {
-            MatManager.Ins.ChangeMatCurent(voxelPiece, 0);
-        }
-        if (voxelPiece.ID == 7)
-        {
-            MatManager.Ins.ChangeMatCurent(voxelPiece, 1);
+        int[] colorIndices = { 0, 1, 2, 2, 1, 0, 1, 2, 1, 0 };
 
-        }
-        if (voxelPiece.ID == 8)
+        if (voxelPiece.ID > 0 && voxelPiece.ID <= colorIndices.Length)
         {
-            MatManager.Ins.ChangeMatCurent(voxelPiece, 2);
-        }
-        if (voxelPiece.ID == 9)
-        {
-            MatManager.Ins.ChangeMatCurent(voxelPiece, 1);
-        }
-        if (voxelPiece.ID == 10)
-        {
-            MatManager.Ins.ChangeMatCurent(voxelPiece, 0);
+            int colorIndex = colorIndices[voxelPiece.ID - 1];
+            MatManager.Ins.ChangeMatCurent(voxelPiece, colorIndex);
         }
     }
 }

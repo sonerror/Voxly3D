@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 4373519065341805499}
   - component: {fileID: 7530654936316132915}
   - component: {fileID: 7671494390013428408}
-  - component: {fileID: 6098488288244656244}
+  - component: {fileID: 2936218321931468884}
   m_Layer: 6
   m_Name: Level_0
   m_TagString: VoxelPiece
@@ -96,8 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e66be121e9ca1e47b23f5e0fd835ebc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateMouseSpeed: 10
---- !u!114 &6098488288244656244
+  rotateSpeed: 20
+--- !u!114 &2936218321931468884
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106,13 +106,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 8650382400016325306}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c19542d83906b174d95697af1f00dfa4, type: 3}
+  m_Script: {fileID: 11500000, guid: 1b0c2444acf99d54e95e878a4df48bba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zoomState: 1
-  target: {fileID: 4373519065341805499}
-  zoomSpeed: 5
-  minZoom: 1
-  maxZoom: 8
-  minFOV: 1
+  touchesPrePosDiff: 0
+  touchesCurPosDiff: 0
+  zoomModifier: 10
+  firstTouchPrePos: {x: 0, y: 0}
+  secondTouchPrePos: {x: 0, y: 0}
+  zoomWheelSpeed: 40
+  minOrthoSize: 0.1
+  maxOrthoSize: 0.8
+  zoomMobileSpeed: 1
+  minFOV: 0.05
   maxFOV: 6

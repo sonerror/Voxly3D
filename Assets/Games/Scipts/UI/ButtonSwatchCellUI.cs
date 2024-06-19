@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ButtonSwatchCellUI : MonoBehaviour
 {
@@ -8,20 +9,37 @@ public class ButtonSwatchCellUI : MonoBehaviour
     public Transform tf;
     public List<ButtonSwatch> buttonSwatches;
     public RectTransform tfContent;
-    private void Awake()
-    {
-
-    }
     public void LoadData()
     {
         DestroyButton();
-        for (int i = 0; i < LevelManager.Ins.listIDs.Count; i++)
+        for (int i = 0; i < MatManager.Ins.listIDBtn.Count; i++)
         {
-            ButtonSwatch btn = Instantiate(buttonSwatch, tf);
-            btn.id = LevelManager.Ins.listIDs[i];
-            buttonSwatches.Add(btn);
+            CreateAndConfigureButton(MatManager.Ins.listIDBtn[i]);
         }
-        SetSizeDetal();
+        StartCoroutine(IE_DelayTime());
+    }
+    IEnumerator IE_DelayTime()
+    {
+        yield return new WaitForEndOfFrame();
+        yield return new WaitForEndOfFrame();
+        yield return new WaitForEndOfFrame();
+        SetPosScroll(LevelManager.Ins.iDSelected);
+        yield return new WaitForEndOfFrame();
+        SelectButton();
+    }
+    void CreateAndConfigureButton(MaterialData materialData)
+    {
+        ButtonSwatch btn = Instantiate(buttonSwatch, tf);
+        btn.id = materialData.colorID;
+
+        Color newColor = materialData.material.color;
+        newColor.a -= 0.3f;
+
+        btn.imgBG.color = newColor;
+        btn.color = newColor;
+        btn.Onint(this);
+
+        buttonSwatches.Add(btn);
     }
     public void DestroyButton()
     {
@@ -34,40 +52,44 @@ public class ButtonSwatchCellUI : MonoBehaviour
             buttonSwatches.Clear();
         }
     }
-    public void SetSizeDetal()
+
+    public void ResetUI(int id)
+    {
+        SetPosScroll(id);
+    }
+    public void SetPosScroll(int targetButtonIndex)
     {
         if (tfContent != null && buttonSwatches.Count > 0)
         {
             RectTransform buttonRectTransform = buttonSwatches[0].GetComponent<RectTransform>();
             float buttonWidth = buttonRectTransform.rect.width;
             float totalWidth = buttonWidth * buttonSwatches.Count;
-
             tfContent.sizeDelta = new Vector2(totalWidth, tfContent.sizeDelta.y);
+            if (targetButtonIndex > 0 && targetButtonIndex < buttonSwatches.Count)
+            {
+                RectTransform targetButtonRectTransform = buttonSwatches.Find(id =>id.id == targetButtonIndex).GetComponent<RectTransform>();
+                float targetButtonXPos = targetButtonRectTransform.anchoredPosition.x + 100;
+                float normalizedPosition = Mathf.Clamp01(1 - (targetButtonXPos / (totalWidth - tfContent.rect.width)));
+                ScrollRect scrollRect = tfContent.GetComponentInParent<ScrollRect>();
+                scrollRect.horizontalNormalizedPosition = normalizedPosition;
+            }
         }
     }
-
-
-   
-    public void btnID(int id)
-    {
-        LevelManager.Ins.CheckID(id);
-        LevelManager.Ins.ChangematFormID();
-    }
-
     public void SelectButton()
     {
-        for (int i = 0; i < buttonSwatches.Count; i++)
+        if (LevelManager.Ins.iDSelected != 0)
         {
-            if (buttonSwatches[i].id == LevelManager.Ins.iDSelected)
+            for (int i = 0; i < buttonSwatches.Count; i++)
             {
-                buttonSwatches[i].SetBG(Color.blue);
-            }
-            else
-            {
-                buttonSwatches[i].SetBG(Color.white);
-
+                if (buttonSwatches[i].id == LevelManager.Ins.iDSelected)
+                {
+                    buttonSwatches[i].MoveUp();
+                }
+                else
+                {
+                    buttonSwatches[i].MoveDown();
+                }
             }
         }
     }
-
 }

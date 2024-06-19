@@ -11,7 +11,6 @@ public class LevelData : ScriptableObject
     public int levelID;
     public List<TransformData> tfData;
     public List<MaterialData> materials;
-
 }
 [Serializable]
 public class TransformData

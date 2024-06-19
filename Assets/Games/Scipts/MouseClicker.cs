@@ -50,24 +50,23 @@ public class MouseClicker : MonoBehaviour
         if (Physics.Raycast(ray, out hit, 1000f, layerMask))
         {
             piece = hit.collider.GetComponentInParent<VoxelPiece>();
-            StartCoroutine(IE_Draw());
+            StartCoroutine(IE_Draw(piece));
         }
     }
-    IEnumerator IE_Draw()
+    IEnumerator IE_Draw(VoxelPiece voxelPiece)
     {
         yield return new WaitForEndOfFrame();
-        if (piece != null)
+        if (voxelPiece != null)
         {
-            if (piece.isVoxel != true && piece.ID == LevelManager.Ins.iDSelected)
+            if (voxelPiece.isVoxel != true && voxelPiece.ID == LevelManager.Ins.iDSelected)
             {
                 LevelManager.Ins.areDrawing = true;
             }
-
-            if (piece != null && piece.ID == LevelManager.Ins.iDSelected)
+            if (voxelPiece != null && voxelPiece.ID == LevelManager.Ins.iDSelected)
             {
-                MatManager.Ins.ChangeMat(piece);
-                piece.isVoxel = true;
-                LevelManager.Ins.CheckWinLose(piece.ID);
+                MatManager.Ins.ChangeMat(voxelPiece);
+                voxelPiece.isVoxel = true;
+                LevelManager.Ins.CheckWinLose(voxelPiece.ID);
             }
         }
     }
