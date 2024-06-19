@@ -11,12 +11,25 @@ public class Level : MonoBehaviour
     public bool isTutorialClick;
     public bool isTutorialRotate;
     public Transform container;
-    public int ID_1 = 0;
- 
+    public float countDownTime = 180f;
+    public bool isCountDown;
+
+    private void Update()
+    {
+        if (!isCountDown || countDownTime < 0) return;
+        countDownTime -= Time.deltaTime;
+        if (countDownTime < 0)
+        {
+            LevelManager.Ins.CheckWinloseTimer();
+            isCountDown = false;
+        }
+    }
+
     public void Onint()
     {
         voxelPieces = new List<VoxelPiece>(GetComponentsInChildren<VoxelPiece>());
         quantity = voxelPieces.Count;
+        isCountDown = true;
     }
     public int CountVoxelPiecesWithID(int targetID)
     {
@@ -30,4 +43,9 @@ public class Level : MonoBehaviour
     {
         return voxelPieces.Count(voxelPiece => !voxelPiece.isVoxel);
     }
+    public void StopCountDown()
+    {
+        isCountDown = false;
+    }
+
 }

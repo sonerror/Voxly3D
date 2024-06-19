@@ -17,6 +17,8 @@ public class LevelManager : Singleton<LevelManager>
     public int indexLevel = 0;
     public bool isChangeMatSl = false;
 
+
+
     private void OnEnable()
     {
         EventManager.OnLoadNewScene += OnLoadNewScene;
@@ -153,6 +155,16 @@ public class LevelManager : Singleton<LevelManager>
         {
             UIManager.Ins.CloseAll();
             UIManager.Ins.OpenUI<Win>();
+        }
+    }
+    public void CheckWinloseTimer()
+    {
+        if (SceneController.Ins.isLoadingNewScene) return;
+        if (!levelCurrent.isCountDown) return;
+        if (levelCurrent.countDownTime <= 0)
+        {
+            levelCurrent.StopCountDown();
+            UIManager.Ins.OpenUI<Lose>();
         }
     }
     IEnumerator IE_ResetUI(int id)

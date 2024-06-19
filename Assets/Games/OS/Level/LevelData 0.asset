@@ -18,5 +18,5 @@ MonoBehaviour:
     realColorID: 1
     defaultColorID: 1
   materials:
-  - material: {fileID: -6312228636536175987, guid: 45b4a109ec58c6f478fbe2c24316f062, type: 3}
+  - material: {fileID: 5106364046640926047, guid: 45d0ba4a2c434494d95f3fc8afd5203d, type: 3}
     colorID: 1
