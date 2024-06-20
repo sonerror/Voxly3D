@@ -15,7 +15,5 @@ public class Lose : UICanvas
             UIManager.Ins.CloseAll();
             UIManager.Ins.OpenUI<Home>();
         }, true, true);
-        LevelManager.Ins.iDSelected = 0;
-        MatManager.Ins.ClearListID();
     }
 }

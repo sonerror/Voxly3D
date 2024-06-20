@@ -14,7 +14,7 @@ GameObject:
   m_TagString: VoxelPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &3976220074199064438
 Transform:
@@ -43,12 +43,13 @@ GameObject:
   - component: {fileID: 7530654936316132915}
   - component: {fileID: 7671494390013428408}
   - component: {fileID: 2936218321931468884}
+  - component: {fileID: 3457727404598524676}
   m_Layer: 6
   m_Name: Level_0
   m_TagString: VoxelPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4373519065341805499
 Transform:
@@ -85,6 +86,7 @@ MonoBehaviour:
   container: {fileID: 3976220074199064438}
   countDownTime: 10
   isCountDown: 0
+  animator: {fileID: 3457727404598524676}
 --- !u!114 &7671494390013428408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,14 +112,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b0c2444acf99d54e95e878a4df48bba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchesPrePosDiff: 0
-  touchesCurPosDiff: 0
-  zoomModifier: 10
-  firstTouchPrePos: {x: 0, y: 0}
-  secondTouchPrePos: {x: 0, y: 0}
+  rotateSpeed: 0.2
+  zoomMobileSpeed: 0.005
+  minOrthoSize: 0.05
+  maxOrthoSize: 0.6
+  dragSpeed: 0.1
   zoomWheelSpeed: 40
-  minOrthoSize: 0.1
-  maxOrthoSize: 0.8
-  zoomMobileSpeed: 1
-  minFOV: 0.05
-  maxFOV: 6
+--- !u!95 &3457727404598524676
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8650382400016325306}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 48e01d19291234d4dbb0c5a847460374, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

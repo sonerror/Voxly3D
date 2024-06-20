@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,8 +8,6 @@ using UnityEngine.Windows;
 public class LevelManager : Singleton<LevelManager>
 {
     public LevelDataTFAssetData levelDataTFAssetData;
-    public LevelDataAssetData levelDataAssetData;
-
     public Level _levelIndex;
     public Level levelCurrent;
     public GameObject voxelPiece;
@@ -16,9 +15,7 @@ public class LevelManager : Singleton<LevelManager>
     public bool areDrawing = false;
     public int indexLevel = 0;
     public bool isChangeMatSl = false;
-
-
-
+    public bool isWin = false;
     private void OnEnable()
     {
         EventManager.OnLoadNewScene += OnLoadNewScene;
@@ -42,16 +39,10 @@ public class LevelManager : Singleton<LevelManager>
         levelCurrent.Onint();
         StartCoroutine(IE_LoadCellButtonSwatch());
         isChangeMatSl = false;
+        isWin = false;
     }
 
-    public void LoadLevelPrefabs()
-    {
-        DestroyCurrentLevel();
-        InstantiateLevelPrefabs(indexLevel);
-        levelCurrent.gameObject.SetActive(true);
-        levelCurrent.Onint();
-        StartCoroutine(IE_LoadCellButtonSwatch());
-    }
+    
 
 
     IEnumerator IE_LoadCellButtonSwatch()
@@ -65,10 +56,7 @@ public class LevelManager : Singleton<LevelManager>
             UIManager.Ins.OpenUI<GamePlay>().buttonSwatchCellUI.LoadData();
         }
     }
-    public void InstantiateLevelPrefabs(int indexLevel)
-    {
-        levelCurrent = Instantiate(levelDataAssetData.GetLevelWithID(indexLevel).level);
-    }
+  
     public void NextLevel()
     {
         indexLevel++;
@@ -82,6 +70,10 @@ public class LevelManager : Singleton<LevelManager>
         levelCurrent = Instantiate(_levelIndex);
         LevelData levelDataTF = levelDataTFAssetData.GetLevelDataWithID(indexLevel).levelDatas;
         MatManager.Ins.listID = new List<MaterialData>(levelDataTF.materials);
+        if(levelDataTFAssetData.GetLevelDataWithID(indexLevel).timeCount <= 0 )
+        {
+            levelDataTFAssetData.GetLevelDataWithID(indexLevel).timeCount = 120;
+        }
         levelCurrent.countDownTime = levelDataTFAssetData.GetLevelDataWithID(indexLevel).timeCount;
         MatManager.Ins.listIDBtn = new List<MaterialData>(levelDataTF.materials);
         foreach (TransformData tf in levelDataTF.tfData)
@@ -146,16 +138,23 @@ public class LevelManager : Singleton<LevelManager>
     {
         if (levelCurrent.CountSumVoxel() > 0)
         {
+            ButtonSwatch buttonSwatch = UIManager.Ins.OpenUI<GamePlay>().buttonSwatchCellUI.buttonSwatches.Find(_i => _i.id == id);
+            buttonSwatch.SetIMGType(levelCurrent.FCountVoxel(buttonSwatch.id));
             if (levelCurrent.CountVoxel(id) <= 0)
             {
                 StartCoroutine(IE_ResetUI(id));
-                ChangematFormID();
             }
         }
         else
         {
-            UIManager.Ins.CloseAll();
-            UIManager.Ins.OpenUI<Win>();
+            isWin = true;
+            levelCurrent.StopCountDown();
+            levelCurrent.ChangeAnim();
+            DOVirtual.DelayedCall(3f, () =>
+            {
+                UIManager.Ins.CloseAll();
+                UIManager.Ins.OpenUI<Win>();
+            });
         }
     }
     public void CheckWinloseTimer()
@@ -164,6 +163,7 @@ public class LevelManager : Singleton<LevelManager>
         if (!levelCurrent.isCountDown) return;
         if (levelCurrent.countDownTime <= 0)
         {
+            isWin = true;
             levelCurrent.StopCountDown();
             UIManager.Ins.OpenUI<Lose>();
         }
@@ -174,14 +174,14 @@ public class LevelManager : Singleton<LevelManager>
         MatManager.Ins.listIDBtn.RemoveAll(i => i.colorID == id);
         yield return new WaitForEndOfFrame();
         yield return new WaitForEndOfFrame();
-        //iDSelected = MatManager.Ins.listIDBtn[MatManager.Ins.listIDBtn.Count - 1].colorID;
         iDSelected = MatManager.Ins.listIDBtn[0].colorID;
         yield return new WaitForEndOfFrame();
         yield return new WaitForEndOfFrame();
         UIManager.Ins.OpenUI<GamePlay>().buttonSwatchCellUI.LoadData();
         yield return new WaitForEndOfFrame();
+        ChangematFormID();
     }
-    public void SetMatZoomIn()
+    public void SetMatZoomIn()// phong to obj
     {
         for (int i = 0; i < levelCurrent.quantity; i++)
         {
@@ -191,18 +191,25 @@ public class LevelManager : Singleton<LevelManager>
             }
         }
     }
-    public void SetMatZoomOut()
+    public void SetMatZoomOut()//thu nho obj
     {
         for (int i = 0; i < levelCurrent.quantity; i++)
         {
+            MatManager.Ins.ChangeMat(levelCurrent.voxelPieces[i]);
             if (levelCurrent.voxelPieces[i].isVoxel != true)
             {
+
                 ChangeMatCurrent(levelCurrent.voxelPieces[i]);
             }
         }
     }
+    public void SetMatDef(VoxelPiece voxelPiece)
+    {
+
+    }
     public void ChangeMatCurrent(VoxelPiece voxelPiece)
     {
-        MatManager.Ins.ChangeMatCurent(voxelPiece, voxelPiece.ID - 1);
+        MatManager.Ins.ChangeMatCurent(voxelPiece);
     }
+
 }

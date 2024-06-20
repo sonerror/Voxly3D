@@ -32,7 +32,7 @@ public class ButtonLevel : MonoBehaviour
         if (tfContent != null && buttonLevelCellUIs.Count > 0)
         {
             RectTransform buttonRectTransform = buttonLevelCellUIs[0].GetComponent<RectTransform>();
-            float buttonWidth = buttonRectTransform.rect.width + 100;
+            float buttonWidth = buttonRectTransform.rect.height + 100;
             float totalWidth = buttonWidth * buttonLevelCellUIs.Count;
 
             tfContent.sizeDelta = new Vector2(tfContent.sizeDelta.x, totalWidth);
@@ -48,11 +48,5 @@ public class ButtonLevel : MonoBehaviour
             }
         }
     }
-    public void LoadataCell(int id)
-    {
-        for (int i = 0; i < LevelManager.Ins.levelDataAssetData.dataLevels.Count; i++)
-        {
-            id = LevelManager.Ins.levelDataAssetData.dataLevels[i].id;
-        }
-    }
+   
 }

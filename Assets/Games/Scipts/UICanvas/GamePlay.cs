@@ -32,17 +32,10 @@ public class GamePlay : UICanvas
     {
         base.CloseDirectly();
     }
-    public void btnID(int idInput)
-    {
-        LevelManager.Ins.CheckID(idInput);
-        LevelManager.Ins.ChangematFormID();
-    }
     public void BtnBack()
     {
         SceneController.Ins.ChangeScene("GamePlay", () =>
         {
-           
-            buttonSwatchCellUI.DestroyButton();
             UIManager.Ins.CloseAll();
             UIManager.Ins.OpenUI<Home>();
         }, true, true);

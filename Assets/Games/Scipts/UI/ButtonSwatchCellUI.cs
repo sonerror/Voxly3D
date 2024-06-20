@@ -31,14 +31,11 @@ public class ButtonSwatchCellUI : MonoBehaviour
     {
         ButtonSwatch btn = Instantiate(buttonSwatch, tf);
         btn.id = materialData.colorID;
-
         Color newColor = materialData.material.color;
         newColor.a -= 0.3f;
-
         btn.imgBG.color = newColor;
         btn.color = newColor;
-        btn.Onint(this);
-
+        btn.Onint(this,btn.id);
         buttonSwatches.Add(btn);
     }
     public void DestroyButton()
@@ -91,5 +88,10 @@ public class ButtonSwatchCellUI : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void ResetUIBtn()
+    {
+
     }
 }

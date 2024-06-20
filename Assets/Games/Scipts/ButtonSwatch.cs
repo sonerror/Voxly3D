@@ -14,6 +14,7 @@ public class ButtonSwatch : MonoBehaviour
     private RectTransform rectTransform;
     public Vector2 initialPosition;
     public Color color;
+    public float sumMat = 0;
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
@@ -30,12 +31,17 @@ public class ButtonSwatch : MonoBehaviour
         yield return new WaitForEndOfFrame();
         initialPosition = rectTransform.anchoredPosition;
     }
-    public void Onint(ButtonSwatchCellUI buttonSwatchCellUI)
+    public void Onint(ButtonSwatchCellUI buttonSwatchCellUI, int _id)
     {
         this.buttonSwatchCellUI = buttonSwatchCellUI;
         StartCoroutine(IE_Loadata());
+        sumMat = LevelManager.Ins.levelCurrent.FCountVoxel(_id);
+        SetIMGType(sumMat);
     }
-
+    public void SetIMGType(float _coutMat)
+    {
+        imgBG.fillAmount = _coutMat / sumMat;
+    }
     public void btnID()
     {
         LevelManager.Ins.CheckID(id);
