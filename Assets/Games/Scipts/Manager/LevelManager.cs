@@ -82,6 +82,7 @@ public class LevelManager : Singleton<LevelManager>
         levelCurrent = Instantiate(_levelIndex);
         LevelData levelDataTF = levelDataTFAssetData.GetLevelDataWithID(indexLevel).levelDatas;
         MatManager.Ins.listID = new List<MaterialData>(levelDataTF.materials);
+        levelCurrent.countDownTime = levelDataTFAssetData.GetLevelDataWithID(indexLevel).timeCount;
         MatManager.Ins.listIDBtn = new List<MaterialData>(levelDataTF.materials);
         foreach (TransformData tf in levelDataTF.tfData)
         {
@@ -202,12 +203,6 @@ public class LevelManager : Singleton<LevelManager>
     }
     public void ChangeMatCurrent(VoxelPiece voxelPiece)
     {
-        int[] colorIndices = { 0, 1, 2, 2, 1, 0, 1, 2, 1, 0 };
-
-        if (voxelPiece.ID > 0 && voxelPiece.ID <= colorIndices.Length)
-        {
-            int colorIndex = colorIndices[voxelPiece.ID - 1];
-            MatManager.Ins.ChangeMatCurent(voxelPiece, colorIndex);
-        }
+        MatManager.Ins.ChangeMatCurent(voxelPiece, voxelPiece.ID - 1);
     }
 }
