@@ -17,12 +17,10 @@ public class TransformData
 {
     public Vector3 position;
     public int realColorID;
-    public int defaultColorID;
-    public TransformData(Vector3 position, int realColorID, int defaultColorID)
+    public TransformData(Vector3 position, int realColorID)
     {
         this.position = position;
         this.realColorID = realColorID;
-        this.defaultColorID = defaultColorID;
     }
 }
 [System.Serializable]

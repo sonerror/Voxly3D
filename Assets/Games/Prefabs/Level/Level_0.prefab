@@ -87,6 +87,7 @@ MonoBehaviour:
   countDownTime: 10
   isCountDown: 0
   animator: {fileID: 3457727404598524676}
+  zoomAndMoveLevel: {fileID: 0}
 --- !u!114 &7671494390013428408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,11 +114,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotateSpeed: 0.2
-  zoomMobileSpeed: 0.005
+  zoomMobileSpeed: 0.001
   minOrthoSize: 0.05
   maxOrthoSize: 0.6
   dragSpeed: 0.1
   zoomWheelSpeed: 40
+  cam: {fileID: 0}
 --- !u!95 &3457727404598524676
 Animator:
   serializedVersion: 5

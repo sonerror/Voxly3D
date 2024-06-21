@@ -15,7 +15,7 @@ public class ZoomAndMoveLevel : MonoBehaviour
     private float touchesPrePosDiff, touchesCurPosDiff;
     private float zoomModifier;
     private Vector2? lastTouchPos = null;
-    private Camera cam;
+    public Camera cam;
     // private RectTransform canvasRectTransform;
 
     void Start()
@@ -28,11 +28,21 @@ public class ZoomAndMoveLevel : MonoBehaviour
     {
         cam.DOOrthoSize(maxOrthoSize / 3, 0.5f).SetEase(Ease.InOutQuad);
     }
-
+    public void SetTFZoom(bool isZoomIN)
+    {
+        if (isZoomIN)
+        {
+            cam.DOOrthoSize(maxOrthoSize / 4, 0.5f).SetEase(Ease.InOutQuad);
+        }
+        else
+        {
+            cam.DOOrthoSize(maxOrthoSize, 0.5f).SetEase(Ease.InOutQuad);
+        }
+    }
     void Update()
     {
         if (LevelManager.Ins.isWin == true) return;
-        float scrollInput = Input.GetAxis("Mouse ScrollWheel");
+        //float scrollInput = Input.GetAxis("Mouse ScrollWheel");
 
         if (Input.touchCount == 2 && !UI_Hover.IsPointerOverUIElement())
         {
@@ -57,18 +67,18 @@ public class ZoomAndMoveLevel : MonoBehaviour
 
             cam.orthographicSize = Mathf.Clamp(cam.orthographicSize, minOrthoSize, maxOrthoSize);
             UpdateLevelManagerZoomState(cam.orthographicSize);
-        }
+        }/*
 
         float newOrthographicSize = cam.orthographicSize - scrollInput * zoomWheelSpeed * Time.deltaTime;
         cam.orthographicSize = Mathf.Clamp(newOrthographicSize, minOrthoSize, maxOrthoSize);
-        UpdateLevelManagerZoomState(cam.orthographicSize);
+        UpdateLevelManagerZoomState(cam.orthographicSize);*/
     }
 
     void HandleZoom(float touchesPrePosDiff, float touchesCurPosDiff, Touch firstTouch, Touch secondTouch)
     {
         float deltaPos = (firstTouch.deltaPosition - secondTouch.deltaPosition).sqrMagnitude;
         deltaPos = Mathf.Clamp(deltaPos, 0, 400f);
-        zoomModifier = deltaPos * zoomMobileSpeed;
+        zoomModifier = deltaPos * zoomMobileSpeed * Time.deltaTime; 
 
         if (touchesPrePosDiff < touchesCurPosDiff)
         {
@@ -110,11 +120,14 @@ public class ZoomAndMoveLevel : MonoBehaviour
             LevelManager.Ins.SetMatZoomIn();
             LevelManager.Ins.ChangematFormID();
             LevelManager.Ins.isChangeMatSl = true;
+            LevelManager.Ins.SetBtnZoomOut();
         }
         else
         {
             LevelManager.Ins.isChangeMatSl = false;
             LevelManager.Ins.SetMatZoomOut();
+            LevelManager.Ins.SetBtnZoomIn();
+
         }
     }
 }

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,7 +7,12 @@ public class GamePlay : UICanvas
 {
     public ButtonSwatchCellUI buttonSwatchCellUI;
     public TextMeshProUGUI countDownText;
-
+    public List<ButtonZoom> listB = new List<ButtonZoom>();
+    public void ToggleButtons(int indexToDeactivate, int indexToActivate)
+    {
+        listB[indexToDeactivate].gameObject.SetActive(false);
+        listB[indexToActivate].gameObject.SetActive(true);
+    }
     private void OnEnable()
     {
         EventManager.OnLoadNewScene += OnLoadNewScene;
@@ -60,4 +66,7 @@ public class GamePlay : UICanvas
         }
         countDownText.text = minuteString + ":" + secondString;
     }
+
+    
+
 }

@@ -546,7 +546,7 @@ MonoBehaviour:
     realColorID: 3
     defaultColorID: 1
   - position: {x: 0, y: 0.04, z: 0}
-    realColorID: 3
+    realColorID: 2
     defaultColorID: 1
   materials:
   - material: {fileID: -3816400033163642939, guid: f7d5de1e55a3ac440ac4d0cb1de81ca8, type: 3}

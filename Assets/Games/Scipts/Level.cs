@@ -15,7 +15,7 @@ public class Level : MonoBehaviour
     public float countDownTime = 180f;
     public bool isCountDown;
     public Animator animator;
-    ZoomAndMoveLevel zoomAndMoveLevel;
+    public ZoomAndMoveLevel zoomAndMoveLevel;
     public void Start()
     {
         zoomAndMoveLevel = GetComponent<ZoomAndMoveLevel>();
@@ -46,7 +46,8 @@ public class Level : MonoBehaviour
     public int CountVoxel(int targetID)
     {
         return voxelPieces.Count(voxelPiece => voxelPiece.ID == targetID && !voxelPiece.isVoxel);
-    }  public float FCountVoxel(int targetID)
+    }
+    public float FCountVoxel(int targetID)
     {
         return voxelPieces.Count(voxelPiece => voxelPiece.ID == targetID && !voxelPiece.isVoxel);
     }
@@ -68,4 +69,30 @@ public class Level : MonoBehaviour
             animator.Play("Win");
         });
     }
+    public void ZoomInLevel()
+    {
+        zoomAndMoveLevel.SetTFZoom(true);
+    }
+    public void ZoomOutLevel()
+    {
+        zoomAndMoveLevel.SetTFZoom(false);
+
+    }
+    public void BoosterPaintObject(VoxelPiece voxelPiece)
+    {
+
+    }
+    public void ShootRaycasts(VoxelPiece voxelPiece)
+    {
+        Vector3[] directions = { Vector3.up, Vector3.down, Vector3.left, Vector3.right };
+        foreach (var direction in directions)
+        {
+            RaycastHit hit;
+            if (Physics.Raycast(voxelPiece.transform.position, direction, out hit))
+            {
+                Debug.LogError("hit");
+            }
+        }
+    }
+
 }

@@ -16,6 +16,7 @@ public class LevelManager : Singleton<LevelManager>
     public int indexLevel = 0;
     public bool isChangeMatSl = false;
     public bool isWin = false;
+    public bool isUsingBooster = false;
     private void OnEnable()
     {
         EventManager.OnLoadNewScene += OnLoadNewScene;
@@ -40,6 +41,7 @@ public class LevelManager : Singleton<LevelManager>
         StartCoroutine(IE_LoadCellButtonSwatch());
         isChangeMatSl = false;
         isWin = false;
+        isUsingBooster = false;
     }
 
     
@@ -86,7 +88,8 @@ public class LevelManager : Singleton<LevelManager>
             v.TF.SetParent(levelCurrent.container);
             if (indexLevel == 0)
             {
-                v.TF.localScale = new Vector3(5, 5, 5);
+                v.TF.localScale = new Vector3(10, 10, 10);
+                v.TF.localRotation = Quaternion.Euler(-23, 55, -27);
             }
         }
     }
@@ -147,6 +150,8 @@ public class LevelManager : Singleton<LevelManager>
         }
         else
         {
+            ButtonSwatch buttonSwatch = UIManager.Ins.OpenUI<GamePlay>().buttonSwatchCellUI.buttonSwatches.Find(_i => _i.id == id);
+            buttonSwatch.SetIMGType(levelCurrent.FCountVoxel(buttonSwatch.id));
             isWin = true;
             levelCurrent.StopCountDown();
             levelCurrent.ChangeAnim();
@@ -211,5 +216,18 @@ public class LevelManager : Singleton<LevelManager>
     {
         MatManager.Ins.ChangeMatCurent(voxelPiece);
     }
-
+    public void SetBtnZoomIn()
+    {
+        if(UIManager.Ins.IsOpened<GamePlay>())
+        {
+            UIManager.Ins.OpenUI<GamePlay>().ToggleButtons(1, 0);
+        }
+    }
+    public void SetBtnZoomOut()
+    {
+        if(UIManager.Ins.IsOpened<GamePlay>())
+        {
+            UIManager.Ins.OpenUI<GamePlay>().ToggleButtons(0, 1);
+        }
+    }
 }

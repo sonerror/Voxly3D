@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class MouseClicker : MonoBehaviour
@@ -47,7 +48,12 @@ public class MouseClicker : MonoBehaviour
             if (piece != null && !piece.isVoxel && piece.ID == LevelManager.Ins.iDSelected)
             {
                 StartCoroutine(IE_Draw(piece));
+                if (LevelManager.Ins.isUsingBooster)
+                {
+                    ShootRaycasts(piece);
+                }
             }
+            
         }
     }
     IEnumerator IE_Draw(VoxelPiece voxelPiece)
@@ -62,4 +68,42 @@ public class MouseClicker : MonoBehaviour
             LevelManager.Ins.CheckWinLose(voxelPiece.ID);
         }
     }
+
+    IEnumerator IE_DrawByBooster(VoxelPiece voxelPiece)
+    {
+        yield return new WaitForEndOfFrame();
+        LevelManager.Ins.areDrawing = true;
+        MatManager.Ins.ChangeMat(voxelPiece);
+        voxelPiece.isVoxel = true;
+        LevelManager.Ins.CheckWinLose(voxelPiece.ID);
+
+    }
+    public void ShootRaycasts(VoxelPiece voxelPiece)
+    {
+        HashSet<VoxelPiece> visitedPieces = new HashSet<VoxelPiece>();
+        Queue<VoxelPiece> piecesToProcess = new Queue<VoxelPiece>();
+        piecesToProcess.Enqueue(voxelPiece);
+        while (piecesToProcess.Count > 0)
+        {
+            VoxelPiece currentPiece = piecesToProcess.Dequeue();
+
+            Vector3[] directions = { Vector3.up, Vector3.down, Vector3.left, Vector3.right, Vector3.forward, Vector3.back };
+            foreach (var direction in directions)
+            {
+                RaycastHit hit;
+                if (Physics.Raycast(currentPiece.transform.position, direction, out hit, 0.01f))
+                {
+                    VoxelPiece hitPiece = hit.collider.GetComponentInParent<VoxelPiece>();
+                    if (hitPiece != null && !hitPiece.isVoxel && hitPiece.ID == currentPiece.ID && !visitedPieces.Contains(hitPiece))
+                    {
+                        StartCoroutine(IE_DrawByBooster(hitPiece));
+                        StartCoroutine(IE_DrawByBooster(currentPiece));
+                        visitedPieces.Add(hitPiece);
+                        piecesToProcess.Enqueue(hitPiece);
+                    }
+                }
+            }
+        }
+    }
+
 }

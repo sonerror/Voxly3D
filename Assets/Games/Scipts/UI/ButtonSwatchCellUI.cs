@@ -1,14 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ButtonSwatchCellUI : MonoBehaviour
 {
     public ButtonSwatch buttonSwatch;
+    public ButtonSwatch buttonBooster;
     public Transform tf;
     public List<ButtonSwatch> buttonSwatches;
     public RectTransform tfContent;
+
     public void LoadData()
     {
         DestroyButton();
@@ -17,6 +20,7 @@ public class ButtonSwatchCellUI : MonoBehaviour
             CreateAndConfigureButton(MatManager.Ins.listIDBtn[i]);
         }
         StartCoroutine(IE_DelayTime());
+        buttonBooster.MoveDown();
     }
     IEnumerator IE_DelayTime()
     {
@@ -35,7 +39,7 @@ public class ButtonSwatchCellUI : MonoBehaviour
         newColor.a -= 0.3f;
         btn.imgBG.color = newColor;
         btn.color = newColor;
-        btn.Onint(this,btn.id);
+        btn.Onint(this, btn.id);
         buttonSwatches.Add(btn);
     }
     public void DestroyButton()
@@ -59,12 +63,12 @@ public class ButtonSwatchCellUI : MonoBehaviour
         if (tfContent != null && buttonSwatches.Count > 0)
         {
             RectTransform buttonRectTransform = buttonSwatches[0].GetComponent<RectTransform>();
-            float buttonWidth = buttonRectTransform.rect.width;
+            float buttonWidth = buttonRectTransform.rect.width + 10;
             float totalWidth = buttonWidth * buttonSwatches.Count;
             tfContent.sizeDelta = new Vector2(totalWidth, tfContent.sizeDelta.y);
             if (targetButtonIndex > 0 && targetButtonIndex < buttonSwatches.Count)
             {
-                RectTransform targetButtonRectTransform = buttonSwatches.Find(id =>id.id == targetButtonIndex).GetComponent<RectTransform>();
+                RectTransform targetButtonRectTransform = buttonSwatches.Find(id => id.id == targetButtonIndex).GetComponent<RectTransform>();
                 float targetButtonXPos = targetButtonRectTransform.anchoredPosition.x + 100;
                 float normalizedPosition = Mathf.Clamp01(1 - (targetButtonXPos / (totalWidth - tfContent.rect.width)));
                 ScrollRect scrollRect = tfContent.GetComponentInParent<ScrollRect>();
@@ -81,8 +85,21 @@ public class ButtonSwatchCellUI : MonoBehaviour
                 if (buttonSwatches[i].id == LevelManager.Ins.iDSelected)
                 {
                     buttonSwatches[i].MoveUp();
+                    buttonSwatches[i].isSelect = true;
                 }
                 else
+                {
+                    buttonSwatches[i].MoveDown();
+                    buttonSwatches[i].isSelect = false;
+                }
+
+            }
+        }
+        if (LevelManager.Ins.iDSelected == 0)
+        {
+            for (int i = 0; i < buttonSwatches.Count; i++)
+            {
+                if(buttonSwatches[i].isSelect == true)
                 {
                     buttonSwatches[i].MoveDown();
                 }

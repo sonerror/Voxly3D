@@ -41,7 +41,7 @@ public class SpawnLevel : EditorWindow
                         {
                             if (Ultilities.AreColorsApproximatelyEqual(mat.color, listColor[i], 0.1f))
                             {
-                                TransformData cube = new TransformData(child.transform.position, i, 1);
+                                TransformData cube = new TransformData(child.transform.position, i);
                                 level.tfData.Add(cube);
                             }
                         }
@@ -50,7 +50,7 @@ public class SpawnLevel : EditorWindow
                     {
                         listColor.Add(mat.color);
                         uniqueColors.Add(mat);
-                        TransformData cube = new TransformData(child.transform.position, listColor.Count - 1, 1);
+                        TransformData cube = new TransformData(child.transform.position, listColor.Count - 1);
                         level.tfData.Add(cube);
                     }
                 }

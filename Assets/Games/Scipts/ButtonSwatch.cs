@@ -10,11 +10,13 @@ public class ButtonSwatch : MonoBehaviour
     public int id;
     public TextMeshProUGUI textID;
     public Image imgBG;
-    ButtonSwatchCellUI buttonSwatchCellUI;
+    public ButtonSwatchCellUI buttonSwatchCellUI;
     private RectTransform rectTransform;
     public Vector2 initialPosition;
     public Color color;
     public float sumMat = 0;
+    public bool isSelect = false;
+    public bool isSelectedBooster = false;
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
@@ -60,5 +62,24 @@ public class ButtonSwatch : MonoBehaviour
     public void MoveDown()
     {
         rectTransform.DOAnchorPos(initialPosition, 0.5f);
+    }
+
+    public void BtnBooster()
+    {
+        if (isSelectedBooster == false)
+        {
+            LevelManager.Ins.isUsingBooster = true;
+            MoveUp();
+            LevelManager.Ins.iDSelected = 0;
+            buttonSwatchCellUI.SelectButton();
+            isSelectedBooster = true;
+            return;
+        }
+        if (isSelectedBooster == true)
+        {
+            LevelManager.Ins.isUsingBooster = false;
+            MoveDown();
+            isSelectedBooster = false;
+        }
     }
 }
