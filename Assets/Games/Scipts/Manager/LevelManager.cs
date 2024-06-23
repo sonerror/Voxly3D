@@ -29,13 +29,13 @@ public class LevelManager : Singleton<LevelManager>
     {
         if (SceneController.Ins.currentSceneName.Equals("GamePlay") && !UIManager.Ins.IsOpened<Home>())
         {
-            LoadLevel();
+            LoadLevel(indexLevel);
         }
     }
-    public void LoadLevel()
+    public void LoadLevel(int _indelLevel)
     {
         DestroyCurrentLevel();
-        InstantiateLevel(indexLevel);
+        InstantiateLevel(_indelLevel);
         levelCurrent.gameObject.SetActive(true);
         levelCurrent.Onint();
         StartCoroutine(IE_LoadCellButtonSwatch());
@@ -63,9 +63,7 @@ public class LevelManager : Singleton<LevelManager>
     {
         indexLevel++;
         iDSelected = 0;
-        SceneController.Ins.LoadCurrentScene(() =>
-        {
-        }, false, false);
+        LoadLevel(indexLevel);
     }
     public void InstantiateLevel(int indexLevel)
     {
@@ -89,9 +87,9 @@ public class LevelManager : Singleton<LevelManager>
             if (indexLevel == 0)
             {
                 v.TF.localScale = new Vector3(10, 10, 10);
-                v.TF.localRotation = Quaternion.Euler(-23, 55, -27);
             }
         }
+        levelCurrent.transform.localRotation = Quaternion.Euler(10, 120, -20);
     }
     public void DestroyCurrentLevel()
     {

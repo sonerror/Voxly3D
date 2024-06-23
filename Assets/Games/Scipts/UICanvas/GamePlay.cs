@@ -8,6 +8,8 @@ public class GamePlay : UICanvas
     public ButtonSwatchCellUI buttonSwatchCellUI;
     public TextMeshProUGUI countDownText;
     public List<ButtonZoom> listB = new List<ButtonZoom>();
+    public GameObject btn_Zoom;
+
     public void ToggleButtons(int indexToDeactivate, int indexToActivate)
     {
         listB[indexToDeactivate].gameObject.SetActive(false);
@@ -29,6 +31,17 @@ public class GamePlay : UICanvas
     public override void Open()
     {
         base.Open();
+        /*if (LevelManager.Ins != null)
+        {
+            if (LevelManager.Ins.indexLevel == 0)
+            {
+                btn_Zoom.SetActive(false);
+            }
+            else
+            {
+                btn_Zoom.SetActive(true);
+            }
+        }*/
     }
     public void Update()
     {
@@ -66,7 +79,8 @@ public class GamePlay : UICanvas
         }
         countDownText.text = minuteString + ":" + secondString;
     }
-
-    
-
+    public void Btn_Set()
+    {
+        UIManager.Ins.OpenUI<Set>();
+    }
 }

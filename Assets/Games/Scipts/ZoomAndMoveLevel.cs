@@ -26,7 +26,7 @@ public class ZoomAndMoveLevel : MonoBehaviour
     }
     public void SetTFDef()
     {
-        cam.DOOrthoSize(maxOrthoSize / 3, 0.5f).SetEase(Ease.InOutQuad);
+        cam.DOOrthoSize(maxOrthoSize/2 , 0.5f).SetEase(Ease.InOutQuad);
     }
     public void SetTFZoom(bool isZoomIN)
     {
@@ -42,8 +42,14 @@ public class ZoomAndMoveLevel : MonoBehaviour
     void Update()
     {
         if (LevelManager.Ins.isWin == true) return;
-        //float scrollInput = Input.GetAxis("Mouse ScrollWheel");
-
+        float scrollInput = Input.GetAxis("Mouse ScrollWheel");
+        /* if (LevelManager.Ins != null)
+         {
+             if (LevelManager.Ins.indexLevel == 0)
+             {
+                 return;
+             }
+         }*/
         if (Input.touchCount == 2 && !UI_Hover.IsPointerOverUIElement())
         {
             Touch firstTouch = Input.GetTouch(0);
@@ -55,7 +61,6 @@ public class ZoomAndMoveLevel : MonoBehaviour
             Vector2 firstDelta = firstTouch.deltaPosition;
             Vector2 secondDelta = secondTouch.deltaPosition;
             bool isZooming = Vector2.Dot(firstDelta.normalized, secondDelta.normalized) < 0;
-
             if (isZooming)
             {
                 HandleZoom(touchesPrePosDiff, touchesCurPosDiff, firstTouch, secondTouch);
@@ -64,21 +69,20 @@ public class ZoomAndMoveLevel : MonoBehaviour
             {
                 // HandleMove(firstTouch, secondTouch);
             }
-
             cam.orthographicSize = Mathf.Clamp(cam.orthographicSize, minOrthoSize, maxOrthoSize);
             UpdateLevelManagerZoomState(cam.orthographicSize);
-        }/*
+        }
 
         float newOrthographicSize = cam.orthographicSize - scrollInput * zoomWheelSpeed * Time.deltaTime;
         cam.orthographicSize = Mathf.Clamp(newOrthographicSize, minOrthoSize, maxOrthoSize);
-        UpdateLevelManagerZoomState(cam.orthographicSize);*/
+        UpdateLevelManagerZoomState(cam.orthographicSize);
     }
 
     void HandleZoom(float touchesPrePosDiff, float touchesCurPosDiff, Touch firstTouch, Touch secondTouch)
     {
         float deltaPos = (firstTouch.deltaPosition - secondTouch.deltaPosition).sqrMagnitude;
         deltaPos = Mathf.Clamp(deltaPos, 0, 400f);
-        zoomModifier = deltaPos * zoomMobileSpeed * Time.deltaTime; 
+        zoomModifier = deltaPos * zoomMobileSpeed * Time.deltaTime;
 
         if (touchesPrePosDiff < touchesCurPosDiff)
         {
@@ -92,7 +96,6 @@ public class ZoomAndMoveLevel : MonoBehaviour
             //cam.DOOrthoSize(cam.orthographicSize - zoomModifier, 0.1f).SetEase(Ease.OutQuad);
         }
     }
-
     /*    void HandleMove(Touch firstTouch, Touch secondTouch)
         {
             Vector2 currentTouchPos = (firstTouch.position + secondTouch.position) / 2f;
@@ -112,7 +115,6 @@ public class ZoomAndMoveLevel : MonoBehaviour
             }
             lastTouchPos = currentTouchPos;
         }*/
-
     void UpdateLevelManagerZoomState(float orthographicSize)
     {
         if (orthographicSize < maxOrthoSize / 1.4f)
@@ -127,7 +129,6 @@ public class ZoomAndMoveLevel : MonoBehaviour
             LevelManager.Ins.isChangeMatSl = false;
             LevelManager.Ins.SetMatZoomOut();
             LevelManager.Ins.SetBtnZoomIn();
-
         }
     }
 }

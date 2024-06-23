@@ -116,7 +116,7 @@ MonoBehaviour:
   rotateSpeed: 0.2
   zoomMobileSpeed: 0.001
   minOrthoSize: 0.05
-  maxOrthoSize: 0.6
+  maxOrthoSize: 0.35
   dragSpeed: 0.1
   zoomWheelSpeed: 40
   cam: {fileID: 0}

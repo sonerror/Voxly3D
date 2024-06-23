@@ -24,7 +24,7 @@ public class Level : MonoBehaviour
     private void Update()
     {
         if (!isCountDown || countDownTime < 0) return;
-        countDownTime -= Time.deltaTime;
+       // countDownTime -= Time.deltaTime;
         if (countDownTime < 0)
         {
             LevelManager.Ins.CheckWinloseTimer();

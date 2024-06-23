@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44402242, g: 0.49316543, b: 0.5722324, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -266,7 +266,7 @@ MonoBehaviour:
   - root: {fileID: 1695010349}
     prefab: {fileID: 4093961905051792774, guid: 7e08587e1ea898842a7c9a9e5aa362f8, type: 3}
     amount: 500
-    collect: 0
+    collect: 1
   Particle: []
 --- !u!1 &283469748
 GameObject:
@@ -428,6 +428,7 @@ MonoBehaviour:
   - {fileID: 6941864843590555215, guid: 04b3c07ed1dee76459bb6ba99346b988, type: 3}
   - {fileID: 614979916153278048, guid: 0fc982633f6d11e45bc4c97d0b649c1f, type: 3}
   - {fileID: -975830004319066610, guid: e6e93e4843d34f0489f866b00331ee2c, type: 3}
+  - {fileID: 6941864843590555215, guid: 3d50b3b87dc235045aac5fbe44988a98, type: 3}
   CanvasParentTF: {fileID: 1692685246}
   bg: {fileID: 2118870615}
 --- !u!1 &507201642

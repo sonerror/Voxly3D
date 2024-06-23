@@ -63,7 +63,7 @@ public class ButtonSwatchCellUI : MonoBehaviour
         if (tfContent != null && buttonSwatches.Count > 0)
         {
             RectTransform buttonRectTransform = buttonSwatches[0].GetComponent<RectTransform>();
-            float buttonWidth = buttonRectTransform.rect.width + 10;
+            float buttonWidth = buttonRectTransform.rect.width + 22;
             float totalWidth = buttonWidth * buttonSwatches.Count;
             tfContent.sizeDelta = new Vector2(totalWidth, tfContent.sizeDelta.y);
             if (targetButtonIndex > 0 && targetButtonIndex < buttonSwatches.Count)

@@ -11,7 +11,7 @@ public class RotateAround : MonoBehaviour
     void Update()
     {
         if (LevelManager.Ins.isWin == true) return;
-        //HandleMouseInput();
+        HandleMouseInput();
         HandleTouchInput();
     }
 
@@ -79,6 +79,4 @@ public class RotateAround : MonoBehaviour
             }
         }
     }
-
-
 }

@@ -10,6 +10,7 @@ public class Lose : UICanvas
     }
     public void BtnBack()
     {
+        LevelManager.Ins.levelCurrent.StopCountDown();
         SceneController.Ins.ChangeScene("GamePlay", () =>
         {
             UIManager.Ins.CloseAll();
