@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class ZoomAndMoveLevel : MonoBehaviour
 {
-    public float rotateSpeed = 0.2f;
     public float zoomMobileSpeed = 0.001f;
     public float minOrthoSize = 1f;
     public float maxOrthoSize = 10f;
@@ -16,33 +15,35 @@ public class ZoomAndMoveLevel : MonoBehaviour
     private float zoomModifier;
     private Vector2? lastTouchPos = null;
     public Camera cam;
-    // private RectTransform canvasRectTransform;
+    public bool isZoomHand = false;
 
     void Start()
     {
         cam = Camera.main;
-        cam.orthographicSize = maxOrthoSize;
-        //canvasRectTransform = GameObject.Find("Canvas").GetComponent<RectTransform>();
+    }
+    public void Onint()
+    {
+        cam.fieldOfView = maxOrthoSize;
     }
     public void SetTFDef()
     {
-        cam.DOOrthoSize(maxOrthoSize/2 , 0.5f).SetEase(Ease.InOutQuad);
+        cam.DOFieldOfView(maxOrthoSize  / 1.5f, 0.5f).SetEase(Ease.InOutQuad);
     }
     public void SetTFZoom(bool isZoomIN)
     {
         if (isZoomIN)
         {
-            cam.DOOrthoSize(maxOrthoSize / 4, 0.5f).SetEase(Ease.InOutQuad);
+            cam.DOFieldOfView(minOrthoSize, 0.5f).SetEase(Ease.InOutQuad);
         }
         else
         {
-            cam.DOOrthoSize(maxOrthoSize, 0.5f).SetEase(Ease.InOutQuad);
+            cam.DOFieldOfView(maxOrthoSize, 0.5f).SetEase(Ease.InOutQuad);
         }
     }
     void Update()
     {
         if (LevelManager.Ins.isWin == true) return;
-        float scrollInput = Input.GetAxis("Mouse ScrollWheel");
+        // float scrollInput = Input.GetAxis("Mouse ScrollWheel");
         /* if (LevelManager.Ins != null)
          {
              if (LevelManager.Ins.indexLevel == 0)
@@ -50,8 +51,10 @@ public class ZoomAndMoveLevel : MonoBehaviour
                  return;
              }
          }*/
+        isZoomHand = false;
         if (Input.touchCount == 2 && !UI_Hover.IsPointerOverUIElement())
         {
+            isZoomHand = true;
             Touch firstTouch = Input.GetTouch(0);
             Touch secondTouch = Input.GetTouch(1);
             firstTouchPrePos = firstTouch.position - firstTouch.deltaPosition;
@@ -67,15 +70,17 @@ public class ZoomAndMoveLevel : MonoBehaviour
             }
             else
             {
-                // HandleMove(firstTouch, secondTouch);
+                HandleMove(firstTouch, secondTouch);
             }
-            cam.orthographicSize = Mathf.Clamp(cam.orthographicSize, minOrthoSize, maxOrthoSize);
-            UpdateLevelManagerZoomState(cam.orthographicSize);
+            cam.fieldOfView = Mathf.Clamp(cam.fieldOfView, minOrthoSize, maxOrthoSize);
+            UpdateLevelManagerZoomState(cam.fieldOfView);
         }
-
-        float newOrthographicSize = cam.orthographicSize - scrollInput * zoomWheelSpeed * Time.deltaTime;
-        cam.orthographicSize = Mathf.Clamp(newOrthographicSize, minOrthoSize, maxOrthoSize);
-        UpdateLevelManagerZoomState(cam.orthographicSize);
+        //float newOrthographicSize = cam.orthographicSize - scrollInput * zoomWheelSpeed * Time.deltaTime;
+        //cam.orthographicSize = Mathf.Clamp(newOrthographicSize, minOrthoSize, maxOrthoSize);
+        if (isZoomHand == false)
+        {
+            UpdateLevelManagerZoomState(cam.fieldOfView);
+        }
     }
 
     void HandleZoom(float touchesPrePosDiff, float touchesCurPosDiff, Touch firstTouch, Touch secondTouch)
@@ -86,35 +91,33 @@ public class ZoomAndMoveLevel : MonoBehaviour
 
         if (touchesPrePosDiff < touchesCurPosDiff)
         {
-            cam.orthographicSize -= zoomModifier;
-            //cam.DOOrthoSize(cam.orthographicSize + zoomModifier, 0.1f).SetEase(Ease.OutQuad);
-
+            cam.fieldOfView -= zoomModifier;
         }
         else if (touchesPrePosDiff > touchesCurPosDiff)
         {
-            cam.orthographicSize += zoomModifier;
-            //cam.DOOrthoSize(cam.orthographicSize - zoomModifier, 0.1f).SetEase(Ease.OutQuad);
+            cam.fieldOfView += zoomModifier;
         }
     }
-    /*    void HandleMove(Touch firstTouch, Touch secondTouch)
+    
+    void HandleMove(Touch firstTouch, Touch secondTouch)
+    {
+        Vector2 firstTouchPrevPos = firstTouch.position - firstTouch.deltaPosition;
+        Vector2 secondTouchPrevPos = secondTouch.position - secondTouch.deltaPosition;
+        Vector2 prevTouchPosCenter = (firstTouchPrevPos + secondTouchPrevPos) / 2f;
+        Vector2 currentTouchPosCenter = (firstTouch.position + secondTouch.position) / 2f;
+        if (lastTouchPos.HasValue)
         {
-            Vector2 currentTouchPos = (firstTouch.position + secondTouch.position) / 2f;
-            if (lastTouchPos.HasValue)
-            {
-                Vector2 delta = currentTouchPos - lastTouchPos.Value;
-                Vector3 moveDirection = new Vector3(delta.x, delta.y, 0f) * dragSpeed;
-                Vector3 screenPosition = cam.WorldToScreenPoint(transform.position);
-                screenPosition.x = Mathf.Clamp(screenPosition.x, 0, Screen.width);
-                screenPosition.y = Mathf.Clamp(screenPosition.y, 0, Screen.height);
-                Vector3 worldPosition = cam.ScreenToWorldPoint(screenPosition + moveDirection);
-                Vector3 localPos = canvasRectTransform.InverseTransformPoint(worldPosition);
-                localPos.x = Mathf.Clamp(localPos.x, -canvasRectTransform.rect.width / 2, canvasRectTransform.rect.width / 2);
-                localPos.y = Mathf.Clamp(localPos.y, -canvasRectTransform.rect.height / 2, canvasRectTransform.rect.height / 2);
-                worldPosition = canvasRectTransform.TransformPoint(localPos);
-                transform.position = worldPosition;
-            }
-            lastTouchPos = currentTouchPos;
-        }*/
+            Vector2 delta = currentTouchPosCenter - prevTouchPosCenter;
+            Vector3 moveDirection = new Vector3(delta.x, delta.y, 0f) * dragSpeed * Time.deltaTime;
+            Vector3 newPosition = transform.position + moveDirection;
+            Vector3 screenPosition = cam.WorldToViewportPoint(newPosition);
+            screenPosition.x = Mathf.Clamp(screenPosition.x, 0.1f, 0.9f);
+            screenPosition.y = Mathf.Clamp(screenPosition.y, 0.1f, 0.9f);
+            newPosition = cam.ViewportToWorldPoint(screenPosition);
+            transform.position = newPosition;
+        }
+        lastTouchPos = currentTouchPosCenter;
+    }
     void UpdateLevelManagerZoomState(float orthographicSize)
     {
         if (orthographicSize < maxOrthoSize / 1.4f)

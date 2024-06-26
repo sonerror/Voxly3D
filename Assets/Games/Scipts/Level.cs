@@ -16,15 +16,15 @@ public class Level : MonoBehaviour
     public bool isCountDown;
     public Animator animator;
     public ZoomAndMoveLevel zoomAndMoveLevel;
+    public RotateAround rotateAround;
     public void Start()
     {
-        zoomAndMoveLevel = GetComponent<ZoomAndMoveLevel>();
         animator.enabled = false;
     }
     private void Update()
     {
         if (!isCountDown || countDownTime < 0) return;
-       // countDownTime -= Time.deltaTime;
+       // countDownTime -= Time.deltaTime; count timer
         if (countDownTime < 0)
         {
             LevelManager.Ins.CheckWinloseTimer();
@@ -50,6 +50,10 @@ public class Level : MonoBehaviour
     public float FCountVoxel(int targetID)
     {
         return voxelPieces.Count(voxelPiece => voxelPiece.ID == targetID && !voxelPiece.isVoxel);
+    } 
+    public float FCountIDVoxel(int targetID)
+    {
+        return voxelPieces.Count(voxelPiece => voxelPiece.ID == targetID);
     }
     public int CountSumVoxel()
     {
@@ -62,7 +66,8 @@ public class Level : MonoBehaviour
     public void ChangeAnim()
     {
         zoomAndMoveLevel.SetTFDef();
-        this.transform.DORotate(Vector3.zero, 0.8f).SetEase(Ease.InOutQuad);
+        this.transform.DOMove(new Vector3(0, 0, 0), 0.8f).SetEase(Ease.InOutQuad);
+        this.transform.DORotate(new Vector3(0,180,0), 0.8f).SetEase(Ease.InOutQuad);
         DOVirtual.DelayedCall(1f, () =>
         {
             animator.enabled = true;

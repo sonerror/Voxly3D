@@ -1,6 +1,7 @@
 using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -21,7 +22,6 @@ public class ButtonSwatch : MonoBehaviour
     {
         rectTransform = GetComponent<RectTransform>();
         StartCoroutine(IE_Loadata());
-
     }
     public void Start()
     {
@@ -37,18 +37,18 @@ public class ButtonSwatch : MonoBehaviour
     {
         this.buttonSwatchCellUI = buttonSwatchCellUI;
         StartCoroutine(IE_Loadata());
-        sumMat = LevelManager.Ins.levelCurrent.FCountVoxel(_id);
-        SetIMGType(sumMat);
+        SetIMGType(LevelManager.Ins.levelCurrent.FCountVoxel(id));
     }
     public void SetIMGType(float _coutMat)
     {
-        imgBG.fillAmount = _coutMat / sumMat;
+        imgBG.fillAmount = _coutMat / LevelManager.Ins.levelCurrent.FCountIDVoxel(id);
     }
     public void btnID()
     {
         LevelManager.Ins.CheckID(id);
         LevelManager.Ins.ChangematFormID();
         buttonSwatchCellUI.SelectButton();
+        buttonSwatchCellUI.MoveTarget(this);
     }
     public void SetBG(Color color)
     {

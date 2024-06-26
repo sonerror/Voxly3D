@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44402242, g: 0.49316543, b: 0.5722324, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -265,7 +265,7 @@ MonoBehaviour:
   Pool:
   - root: {fileID: 1695010349}
     prefab: {fileID: 4093961905051792774, guid: 7e08587e1ea898842a7c9a9e5aa362f8, type: 3}
-    amount: 500
+    amount: 0
     collect: 1
   Particle: []
 --- !u!1 &283469748
@@ -428,7 +428,7 @@ MonoBehaviour:
   - {fileID: 6941864843590555215, guid: 04b3c07ed1dee76459bb6ba99346b988, type: 3}
   - {fileID: 614979916153278048, guid: 0fc982633f6d11e45bc4c97d0b649c1f, type: 3}
   - {fileID: -975830004319066610, guid: e6e93e4843d34f0489f866b00331ee2c, type: 3}
-  - {fileID: 6941864843590555215, guid: 3d50b3b87dc235045aac5fbe44988a98, type: 3}
+  - {fileID: 7707210785496125447, guid: 3d50b3b87dc235045aac5fbe44988a98, type: 3}
   CanvasParentTF: {fileID: 1692685246}
   bg: {fileID: 2118870615}
 --- !u!1 &507201642
@@ -485,6 +485,7 @@ MonoBehaviour:
   isChangeMatSl: 0
   isWin: 0
   isUsingBooster: 0
+  isInstantiateLevel: 0
 --- !u!1 &883175416
 GameObject:
   m_ObjectHideFlags: 0
@@ -1236,7 +1237,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18d122c0c9ab7e04198c9cc68aa8cb96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isCheat: 0
 --- !u!1 &1935187056
 GameObject:
   m_ObjectHideFlags: 0
