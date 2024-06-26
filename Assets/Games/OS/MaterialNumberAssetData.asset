@@ -76,3 +76,31 @@ MonoBehaviour:
       fakeValue: 9
       fakeValueActive: 1
     mats: {fileID: 2100000, guid: 21f5321c9b85e2148abb65f9548c9c9c, type: 2}
+  - id:
+      currentCryptoKey: 1839143875
+      hiddenValue: 1839143881
+      inited: 1
+      fakeValue: 10
+      fakeValueActive: 1
+    mats: {fileID: 2100000, guid: e909333763912c0409e2eb86586294a7, type: 2}
+  - id:
+      currentCryptoKey: 1839143875
+      hiddenValue: 1839143880
+      inited: 1
+      fakeValue: 11
+      fakeValueActive: 1
+    mats: {fileID: 2100000, guid: 05ff1549afa37f34a8082b59da97417c, type: 2}
+  - id:
+      currentCryptoKey: 1839143875
+      hiddenValue: 1839143887
+      inited: 1
+      fakeValue: 12
+      fakeValueActive: 1
+    mats: {fileID: 2100000, guid: 89f3bedb2bcd8734e9fe09b2cbdf16e4, type: 2}
+  - id:
+      currentCryptoKey: 1839143875
+      hiddenValue: 1839143886
+      inited: 1
+      fakeValue: 13
+      fakeValueActive: 1
+    mats: {fileID: 2100000, guid: 431b5ddae4e19c245908d3d017a20eaa, type: 2}

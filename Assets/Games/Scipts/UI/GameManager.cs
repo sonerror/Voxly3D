@@ -8,16 +8,13 @@ using UnityEngine.VFX;
 
 public class GameManager : Singleton<GameManager>
 {
-    public bool isCheat = false;
     private bool isInitGame;
-
     protected void Awake()
     {
         Input.multiTouchEnabled = true;
         Application.targetFrameRate = 60;
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
     }
-
     private void Start()
     {
         StartCoroutine(I_InitGame());

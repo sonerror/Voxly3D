@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -53,13 +54,26 @@ public class GamePlay : UICanvas
     }
     public void BtnBack()
     {
-        SceneController.Ins.ChangeScene("GamePlay", () =>
-        {
-            UIManager.Ins.CloseAll();
-            UIManager.Ins.OpenUI<Home>();
-        }, true, true);
+        /* SceneController.Ins.ChangeScene("GamePlay", () =>
+         {
+             UIManager.Ins.CloseAll();
+             UIManager.Ins.OpenUI<Home>();
+         }, true, true);*/
+        UIManager.Ins.CloseAll();
+        UIManager.Ins.OpenUI<Home>();
+        UIManager.Ins.GetUI<Home>().buttonLevel.Loadata();
+        LevelManager.Ins.ResetData();
         LevelManager.Ins.iDSelected = 0;
         MatManager.Ins.ClearListID();
+        buttonSwatchCellUI.DestroyButton();
+    }
+
+    IEnumerator IE_ResetData()
+    {
+        yield return new WaitForEndOfFrame();
+        UIManager.Ins.GetUI<Home>().buttonLevel.ResetData();
+        yield return new WaitForEndOfFrame();
+        UIManager.Ins.GetUI<Home>().buttonLevel.Loadata();
     }
     private void UpdateCountDownText()
     {

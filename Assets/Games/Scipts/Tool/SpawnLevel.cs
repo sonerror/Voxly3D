@@ -39,7 +39,7 @@ public class SpawnLevel : EditorWindow
                     {
                         for (int i = 0; i < listColor.Count; i++)
                         {
-                            if (Ultilities.AreColorsApproximatelyEqual(mat.color, listColor[i], 0.1f))
+                            if (Ultilities.AreColorsApproximatelyEqual(mat.color, listColor[i]))
                             {
                                 TransformData cube = new TransformData(child.transform.position, i);
                                 level.tfData.Add(cube);

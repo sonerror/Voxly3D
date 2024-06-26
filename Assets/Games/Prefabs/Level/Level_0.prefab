@@ -87,7 +87,8 @@ MonoBehaviour:
   countDownTime: 10
   isCountDown: 0
   animator: {fileID: 3457727404598524676}
-  zoomAndMoveLevel: {fileID: 0}
+  zoomAndMoveLevel: {fileID: 2936218321931468884}
+  rotateAround: {fileID: 7671494390013428408}
 --- !u!114 &7671494390013428408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100,7 +101,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e66be121e9ca1e47b23f5e0fd835ebc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 20
+  rotateSpeed: 12
+  smoothTime: 0.06
 --- !u!114 &2936218321931468884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,13 +115,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b0c2444acf99d54e95e878a4df48bba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 0.2
-  zoomMobileSpeed: 0.001
+  zoomMobileSpeed: 0.01
   minOrthoSize: 0.05
   maxOrthoSize: 0.35
-  dragSpeed: 0.1
+  dragSpeed: 0.003
   zoomWheelSpeed: 40
   cam: {fileID: 0}
+  isZoomHand: 0
 --- !u!95 &3457727404598524676
 Animator:
   serializedVersion: 5

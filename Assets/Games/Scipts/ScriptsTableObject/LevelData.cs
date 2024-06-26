@@ -11,6 +11,26 @@ public class LevelData : ScriptableObject
     public int levelID;
     public List<TransformData> tfData;
     public List<MaterialData> materials;
+    public float minOrthoSize;
+    public float maxOrthoSize;
+    public LevelData DeepCopy()
+    {
+        LevelData copy = CreateInstance<LevelData>();
+        copy.levelID = this.levelID;
+        copy.tfData = new List<TransformData>(this.tfData.Count);
+        foreach (TransformData tf in this.tfData)
+        {
+            copy.tfData.Add(new TransformData(tf.position, tf.realColorID));
+        }
+        copy.materials = new List<MaterialData>(this.materials.Count);
+        foreach (MaterialData mat in this.materials)
+        {
+            copy.materials.Add(new MaterialData(mat.material, mat.colorID));
+        }
+        copy.maxOrthoSize = this.maxOrthoSize;
+        copy.minOrthoSize = this.minOrthoSize;
+        return copy;
+    }
 }
 [Serializable]
 public class TransformData

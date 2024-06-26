@@ -11,7 +11,7 @@ public class ButtonSwatchCellUI : MonoBehaviour
     public Transform tf;
     public List<ButtonSwatch> buttonSwatches;
     public RectTransform tfContent;
-
+    public bool isMoveTarget = false;
     public void LoadData()
     {
         DestroyButton();
@@ -21,6 +21,7 @@ public class ButtonSwatchCellUI : MonoBehaviour
         }
         StartCoroutine(IE_DelayTime());
         buttonBooster.MoveDown();
+        isMoveTarget = false;
     }
     IEnumerator IE_DelayTime()
     {
@@ -53,7 +54,14 @@ public class ButtonSwatchCellUI : MonoBehaviour
             buttonSwatches.Clear();
         }
     }
-
+    public void MoveTarget(ButtonSwatch buttonSwatch)
+    {
+        if (isMoveTarget == false)
+        {
+            LevelManager.Ins.FLTarget();
+            isMoveTarget = true;
+        }
+    }
     public void ResetUI(int id)
     {
         SetPosScroll(id);
@@ -99,7 +107,7 @@ public class ButtonSwatchCellUI : MonoBehaviour
         {
             for (int i = 0; i < buttonSwatches.Count; i++)
             {
-                if(buttonSwatches[i].isSelect == true)
+                if (buttonSwatches[i].isSelect == true)
                 {
                     buttonSwatches[i].MoveDown();
                 }

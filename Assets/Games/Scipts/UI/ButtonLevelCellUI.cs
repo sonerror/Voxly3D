@@ -18,13 +18,13 @@ public class ButtonLevelCellUI : MonoBehaviour
     }
     public void btnIndexLevel()
     {
-        SceneController.Ins.ChangeScene("GamePlay", () =>
+        LevelManager.Ins.indexLevel = id;
+        if(SceneController.Ins.currentSceneName.Equals("GamePlay"))
         {
             UIManager.Ins.CloseUI<Home>();
             UIManager.Ins.OpenUI<GamePlay>();
             UIManager.Ins.bg.gameObject.SetActive(false);
-            LevelManager.Ins.indexLevel = id;
-           
-        }, true, true);
+            LevelManager.Ins.LoadLevel(id);
+        }
     }
 }

@@ -50,7 +50,7 @@ public class MouseClicker : MonoBehaviour
                 StartCoroutine(IE_Draw(piece));
                 if (LevelManager.Ins.isUsingBooster)
                 {
-                    ShootRaycasts(piece);
+                    StartCoroutine(ShootRaycasts(piece));
                 }
             }
             
@@ -78,7 +78,39 @@ public class MouseClicker : MonoBehaviour
         LevelManager.Ins.CheckWinLose(voxelPiece.ID);
 
     }
-    public void ShootRaycasts(VoxelPiece voxelPiece)
+    IEnumerator IE_DrawByBoosterWithDelay(VoxelPiece voxelPiece, float delay)
+    {
+        yield return IE_DrawByBooster(voxelPiece);
+        yield return new WaitForSeconds(delay);
+    }
+    /*    public void ShootRaycasts(VoxelPiece voxelPiece)
+        {
+            HashSet<VoxelPiece> visitedPieces = new HashSet<VoxelPiece>();
+            Queue<VoxelPiece> piecesToProcess = new Queue<VoxelPiece>();
+            piecesToProcess.Enqueue(voxelPiece);
+            while (piecesToProcess.Count > 0)
+            {
+                VoxelPiece currentPiece = piecesToProcess.Dequeue();
+
+                Vector3[] directions = { Vector3.up, Vector3.down, Vector3.left, Vector3.right, Vector3.forward, Vector3.back };
+                foreach (var direction in directions)
+                {
+                    RaycastHit hit;
+                    if (Physics.Raycast(currentPiece.transform.position, direction, out hit, 0.01f))
+                    {
+                        VoxelPiece hitPiece = hit.collider.GetComponentInParent<VoxelPiece>();
+                        if (hitPiece != null && !hitPiece.isVoxel && hitPiece.ID == currentPiece.ID && !visitedPieces.Contains(hitPiece))
+                        {
+                            StartCoroutine(IE_DrawByBooster(hitPiece));
+                            StartCoroutine(IE_DrawByBooster(currentPiece));
+                            visitedPieces.Add(hitPiece);
+                            piecesToProcess.Enqueue(hitPiece);
+                        }
+                    }
+                }
+            }
+        }*/
+    IEnumerator ShootRaycasts(VoxelPiece voxelPiece)
     {
         HashSet<VoxelPiece> visitedPieces = new HashSet<VoxelPiece>();
         Queue<VoxelPiece> piecesToProcess = new Queue<VoxelPiece>();
@@ -100,10 +132,10 @@ public class MouseClicker : MonoBehaviour
                         StartCoroutine(IE_DrawByBooster(currentPiece));
                         visitedPieces.Add(hitPiece);
                         piecesToProcess.Enqueue(hitPiece);
+                        yield return new WaitForSeconds(0.0001f);
                     }
                 }
             }
         }
     }
-
 }

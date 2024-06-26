@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,11 +11,23 @@ public class ButtonLevel : MonoBehaviour
     public RectTransform tfContent;
     private void Start()
     {
-        Loadata(LevelManager.Ins.indexLevel);
+        Loadata();
     }
-    public void Loadata(int targetButton)
+    public void ResetData()
     {
-        if(buttonLevelCellUIs == null)
+        for (int i = 0; i < buttonLevelCellUIs.Count; i++)
+        {
+            Destroy(buttonLevelCellUIs[i].gameObject);
+        }
+        buttonLevelCellUIs.Clear();
+    }
+    public void Loadata()
+    {
+        if (buttonLevelCellUIs.Count > 0)
+        {
+            ResetData();
+        }
+        if (buttonLevelCellUIs == null)
         {
             buttonLevelCellUIs = new List<ButtonLevelCellUI>();
         }
@@ -25,28 +37,34 @@ public class ButtonLevel : MonoBehaviour
             buttonLevelCellUIs.Add(btn);
             btn.LoadData(LevelManager.Ins.levelDataTFAssetData.levelDataTFDataModels[i].id);
         }
-        SetSizeDetal(targetButton);
+        StartCoroutine(IE_SetSizeDetal(LevelManager.Ins.indexLevel));
     }
-    public void SetSizeDetal(int targetButtonIndex)
+    IEnumerator IE_SetSizeDetal(int targetButtonIndex)
     {
+        yield return new WaitForEndOfFrame();
         if (tfContent != null && buttonLevelCellUIs.Count > 0)
         {
             RectTransform buttonRectTransform = buttonLevelCellUIs[0].GetComponent<RectTransform>();
-            float buttonWidth = buttonRectTransform.rect.height + 100;
-            float totalWidth = buttonWidth * buttonLevelCellUIs.Count;
-
-            tfContent.sizeDelta = new Vector2(tfContent.sizeDelta.x, totalWidth);
-
+            float buttonHeight = buttonRectTransform.rect.height + 100;
+            float totalHeight = buttonHeight * buttonLevelCellUIs.Count;
+            tfContent.sizeDelta = new Vector2(tfContent.sizeDelta.x, totalHeight);
+            yield return new WaitForEndOfFrame();
             if (targetButtonIndex >= 0 && targetButtonIndex < buttonLevelCellUIs.Count)
             {
-                RectTransform targetButtonRectTransform = buttonLevelCellUIs[targetButtonIndex].GetComponent<RectTransform>();
-                float targetButtonYPos = targetButtonRectTransform.anchoredPosition.y;
-
-                float normalizedPosition = Mathf.Clamp01(1 - (targetButtonYPos / (totalWidth - tfContent.rect.height)));
+                RectTransform targetButtonRectTransform = buttonLevelCellUIs.Find(id => id.id == targetButtonIndex).GetComponent<RectTransform>();
+                float targetButtonYPos = Mathf.Abs(targetButtonRectTransform.anchoredPosition.y + 100);
+                float scrollPosition = (targetButtonYPos + buttonHeight / 2) / totalHeight;
+                scrollPosition = 1 - scrollPosition;
                 ScrollRect scrollRect = tfContent.GetComponentInParent<ScrollRect>();
-                scrollRect.verticalNormalizedPosition = normalizedPosition;
+                if(targetButtonIndex >= buttonLevelCellUIs.Count - 2)
+                {
+                    scrollRect.verticalNormalizedPosition = 1;
+                }
+                else
+                {
+                    scrollRect.verticalNormalizedPosition = scrollPosition;
+                }
             }
         }
     }
-   
 }

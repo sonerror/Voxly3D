@@ -1,7 +1,6 @@
-
-
 public class Home : UICanvas
 {
+    public ButtonLevel buttonLevel;
     public override void Open()
     {
         base.Open();
@@ -9,12 +8,12 @@ public class Home : UICanvas
 
     public void Btn_Play()
     {
+        
         SceneController.Ins.ChangeScene("GamePlay", () =>
         {
             UIManager.Ins.CloseUI<Home>();
             UIManager.Ins.OpenUI<GamePlay>();
             UIManager.Ins.bg.gameObject.SetActive(false);
         }, true, true);
-       
     }
 }
