@@ -28,6 +28,7 @@ public class ButtonSwatch : MonoBehaviour
         StartCoroutine(IE_Loadata());
         textID.text = id.ToString();
     }
+
     IEnumerator IE_Loadata()
     {
         yield return new WaitForEndOfFrame();
@@ -46,9 +47,20 @@ public class ButtonSwatch : MonoBehaviour
     public void btnID()
     {
         LevelManager.Ins.CheckID(id);
-        LevelManager.Ins.ChangematFormID();
-        buttonSwatchCellUI.SelectButton();
         buttonSwatchCellUI.MoveTarget(this);
+        if (!LevelManager.Ins.levelCurrent.zoomAndMoveLevel.isChangeMatZoom())
+        {
+
+            LevelManager.Ins.ChangematFormID();
+        }
+        else
+        {
+            LevelManager.Ins.ChangematFormID();
+
+        }
+
+        buttonSwatchCellUI.SelectButton();
+
     }
     public void SetBG(Color color)
     {

@@ -62,6 +62,7 @@ public class LevelManager : Singleton<LevelManager>
         {
             yield return new WaitForSeconds(0.1f);
             UIManager.Ins.OpenUI<GamePlay>().buttonSwatchCellUI.LoadData();
+            UIManager.Ins.OpenUI<GamePlay>().buttonSwatchCellUI.buttonBooster.MoveDown();
         }
     }
 
@@ -79,7 +80,7 @@ public class LevelManager : Singleton<LevelManager>
             iDSelected = 0;
             LoadLevel(indexLevel);
         }
-            
+
     }
     public void InstantiateLevel(int indexLevel)
     {
@@ -105,7 +106,7 @@ public class LevelManager : Singleton<LevelManager>
             v.TF.SetParent(levelCurrent.container);
         }
         levelCurrent.transform.localRotation = Quaternion.Euler(24, -120, 20);
-       
+
     }
     IEnumerator IE_LoadValZoom(Level lv, LevelData lvdata)
     {
@@ -124,7 +125,6 @@ public class LevelManager : Singleton<LevelManager>
             levelCurrent = null;
         }
     }
-
     public void ChangematFormID()
     {
         if (isChangeMatSl)

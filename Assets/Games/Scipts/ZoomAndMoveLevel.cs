@@ -43,15 +43,6 @@ public class ZoomAndMoveLevel : MonoBehaviour
     void Update()
     {
         if (LevelManager.Ins.isWin == true) return;
-        // float scrollInput = Input.GetAxis("Mouse ScrollWheel");
-        /* if (LevelManager.Ins != null)
-         {
-             if (LevelManager.Ins.indexLevel == 0)
-             {
-                 return;
-             }
-         }*/
-        isZoomHand = false;
         if (Input.touchCount == 2 && !UI_Hover.IsPointerOverUIElement())
         {
             isZoomHand = true;
@@ -75,14 +66,7 @@ public class ZoomAndMoveLevel : MonoBehaviour
             cam.fieldOfView = Mathf.Clamp(cam.fieldOfView, minOrthoSize, maxOrthoSize);
             UpdateLevelManagerZoomState(cam.fieldOfView);
         }
-        //float newOrthographicSize = cam.orthographicSize - scrollInput * zoomWheelSpeed * Time.deltaTime;
-        //cam.orthographicSize = Mathf.Clamp(newOrthographicSize, minOrthoSize, maxOrthoSize);
-        if (isZoomHand == false)
-        {
-            UpdateLevelManagerZoomState(cam.fieldOfView);
-        }
     }
-
     void HandleZoom(float touchesPrePosDiff, float touchesCurPosDiff, Touch firstTouch, Touch secondTouch)
     {
         float deltaPos = (firstTouch.deltaPosition - secondTouch.deltaPosition).sqrMagnitude;
@@ -98,7 +82,6 @@ public class ZoomAndMoveLevel : MonoBehaviour
             cam.fieldOfView += zoomModifier;
         }
     }
-    
     void HandleMove(Touch firstTouch, Touch secondTouch)
     {
         Vector2 firstTouchPrevPos = firstTouch.position - firstTouch.deltaPosition;
@@ -133,5 +116,9 @@ public class ZoomAndMoveLevel : MonoBehaviour
             LevelManager.Ins.SetMatZoomOut();
             LevelManager.Ins.SetBtnZoomIn();
         }
+    }
+    public bool isChangeMatZoom()
+    {
+        return cam.fieldOfView < maxOrthoSize / 1.4f;
     }
 }

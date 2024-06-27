@@ -20,7 +20,7 @@ public class ButtonSwatchCellUI : MonoBehaviour
             CreateAndConfigureButton(MatManager.Ins.listIDBtn[i]);
         }
         StartCoroutine(IE_DelayTime());
-        buttonBooster.MoveDown();
+        //buttonBooster.ResetUIBooster();
         isMoveTarget = false;
     }
     IEnumerator IE_DelayTime()
@@ -59,6 +59,9 @@ public class ButtonSwatchCellUI : MonoBehaviour
         if (isMoveTarget == false)
         {
             LevelManager.Ins.FLTarget();
+            LevelManager.Ins.SetMatZoomIn();
+            LevelManager.Ins.isChangeMatSl = true;
+            LevelManager.Ins.SetBtnZoomOut();
             isMoveTarget = true;
         }
     }
